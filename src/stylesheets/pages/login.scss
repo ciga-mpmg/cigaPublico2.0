@@ -7,9 +7,6 @@
 
     @include breakpoint.min("lg") {
         display: flex;
-    }
-
-    @include breakpoint.min("lg") {
         background-image: url("./assets/images/background/login.jpg");
         background-repeat: no-repeat;
         background-position: center right -40vw;
@@ -17,19 +14,22 @@
     }
 
     @include breakpoint.min("xl") {
-        background-position: center right -10vw;
+        background-position: center right -15vw;
         background-size: contain;
     }
 
+    @include breakpoint.min("xxl") {
+        background-position: center right -10vw;
+    }
+
     @media (min-width: 1800px) {
-        background-position: center right -5vw;
+        background-position: center right 0;
     }
 
     &-wrapper {
         position: relative;
         display: flex;
         flex-direction: column;
-        -webkit-box-pack: center;
         justify-content: center;
         width: min(100%, 450px);
         margin: auto;
@@ -40,15 +40,12 @@
         }
 
         @include breakpoint.min("xl") {
-            margin-left: 15vw;
-        }
-
-        @include breakpoint.min("xxl") {
-            margin-left: 330px;
-        }
-
-        @media (min-width: 1560px) {
             margin-left: auto;
+            margin-right: 680px;
+        }
+
+        @media (min-width: 1800px) {
+            margin-right: 850px;
         }
     }
 
