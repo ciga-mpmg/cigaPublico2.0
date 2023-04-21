@@ -13,6 +13,7 @@
         "tokens": "style-dictionary build --config src/stylesheets/styles.json"
     },
     "devDependencies": {
+        "copy-webpack-plugin": "^11.0.0",
         "css-loader": "^6.7.3",
         "html-webpack-plugin": "^5.5.1",
         "mini-css-extract-plugin": "^2.7.5",
