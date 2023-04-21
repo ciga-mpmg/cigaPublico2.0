@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: .5rem;
+    gap: 0.5rem;
     height: 40px;
     font-weight: 500;
     font-size: var(--ds-typography-body-size-normal);
@@ -91,7 +91,6 @@
             background-color: var(--ds-color-secondary-disabled);
         }
 
-
         &-text {
             color: var(--ds-color-secondary-default);
 
@@ -128,6 +127,56 @@
         }
     }
 
+    &-light {
+        color: var(--ds-color-on-light);
+        background-color: var(--ds-color-light-default);
+
+        &:hover {
+            background-color: var(--ds-color-light-hover);
+        }
+
+        &:active,
+        &:focus-within {
+            background-color: var(--ds-color-light-active);
+        }
+
+        &:disabled {
+            background-color: var(--ds-color-light-disabled);
+        }
+
+        &-text {
+            color: var(--ds-color-on-light);
+
+            &:hover,
+            &:active,
+            &:focus-within {
+                color: var(--ds-color-light-hover);
+            }
+
+            &:disabled {
+                color: var(--ds-color-light-disabled);
+            }
+        }
+
+        &-outline {
+            @extend .button-light-text;
+            border-color: var(--ds-color-light-default);
+
+            &:hover {
+                border-color: var(--ds-color-light-hover);
+            }
+
+            &:active,
+            &:focus-within {
+                border-color: var(--ds-color-light-active);
+            }
+
+            &:disabled {
+                border-color: var(--ds-color-light-disabled);
+            }
+        }
+    }
+
     &-icon {
         text-decoration: none;
         aspect-ratio: 1;
@@ -146,7 +195,5 @@
         [class*=" ds-icon-"] {
             font-size: var(--ds-typography-body-size-medium);
         }
-
     }
-
 }
