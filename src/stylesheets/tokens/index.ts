@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 21 Apr 2023 14:13:23 GMT
+ * Generated on Fri, 21 Apr 2023 14:37:59 GMT
  */
 
 export const TokenColorWhite = "#ffffff";
@@ -72,3 +72,41 @@ export const TokenPatternGray700 = "#4B4B4E";
 export const TokenPatternGray800 = "#19191A";
 export const TokenPatternGray900 = "#0A0A0A";
 export const TokenPatternGray000 = "#FFFFFF";
+export const TokenTypographyHeadingFamilyDefault = "'Poppins', sans-serif";
+export const TokenTypographyHeadingSizeH1 = "48px";
+export const TokenTypographyHeadingSizeH2 = "40px";
+export const TokenTypographyHeadingSizeH3 = "32px";
+export const TokenTypographyHeadingSizeH4 = "24px";
+export const TokenTypographyHeadingSizeH5 = "22px";
+export const TokenTypographyHeadingSizeH6 = "18px";
+export const TokenTypographyHeadingLineHeightH1 = "72px";
+export const TokenTypographyHeadingLineHeightH2 = "60px";
+export const TokenTypographyHeadingLineHeightH3 = "48px";
+export const TokenTypographyHeadingLineHeightH4 = "36px";
+export const TokenTypographyHeadingLineHeightH5 = "33px";
+export const TokenTypographyHeadingLineHeightH6 = "27px";
+export const TokenTypographyHeadingLetterSpacingH1 = "-4%";
+export const TokenTypographyHeadingLetterSpacingH2 = "-4%";
+export const TokenTypographyHeadingLetterSpacingH3 = "-4%";
+export const TokenTypographyHeadingLetterSpacingH4 = "-4%";
+export const TokenTypographyHeadingLetterSpacingH5 = "-4%";
+export const TokenTypographyHeadingLetterSpacingH6 = "-4%";
+export const TokenTypographyBodyFamilyDefault = "'Poppins', sans-serif";
+export const TokenTypographyBodySizeLarger = "24px";
+export const TokenTypographyBodySizeLarge = "20px";
+export const TokenTypographyBodySizeMedium = "18px";
+export const TokenTypographyBodySizeRegular = "16px";
+export const TokenTypographyBodySizeNormal = "14px";
+export const TokenTypographyBodySizeSmall = "12px";
+export const TokenTypographyBodyLineHeightLarger = "40px";
+export const TokenTypographyBodyLineHeightLarge = "28px";
+export const TokenTypographyBodyLineHeightMedium = "28px";
+export const TokenTypographyBodyLineHeightRegular = "24px";
+export const TokenTypographyBodyLineHeightNormal = "22px";
+export const TokenTypographyBodyLineHeightSmall = "18px";
+export const TokenTypographyBodyLetterSpacingLarger = "1%";
+export const TokenTypographyBodyLetterSpacingLarge = "1%";
+export const TokenTypographyBodyLetterSpacingMedium = "1%";
+export const TokenTypographyBodyLetterSpacingRegular = "1%";
+export const TokenTypographyBodyLetterSpacingNormal = "1%";
+export const TokenTypographyBodyLetterSpacingSmall = "1%";
