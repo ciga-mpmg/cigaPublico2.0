@@ -41,6 +41,11 @@
         &-text {
             color: var(--ds-color-primary-default);
 
+            &:not([class*="-outline"]) {
+                padding: 0;
+                height: auto;
+            }
+
             &:hover {
                 color: var(--ds-color-primary-hover);
             }
@@ -93,6 +98,10 @@
 
         &-text {
             color: var(--ds-color-secondary-default);
+
+            &:not([class*="-outline"]) {
+                padding: 0;
+            }
 
             &:hover {
                 color: var(--ds-color-secondary-hover);
@@ -195,5 +204,9 @@
         [class*=" ds-icon-"] {
             font-size: var(--ds-typography-body-size-medium);
         }
+    }
+
+    &-full {
+        width: 100%;
     }
 }
