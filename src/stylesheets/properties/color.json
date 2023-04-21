@@ -25,9 +25,16 @@
             "active": { "value": "{pattern.blue.300}" },
             "disabled": { "value": "{pattern.cyan.400}66" }
         },
+        "light": {
+            "default": { "value": "{pattern.gray.200}" },
+            "hover": { "value": "{pattern.gray.500}" },
+            "active": { "value": "{pattern.gray.400}" },
+            "disabled": { "value": "{pattern.gray.400}66" }
+        },
         "on": {
             "primary": { "value": "{color.white}" },
-            "secondary": { "value": "{color.white}" }
+            "secondary": { "value": "{color.white}" },
+            "light": { "value": "{pattern.gray.700}" }
         }
     }
 }
