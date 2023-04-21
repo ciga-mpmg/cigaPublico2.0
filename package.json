@@ -7,9 +7,9 @@
     "author": "Steve Jamerson <stevejamerson@outlook.com>",
     "private": "true",
     "scripts": {
-        "start": "webpack serve --mode development --config webpack.config.js",
-        "build:dev": "webpack --mode development --config webpack.config.js",
-        "build:prod": "webpack --mode production --config webpack.config.js",
+        "start": "yarn tokens && webpack serve --mode development --config webpack.config.js",
+        "build:dev": "yarn tokens && webpack --mode development --config webpack.config.js",
+        "build:prod": "yarn tokens && webpack --mode production --config webpack.config.js",
         "tokens": "style-dictionary build --config src/stylesheets/styles.json"
     },
     "devDependencies": {
