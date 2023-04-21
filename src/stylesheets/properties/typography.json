@@ -1,0 +1,66 @@
+{
+    "typography": {
+        "heading": {
+            "family": {
+                "default": {
+                    "value": "'Poppins', sans-serif"
+                }
+            },
+            "size": {
+                "h1": { "value": "48px" },
+                "h2": { "value": "40px" },
+                "h3": { "value": "32px" },
+                "h4": { "value": "24px" },
+                "h5": { "value": "22px" },
+                "h6": { "value": "18px" }
+            },
+            "line-height": {
+                "h1": { "value": "72px" },
+                "h2": { "value": "60px" },
+                "h3": { "value": "48px" },
+                "h4": { "value": "36px" },
+                "h5": { "value": "33px" },
+                "h6": { "value": "27px" }
+            },
+            "letter-spacing": {
+                "h1": { "value": "-4%" },
+                "h2": { "value": "-4%" },
+                "h3": { "value": "-4%" },
+                "h4": { "value": "-4%" },
+                "h5": { "value": "-4%" },
+                "h6": { "value": "-4%" }
+            }
+        },
+        "body": {
+            "family": {
+                "default": {
+                    "value": "'Poppins', sans-serif"
+                }
+            },
+            "size": {
+                "larger": { "value": "24px" },
+                "large": { "value": "20px" },
+                "medium": { "value": "18px" },
+                "regular": { "value": "16px" },
+                "normal": { "value": "14px" },
+                "small": { "value": "12px" }
+            },
+            "line-height": {
+                "larger": { "value": "40px" },
+                "large": { "value": "28px" },
+                "medium": { "value": "28px" },
+                "regular": { "value": "24px" },
+                "normal": { "value": "22px" },
+                "small": { "value": "18px" }
+            },
+            "letter-spacing": {
+                "larger": { "value": "1%" },
+                "large": { "value": "1%" },
+                "medium": { "value": "1%" },
+                "regular": { "value": "1%" },
+                "normal": { "value": "1%" },
+                "small": { "value": "1%" }
+            }
+        }
+    }
+}

@@ -1,0 +1,210 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?91xqp4');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?91xqp4#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?91xqp4') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?91xqp4') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?91xqp4##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="ds-icon-"], [class*=" ds-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ds-icon-arrow-up-circle {
+  &:before {
+    content: $ds-icon-arrow-up-circle; 
+  }
+}
+.ds-icon-arrow-down-circle {
+  &:before {
+    content: $ds-icon-arrow-down-circle; 
+  }
+}
+.ds-icon-arrow-up-left-circle {
+  &:before {
+    content: $ds-icon-arrow-up-left-circle; 
+  }
+}
+.ds-icon-arrow-down-left-circle {
+  &:before {
+    content: $ds-icon-arrow-down-left-circle; 
+  }
+}
+.ds-icon-arrow-up-right-circle {
+  &:before {
+    content: $ds-icon-arrow-up-right-circle; 
+  }
+}
+.ds-icon-arrow-down-right-circle {
+  &:before {
+    content: $ds-icon-arrow-down-right-circle; 
+  }
+}
+.ds-icon-arrow-left {
+  &:before {
+    content: $ds-icon-arrow-left; 
+  }
+}
+.ds-icon-arrow-right {
+  &:before {
+    content: $ds-icon-arrow-right; 
+  }
+}
+.ds-icon-arrow-down-left {
+  &:before {
+    content: $ds-icon-arrow-down-left; 
+  }
+}
+.ds-icon-arrow-up-right {
+  &:before {
+    content: $ds-icon-arrow-up-right; 
+  }
+}
+.ds-icon-arrow-up-left {
+  &:before {
+    content: $ds-icon-arrow-up-left; 
+  }
+}
+.ds-icon-arrow-down-right {
+  &:before {
+    content: $ds-icon-arrow-down-right; 
+  }
+}
+.ds-icon-arrow-down {
+  &:before {
+    content: $ds-icon-arrow-down; 
+  }
+}
+.ds-icon-arrow-up {
+  &:before {
+    content: $ds-icon-arrow-up; 
+  }
+}
+.ds-icon-arrows-maximize {
+  &:before {
+    content: $ds-icon-arrows-maximize; 
+  }
+}
+.ds-icon-arrows-minimize {
+  &:before {
+    content: $ds-icon-arrows-minimize; 
+  }
+}
+.ds-icon-arrows-move {
+  &:before {
+    content: $ds-icon-arrows-move; 
+  }
+}
+.ds-icon-chevron-down {
+  &:before {
+    content: $ds-icon-chevron-down; 
+  }
+}
+.ds-icon-chevron-left {
+  &:before {
+    content: $ds-icon-chevron-left; 
+  }
+}
+.ds-icon-chevron-right {
+  &:before {
+    content: $ds-icon-chevron-right; 
+  }
+}
+.ds-icon-chevron-up {
+  &:before {
+    content: $ds-icon-chevron-up; 
+  }
+}
+.ds-icon-upload {
+  &:before {
+    content: $ds-icon-upload; 
+  }
+}
+.ds-icon-download-off {
+  &:before {
+    content: $ds-icon-download-off; 
+  }
+}
+.ds-icon-download {
+  &:before {
+    content: $ds-icon-download; 
+  }
+}
+.ds-icon-login {
+  &:before {
+    content: $ds-icon-login; 
+  }
+}
+.ds-icon-logout {
+  &:before {
+    content: $ds-icon-logout; 
+  }
+}
+.ds-icon-refresh-alert {
+  &:before {
+    content: $ds-icon-refresh-alert; 
+  }
+}
+.ds-icon-refresh {
+  &:before {
+    content: $ds-icon-refresh; 
+  }
+}
+.ds-icon-reload {
+  &:before {
+    content: $ds-icon-reload; 
+  }
+}
+.ds-icon-switch-horizontal {
+  &:before {
+    content: $ds-icon-switch-horizontal; 
+  }
+}
+.ds-icon-switch-vertical {
+  &:before {
+    content: $ds-icon-switch-vertical; 
+  }
+}
+.ds-icon-arrows-diff {
+  &:before {
+    content: $ds-icon-arrows-diff; 
+  }
+}
+.ds-icon-arrows-horizontal {
+  &:before {
+    content: $ds-icon-arrows-horizontal; 
+  }
+}
+.ds-icon-eye-check {
+  &:before {
+    content: $ds-icon-eye-check; 
+  }
+}
+.ds-icon-eye-off {
+  &:before {
+    content: $ds-icon-eye-off; 
+  }
+}
+.ds-icon-eye {
+  &:before {
+    content: $ds-icon-eye; 
+  }
+}
+
