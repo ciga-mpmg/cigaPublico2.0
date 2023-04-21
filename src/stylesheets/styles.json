@@ -1,0 +1,38 @@
+{
+  "source": ["src/stylesheets/properties/**/*.json"],
+  "platforms": {
+    "css": {
+      "prefix": "token",
+      "transformGroup": "css",
+      "buildPath": "src/stylesheets/tokens/",
+      "files": [
+        {
+          "destination": "_tokens-var.scss",
+          "format": "css/variables"
+        }
+      ]
+    },
+    "scss": {
+      "prefix": "token",
+      "transformGroup": "scss",
+      "buildPath": "src/stylesheets/tokens/",
+      "files": [
+        {
+          "destination": "_tokens-variables.scss",
+          "format": "scss/variables"
+        }
+      ]
+    },
+    "js": {
+      "prefix": "token",
+      "transformGroup": "js",
+      "buildPath": "src/stylesheets/tokens/",
+      "files": [
+        {
+          "format": "javascript/es6",
+          "destination": "index.ts"
+        }
+      ]
+    }
+  }
+}
