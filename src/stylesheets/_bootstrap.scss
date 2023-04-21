@@ -1,0 +1,58 @@
+.form-control {
+    height: 48px;
+    border-radius: 0.5rem;
+}
+
+.card {
+    &:has(.card-header + .card-body + .card-footer) {
+        .card-header {
+            padding-bottom: 0.75rem;
+        }
+        .card-body {
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+        }
+        .card-footer {
+            padding-top: 0.75rem;
+        }
+    }
+
+    &:has(.card-header + .card-body):not(:has(.card-footer)) {
+        .card-header {
+            padding-bottom: 0.75rem;
+        }
+        .card-body {
+            padding-top: 0.75rem;
+            border-radius: 0 0 1rem 1rem; //bottom
+        }
+    }
+
+    &:has(.card-header + .card-footer):not(:has(.card-body)) {
+        .card-header {
+            padding-bottom: 0.75rem;
+        }
+        .card-footer {
+            padding-top: 0.75rem;
+        }
+    }
+
+    &:has(.card-body, .card-footer):not(:has(.card-header)) {
+        .card-body {
+            padding-top: 1.5rem;
+            padding-bottom: 0.75rem;
+            border-radius: 1rem 1rem 0 0; //top
+        }
+        .card-footer {
+            padding-top: 0.75rem;
+        }
+    }
+
+    &-borderless {
+        &,
+        .card-header,
+        .card-body,
+        .card-footer {
+            border: 0;
+        }
+    }
+}
