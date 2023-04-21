@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 21 Apr 2023 16:40:48 GMT
+ * Generated on Fri, 21 Apr 2023 20:32:27 GMT
  */
 
 export const DsBorderWidthSmall = "1px";
@@ -36,8 +36,13 @@ export const DsColorSecondaryDefault = "#00BFD7";
 export const DsColorSecondaryHover = "#65D0EC";
 export const DsColorSecondaryActive = "#65D0EC";
 export const DsColorSecondaryDisabled = "#00BFD766";
+export const DsColorLightDefault = "#DCD8D7";
+export const DsColorLightHover = "#777777";
+export const DsColorLightActive = "#ACAEAE";
+export const DsColorLightDisabled = "#ACAEAE66";
 export const DsColorOnPrimary = "#ffffff";
 export const DsColorOnSecondary = "#ffffff";
+export const DsColorOnLight = "#4B4B4E";
 export const DsPatternBlack = "#000000";
 export const DsPatternWhite = "#FFFFFF";
 export const DsPatternBlue300 = "#65D0EC";
