@@ -1,5 +1,8 @@
 @use "./tokens/tokens-variables" as tokens;
 
+$primary: tokens.$ds-color-primary-default !default;
+$secondary: tokens.$ds-color-secondary-default !default;
+
 $input-btn-focus-box-shadow: 0 !default;
 $input-focus-border-color: var(--ds-color-primary-default) !default;
 
