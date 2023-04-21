@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 21 Apr 2023 20:32:27 GMT
+ * Generated on Fri, 21 Apr 2023 23:14:53 GMT
  */
 
 export const DsBorderWidthSmall = "1px";
@@ -17,6 +17,12 @@ export const DsBorderRadiusMedium = ".5rem";
 export const DsBorderRadiusLarge = "1rem";
 export const DsBorderRadiusPill = "10rem";
 export const DsBorderRadiusDefault = "1rem";
+export const DsBreakpointsXs = "425px";
+export const DsBreakpointsSm = "576px";
+export const DsBreakpointsMd = "768px";
+export const DsBreakpointsLg = "992px";
+export const DsBreakpointsXl = "1200px";
+export const DsBreakpointsXxl = "1440px";
 export const DsColorWhite = "#ffffff";
 export const DsColorBlack = "#000000";
 export const DsColorBody = "#4B4B4E";
