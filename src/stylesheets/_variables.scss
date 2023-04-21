@@ -46,3 +46,28 @@ $form-validation-states: (
 
 $form-select-focus-box-shadow: 0 !default;
 $form-select-focus-border-color: var(--ds-color-primary-default) !default;
+
+$card-spacer-y: 1.5rem !default;
+$card-spacer-x: 1.5rem !default;
+$card-border-radius: 1rem !default;
+$card-cap-padding-y: 1.5rem !default;
+$card-cap-padding-x: 1.5rem !default;
+$card-cap-bg: transparent !default;
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 425px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1440px,
+) !default;
+
+$theme-breakpoints: (
+    xs: tokens.$ds-breakpoints-xs,
+    sm: tokens.$ds-breakpoints-sm,
+    md: tokens.$ds-breakpoints-md,
+    lg: tokens.$ds-breakpoints-lg,
+    xl: tokens.$ds-breakpoints-xl,
+    xxl: tokens.$ds-breakpoints-xxl,
+) !default;

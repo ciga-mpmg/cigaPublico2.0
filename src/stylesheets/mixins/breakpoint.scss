@@ -1,0 +1,18 @@
+@use "../variables";
+@use "sass:map";
+
+@mixin max($breakpoint) {
+    $break: calc(#{map.get(variables.$theme-breakpoints, $breakpoint)} - 0.2px);
+
+    @media (max-width: $break) {
+        @content;
+    }
+}
+
+@mixin min($breakpoint) {
+    $break: map.get(variables.$theme-breakpoints, $breakpoint);
+
+    @media (min-width: $break) {
+        @content;
+    }
+}

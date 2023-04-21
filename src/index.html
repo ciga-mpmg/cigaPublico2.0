@@ -1,16 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>CIGA</title>
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="/assets/images/brand/favicon.ico"
+        />
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>CIGA</title>
-    <link rel="icon" type="image/x-icon" href="/assets/images/brand/favicon.ico">
-
-</head>
-
-<body>
-</body>
-
+    <body>
+        <div class="container-fluid login">
+            <div class="login-wrapper">
+                <img
+                    class="login-brand"
+                    class=""
+                    src="./assets/images/brand/CIGA_Logotipo-Tipografia_H-56.svg"
+                    alt=""
+                    srcset=""
+                    height="51px"
+                    width="153px"
+                />
+                <form>
+                    <div class="card card-borderless">
+                        <div class="card-header">
+                            <p class="text-title text-primary">
+                                <strong>Olá</strong>, faça seu login!
+                            </p>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">
+                                    Seu email
+                                </label>
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="email"
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">
+                                    Password</label
+                                >
+                                <input
+                                    type="password"
+                                    class="form-control"
+                                    id="password"
+                                />
+                            </div>
+                            <div>
+                                <button
+                                    class="button button-primary-text ms-auto"
+                                    type="button"
+                                >
+                                    <u>Esqueci minha senha</u>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button
+                                class="button button-primary button-full button-large"
+                                type="submit"
+                            >
+                                Entrar
+                                <span class="ds-icon-arrow-right"></span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <button
+                    class="button button-primary-text me-auto login-back"
+                    type="button"
+                >
+                    <span class="ds-icon-arrow-left fs-5"></span>
+                    Voltar para o site
+                </button>
+            </div>
+        </div>
+    </body>
 </html>
