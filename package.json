@@ -1,0 +1,25 @@
+{
+    "name": "painel-tela-login",
+    "version": "1.0.0",
+    "description": "novo site",
+    "main": "index.js",
+    "repository": "https://github.com/ciga-mpmg/painel-tela-login.git",
+    "author": "Steve Jamerson <stevejamerson@outlook.com>",
+    "private": "true",
+    "scripts": {
+        "start": "webpack serve --mode development --config webpack.config.js",
+        "build:dev": "webpack --mode development --config webpack.config.js",
+        "build:prod": "webpack --mode production --config webpack.config.js"
+    },
+    "devDependencies": {
+        "css-loader": "^6.7.3",
+        "html-webpack-plugin": "^5.5.1",
+        "mini-css-extract-plugin": "^2.7.5",
+        "sass": "^1.62.0",
+        "sass-loader": "^13.2.2",
+        "webpack": "^5.80.0",
+        "webpack-cli": "^5.0.1",
+        "webpack-dev-server": "^4.13.3",
+        "webpack-server": "^0.1.2"
+    }
+}
