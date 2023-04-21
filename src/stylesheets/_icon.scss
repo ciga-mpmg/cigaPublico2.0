@@ -1,0 +1,7 @@
+$icomoon-font-path: "../assets/icons" !default;
+@import "../assets/icons/style.scss";
+
+[class^="ds-icon-"],
+[class*=" ds-icon-"] {
+    font-size: inherit;
+}

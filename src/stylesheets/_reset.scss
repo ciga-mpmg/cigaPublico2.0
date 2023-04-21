@@ -1,0 +1,103 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 16px;
+    overscroll-behavior: none;
+}
+
+body {
+    font-family: var(--ds-typography-body-family-default);
+    font-weight: 400;
+    margin: 0;
+    color: var(--ds-color-body);
+    background-color: var(--ds-pattern-gray-100);
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+}
+
+[hidden] {
+    display: none;
+}
+
+[role='button'] {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--ds-typography-heading-family-default);
+    font-weight: 700;
+    color: var(--ds-color-heading);
+    margin: 0;
+}
+
+h1 {
+    font-size: var(--ds-typography-heading-size-h1);
+    line-height: var(--ds-typography-heading-line-height-h1);
+    letter-spacing: var(--ds-typography-heading-letter-spacing-h1);
+}
+
+h2 {
+    font-size: var(--ds-typography-heading-size-h2);
+    line-height: var(--ds-typography-heading-line-height-h2);
+    letter-spacing: var(--ds-typography-heading-letter-spacing-h2);
+}
+
+h3 {
+    font-size: var(--ds-typography-heading-size-h3);
+    line-height: var(--ds-typography-heading-line-height-h3);
+    letter-spacing: var(--ds-typography-heading-letter-spacing-h3);
+}
+
+h4 {
+    font-size: var(--ds-typography-heading-size-h4);
+    line-height: var(--ds-typography-heading-line-height-h4);
+    letter-spacing: var(--ds-typography-heading-letter-spacing-h4);
+}
+
+h5 {
+    font-size: var(--ds-typography-heading-size-h5);
+    line-height: var(--ds-typography-heading-line-height-h5);
+    letter-spacing: var(--ds-typography-heading-letter-spacing-h5);
+}
+
+h6 {
+    font-size: var(--ds-typography-heading-size-h6);
+    line-height: var(--ds-typography-heading-line-height-h6);
+    letter-spacing: var(--ds-typography-heading-letter-spacing-h6);
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+::-webkit-scrollbar {
+    position: relative;
+    width: var(--ds-spacing-5);
+    height: var(--ds-spacing-5);
+    left: -10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: var(--ds-color-primary-default);
+    border: var(--ds-spacing-2) transparent solid;
+    border-radius: 1rem;
+    background-clip: content-box;
+
+}
+
+::-webkit-scrollbar-track-piece {
+    background: transparent;
+    border-radius: 1rem;
+}

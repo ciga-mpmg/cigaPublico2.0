@@ -1,0 +1,48 @@
+@use "./tokens/tokens-variables" as tokens;
+
+$primary: tokens.$ds-color-primary-default !default;
+$secondary: tokens.$ds-color-secondary-default !default;
+
+$input-btn-focus-box-shadow: 0 !default;
+$input-focus-border-color: var(--ds-color-primary-default) !default;
+
+$input-border-width: 1.5px !default;
+$input-border-radius: var(--bs-border-radius-sm) !default;
+$input-border-color: var(--ds-pattern-gray-200) !default;
+
+$input-color: var(--ds-pattern-gray-700) !default;
+$input-font-weight: 400 !default;
+$input-disabled-bg: var(--ds-pattern-gray-100) !default;
+
+$form-label-margin-bottom: 0.25rem !default;
+$form-label-font-size: var(--ds-typography-body-size-small) !default;
+$form-label-font-weight: 600 !default;
+
+$form-feedback-valid-color: tokens.$ds-pattern-green-500 !default;
+$form-feedback-warning-color: tokens.$ds-pattern-orange-500 !default;
+$form-feedback-invalid-color: tokens.$ds-pattern-red-500 !default;
+
+$form-feedback-icon-valid-color: $form-feedback-valid-color !default;
+$form-feedback-icon-valid: url("/assets/images/form/valid.svg") !default;
+$form-feedback-icon-warning-color: $form-feedback-warning-color !default;
+$form-feedback-icon-warning: url("/assets/images/form/warning.svg") !default;
+$form-feedback-icon-invalid-color: $form-feedback-invalid-color !default;
+$form-feedback-icon-invalid: url("/assets/images/form/invalid.svg") !default;
+
+$form-validation-states: (
+    "valid": (
+        "color": $form-feedback-valid-color,
+        "icon": $form-feedback-icon-valid,
+    ),
+    "warning": (
+        "color": $form-feedback-warning-color,
+        "icon": $form-feedback-icon-warning,
+    ),
+    "invalid": (
+        "color": $form-feedback-invalid-color,
+        "icon": $form-feedback-icon-invalid,
+    ),
+) !default;
+
+$form-select-focus-box-shadow: 0 !default;
+$form-select-focus-border-color: var(--ds-color-primary-default) !default;

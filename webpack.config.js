@@ -16,9 +16,25 @@ module.exports = {
                     },
                     {
                         loader: 'css-loader',
+                        options: {
+                            url: false,
+                        },
                     },
                     {
                         loader: 'sass-loader',
+                    },
+                ],
+            },
+            {
+                test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+                type: 'asset/resource',
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[folder]/[name].[ext]',
+                            outputPath: 'assets/fonts/',
+                        },
                     },
                 ],
             },
