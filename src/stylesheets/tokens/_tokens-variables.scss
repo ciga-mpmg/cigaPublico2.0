@@ -1,7 +1,21 @@
 
 // Do not edit directly
-// Generated on Fri, 21 Apr 2023 15:13:57 GMT
+// Generated on Fri, 21 Apr 2023 16:40:48 GMT
 
+$ds-border-width-small: 1px;
+$ds-border-width-medium: 2px;
+$ds-border-width-large: 3px;
+$ds-border-width-default: 2px;
+$ds-border-style-solid: solid;
+$ds-border-style-dashed: dashed;
+$ds-border-style-dotted: dotted;
+$ds-border-style-default: solid;
+$ds-border-radius-none: 0rem;
+$ds-border-radius-small: .25rem;
+$ds-border-radius-medium: .5rem;
+$ds-border-radius-large: 1rem;
+$ds-border-radius-pill: 10rem;
+$ds-border-radius-default: 1rem;
 $ds-color-white: #ffffff;
 $ds-color-black: #000000;
 $ds-color-body: #4B4B4E;
@@ -71,6 +85,28 @@ $ds-pattern-gray-700: #4B4B4E;
 $ds-pattern-gray-800: #19191A;
 $ds-pattern-gray-900: #0A0A0A;
 $ds-pattern-gray-000: #FFFFFF;
+$ds-spacing-0: 0rem;
+$ds-spacing-1: 0.25rem;
+$ds-spacing-2: 0.5rem;
+$ds-spacing-3: 0.75rem;
+$ds-spacing-4: 1.00rem;
+$ds-spacing-5: 1.25rem;
+$ds-spacing-6: 1.50rem;
+$ds-spacing-7: 1.75rem;
+$ds-spacing-8: 2.00rem;
+$ds-spacing-9: 2.25rem;
+$ds-spacing-10: 2.50rem;
+$ds-spacing-11: 2.75rem;
+$ds-spacing-12: 3.00rem;
+$ds-spacing-13: 3.25rem;
+$ds-spacing-14: 3.50rem;
+$ds-spacing-15: 3.75rem;
+$ds-spacing-16: 4.00rem;
+$ds-spacing-17: 4.25rem;
+$ds-spacing-18: 4.50rem;
+$ds-spacing-19: 4.75rem;
+$ds-spacing-20: 5.00rem;
+$ds-spacing-auto: auto;
 $ds-typography-heading-family-default: 'Poppins', sans-serif;
 $ds-typography-heading-size-h1: 48px;
 $ds-typography-heading-size-h2: 40px;

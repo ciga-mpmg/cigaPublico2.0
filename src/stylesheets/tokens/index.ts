@@ -1,8 +1,22 @@
 /**
  * Do not edit directly
- * Generated on Fri, 21 Apr 2023 15:13:57 GMT
+ * Generated on Fri, 21 Apr 2023 16:40:48 GMT
  */
 
+export const DsBorderWidthSmall = "1px";
+export const DsBorderWidthMedium = "2px";
+export const DsBorderWidthLarge = "3px";
+export const DsBorderWidthDefault = "2px";
+export const DsBorderStyleSolid = "solid";
+export const DsBorderStyleDashed = "dashed";
+export const DsBorderStyleDotted = "dotted";
+export const DsBorderStyleDefault = "solid";
+export const DsBorderRadiusNone = "0rem";
+export const DsBorderRadiusSmall = ".25rem";
+export const DsBorderRadiusMedium = ".5rem";
+export const DsBorderRadiusLarge = "1rem";
+export const DsBorderRadiusPill = "10rem";
+export const DsBorderRadiusDefault = "1rem";
 export const DsColorWhite = "#ffffff";
 export const DsColorBlack = "#000000";
 export const DsColorBody = "#4B4B4E";
@@ -72,6 +86,28 @@ export const DsPatternGray700 = "#4B4B4E";
 export const DsPatternGray800 = "#19191A";
 export const DsPatternGray900 = "#0A0A0A";
 export const DsPatternGray000 = "#FFFFFF";
+export const DsSpacing0 = "0rem";
+export const DsSpacing1 = "0.25rem";
+export const DsSpacing2 = "0.5rem";
+export const DsSpacing3 = "0.75rem";
+export const DsSpacing4 = "1.00rem";
+export const DsSpacing5 = "1.25rem";
+export const DsSpacing6 = "1.50rem";
+export const DsSpacing7 = "1.75rem";
+export const DsSpacing8 = "2.00rem";
+export const DsSpacing9 = "2.25rem";
+export const DsSpacing10 = "2.50rem";
+export const DsSpacing11 = "2.75rem";
+export const DsSpacing12 = "3.00rem";
+export const DsSpacing13 = "3.25rem";
+export const DsSpacing14 = "3.50rem";
+export const DsSpacing15 = "3.75rem";
+export const DsSpacing16 = "4.00rem";
+export const DsSpacing17 = "4.25rem";
+export const DsSpacing18 = "4.50rem";
+export const DsSpacing19 = "4.75rem";
+export const DsSpacing20 = "5.00rem";
+export const DsSpacingAuto = "auto";
 export const DsTypographyHeadingFamilyDefault = "'Poppins', sans-serif";
 export const DsTypographyHeadingSizeH1 = "48px";
 export const DsTypographyHeadingSizeH2 = "40px";
