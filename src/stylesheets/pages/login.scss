@@ -41,11 +41,11 @@
 
         @include breakpoint.min("xl") {
             margin-left: auto;
-            margin-right: 680px;
+            margin-right: 60vh;
         }
 
         @media (min-width: 1800px) {
-            margin-right: 850px;
+            margin-right: 80vh;
         }
     }
 
