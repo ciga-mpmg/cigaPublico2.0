@@ -47,13 +47,26 @@
                                 <label for="password" class="form-label">
                                     Password</label
                                 >
-                                <input
-                                    type="password"
-                                    class="form-control"
-                                    id="password"
-                                    required
-                                />
-                                <div class="valid-feedback">Looks good!</div>
+                                <div class="input-group">
+                                    <input
+                                        type="password"
+                                        class="form-control"
+                                        id="password"
+                                        required
+                                    />
+                                    <div class="input-group-text">
+                                        <button
+                                            id="passwordView"
+                                            type="button"
+                                            class="button button-light-text button-icon"
+                                        >
+                                            <span
+                                                id="passwordIcon"
+                                                class="ds-icon-eye"
+                                            ></span>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                             <div>
                                 <button
@@ -85,4 +98,25 @@
             </div>
         </div>
     </body>
+    <script>
+        function togglePasswordVisibility() {
+            const passwordInput = document.getElementById("password");
+            const passwordIcon = document.querySelector(
+                "#passwordView #passwordIcon"
+            );
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                passwordIcon.classList.remove("ds-icon-eye");
+                passwordIcon.classList.add("ds-icon-eye-off");
+            } else {
+                passwordInput.type = "password";
+                passwordIcon.classList.remove("ds-icon-eye-off");
+                passwordIcon.classList.add("ds-icon-eye");
+            }
+        }
+
+        const passwordViewButton = document.getElementById("passwordView");
+        passwordViewButton.addEventListener("click", togglePasswordVisibility);
+    </script>
 </html>
