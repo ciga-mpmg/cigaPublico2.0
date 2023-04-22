@@ -18,13 +18,15 @@ body {
     background-color: var(--ds-pattern-gray-100);
     overflow-x: hidden;
     -webkit-text-size-adjust: 100%;
+    line-height: var(--ds-typography-body-line-height-small);
+    letter-spacing: var(--ds-typography-body-letter-spacing-small);
 }
 
 [hidden] {
     display: none;
 }
 
-[role='button'] {
+[role="button"] {
     cursor: pointer;
 }
 
@@ -88,13 +90,11 @@ img {
     left: -10px;
 }
 
-
 ::-webkit-scrollbar-thumb {
     background: var(--ds-color-primary-default);
     border: var(--ds-spacing-2) transparent solid;
     border-radius: 1rem;
     background-clip: content-box;
-
 }
 
 ::-webkit-scrollbar-track-piece {
