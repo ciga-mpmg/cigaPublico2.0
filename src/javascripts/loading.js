@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="loading-wrapper" id="loading-wrapper">
             <div class="loading-content">
                 <div class="loading-anime"><span></span></div>
-                <div class="loading-text text-center">
-                    <p class="text-primary fs-1 mb-0">Por favor, aguarde</p>
+                <div class="loading-text">
+                    <p class="text-primary">Por favor, aguarde</p>
                     <p>Você será redirecionado em breve</p>
                 </div>
             </div>
@@ -19,11 +19,11 @@ document.addEventListener('readystatechange', () => {
     'use strict';
     setTimeout(() => {
         document.body.classList.add('disappearing');
-    }, 300);
+    }, 30000);
 
     setTimeout(() => {
         document.body.classList.remove('loading');
         document.body.classList.remove('disappearing');
         document.getElementById('loading-wrapper').remove();
-    }, 400);
+    }, 40000);
 });

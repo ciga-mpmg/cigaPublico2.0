@@ -63,8 +63,8 @@
             width: 20px;
             height: 20px;
             border-radius: 20px;
-            margin-top: 1rem;
-            margin-bottom: 2rem;
+            margin-top: 0.75rem;
+            margin-bottom: 1.5rem;
             background-color: var(--ds-loading-color-1);
             color: var(--ds-loading-color-1);
             box-shadow: 9940px 0 0 0 var(--ds-loading-color-1),
@@ -82,6 +82,7 @@
         p:first-child {
             font-size: 28px;
             font-weight: 400;
+            margin-bottom: 0;
 
             &::after {
                 content: "...";
@@ -91,7 +92,7 @@
         }
         p:last-child {
             color: #678994;
-            font-size: 15px;
+            font-size: 14px;
         }
     }
 
