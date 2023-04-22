@@ -69,6 +69,7 @@ module.exports = {
     ],
     entry: {
         ciga: './src/stylesheets/styles.scss',
+        main: './src/javascripts/main.js',
     },
     output: {
         path: path.resolve(__dirname, `./dist/`),

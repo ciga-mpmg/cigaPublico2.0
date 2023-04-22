@@ -24,7 +24,7 @@
                     height="51px"
                     width="153px"
                 />
-                <form>
+                <form auth>
                     <div class="card card-borderless">
                         <div class="card-header">
                             <p class="text-title text-primary">
@@ -40,6 +40,7 @@
                                     type="email"
                                     class="form-control"
                                     id="email"
+                                    required
                                 />
                             </div>
                             <div class="mb-3">
@@ -50,7 +51,9 @@
                                     type="password"
                                     class="form-control"
                                     id="password"
+                                    required
                                 />
+                                <div class="valid-feedback">Looks good!</div>
                             </div>
                             <div>
                                 <button
