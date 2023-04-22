@@ -1,6 +1,7 @@
 .form-control {
     height: 48px;
     border-radius: 0.5rem;
+    box-shadow: none !important;
 }
 
 .input-group {
@@ -38,7 +39,24 @@
         }
     }
 
-    &:has(input:focus) {
+    &:has(.is-invalid) {
+        .input-group-text {
+            border-color: var(--ds-pattern-red-500);
+        }
+    }
+
+    &:has(.is-valid) {
+        .input-group-text {
+            border-color: var(--ds-pattern-green-500);
+        }
+    }
+    &:has(.is-warning) {
+        .input-group-text {
+            border-color: var(--ds-pattern-orange-500);
+        }
+    }
+
+    &:has(input:focus):not(:has([class*="is-"])) {
         .input-group-text {
             border-color: var(--ds-color-primary-default);
         }
