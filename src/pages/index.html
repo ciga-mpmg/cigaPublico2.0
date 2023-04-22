@@ -58,6 +58,7 @@
                                             id="passwordView"
                                             type="button"
                                             class="button button-light-text button-icon"
+                                            onclick="togglePasswordVisibility()"
                                         >
                                             <span
                                                 id="passwordIcon"
@@ -114,8 +115,5 @@
                 passwordIcon.classList.add("ds-icon-eye");
             }
         }
-
-        const passwordViewButton = document.getElementById("passwordView");
-        passwordViewButton.addEventListener("click", togglePasswordVisibility);
     </script>
 </html>

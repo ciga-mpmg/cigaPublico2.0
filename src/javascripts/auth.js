@@ -1,5 +1,6 @@
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
+import loading from './loading';
 
 const firebaseConfig = {
     apiKey: 'AIzaSyD88Ro8rD948Yel6AWi7Zv0YJL39ivxg7I',
@@ -40,11 +41,11 @@ const Auth = (function () {
                     const user = userCredential.user;
                     email.classList.remove('is-invalid');
                     email.classList.remove('is-invalid');
-                    console.log(`Usuário autenticado: ${user.email}`);
-                    alert('Usuário autenticado: ${user.email}');
+                    loading.add();
                 })
                 .catch((error) => {
                     const errorCode = error.code;
+                    console.error(error);
                     if (errorCode.includes('password')) {
                         password.classList.add('is-invalid');
                     }
