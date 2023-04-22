@@ -3,6 +3,48 @@
     border-radius: 0.5rem;
 }
 
+.input-group {
+    input {
+        transition: 0.3s;
+    }
+
+    &-text {
+        border-radius: 0.5rem;
+        background-color: transparent;
+        transition: 0.3s;
+
+        [class^="ds-icon-"],
+        [class*=" ds-icon-"] {
+            font-size: var(--ds-typography-body-size-larger);
+        }
+
+        &:first-child {
+            border-right: 0;
+        }
+
+        &:last-child {
+            border-left: 0;
+        }
+    }
+    &:has(.input-group-text:first-child) {
+        input {
+            border-left: 0;
+        }
+    }
+
+    &:has(.input-group-text:last-child) {
+        input {
+            border-right: 0;
+        }
+    }
+
+    &:has(input:focus) {
+        .input-group-text {
+            border-color: var(--ds-color-primary-default);
+        }
+    }
+}
+
 .card {
     &:has(.card-header + .card-body + .card-footer) {
         .card-header {
