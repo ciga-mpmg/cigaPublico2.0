@@ -4,18 +4,21 @@
     "description": "novo site",
     "main": "index.js",
     "repository": "https://github.com/ciga-mpmg/painel-tela-login.git",
+    "homepage": "https://ciga-mpmg.github.io/painel-tela-login/",
     "author": "Steve Jamerson <stevejamerson@outlook.com>",
     "private": "true",
     "scripts": {
         "start": "yarn tokens && webpack serve --mode development --config webpack.config.js",
         "build:dev": "yarn tokens && webpack --mode development --config webpack.config.js",
         "build:prod": "yarn tokens && webpack --mode production --config webpack.config.js",
-        "tokens": "style-dictionary build --config src/stylesheets/styles.json"
+        "tokens": "style-dictionary build --config src/stylesheets/styles.json",
+        "deploy": "gh-pages -b dist -d dist"
     },
     "devDependencies": {
         "copy-webpack-plugin": "^11.0.0",
         "css-loader": "^6.7.3",
         "file-loader": "^6.2.0",
+        "gh-pages": "^5.0.0",
         "html-webpack-plugin": "^5.5.1",
         "mini-css-extract-plugin": "^2.7.5",
         "sass": "^1.62.0",
