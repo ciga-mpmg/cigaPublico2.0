@@ -45,11 +45,13 @@ const Auth = (function () {
                 })
                 .catch((error) => {
                     const errorCode = error.code;
-
                     if (errorCode.includes('password')) {
                         password.classList.add('is-invalid');
                     }
-                    if (errorCode.includes('email')) {
+                    if (
+                        errorCode.includes('email') ||
+                        errorCode.includes('not')
+                    ) {
                         email.classList.add('is-invalid');
                     }
                 });

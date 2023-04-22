@@ -23,11 +23,11 @@ $form-feedback-warning-color: tokens.$ds-pattern-orange-500 !default;
 $form-feedback-invalid-color: tokens.$ds-pattern-red-500 !default;
 
 $form-feedback-icon-valid-color: $form-feedback-valid-color !default;
-$form-feedback-icon-valid: url("/assets/images/form/valid.svg") !default;
+$form-feedback-icon-valid: url("../assets/images/form/valid.svg") !default;
 $form-feedback-icon-warning-color: $form-feedback-warning-color !default;
-$form-feedback-icon-warning: url("/assets/images/form/warning.svg") !default;
+$form-feedback-icon-warning: url("../assets/images/form/warning.svg") !default;
 $form-feedback-icon-invalid-color: $form-feedback-invalid-color !default;
-$form-feedback-icon-invalid: url("/assets/images/form/invalid.svg") !default;
+$form-feedback-icon-invalid: url("../assets/images/form/invalid.svg") !default;
 
 $form-validation-states: (
     "valid": (

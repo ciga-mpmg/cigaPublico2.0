@@ -7,7 +7,7 @@
 
     @include breakpoint.min("lg") {
         display: flex;
-        background-image: url("./assets/images/background/login.jpg");
+        background-image: url("../assets/images/background/login.jpg");
         background-repeat: no-repeat;
         background-position: center right -40vw;
         background-size: cover;
