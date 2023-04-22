@@ -19,11 +19,11 @@ document.addEventListener('readystatechange', () => {
     'use strict';
     setTimeout(() => {
         document.body.classList.add('disappearing');
-    }, 30000);
+    }, 300);
 
     setTimeout(() => {
         document.body.classList.remove('loading');
         document.body.classList.remove('disappearing');
         document.getElementById('loading-wrapper').remove();
-    }, 40000);
+    }, 400);
 });
