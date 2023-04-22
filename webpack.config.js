@@ -60,11 +60,12 @@ module.exports = {
             ],
         }),
         new MiniCssExtractPlugin({
-            filename: '[name].css',
-            chunkFilename: '[name].css',
+            filename: 'pages/[name].css',
+            chunkFilename: 'pages/[name].css',
         }),
         new HtmlWebpackPlugin({
-            template: './src/index.html',
+            template: './src/pages/index.html',
+            filename: 'pages/index.html',
         }),
     ],
     entry: {
@@ -73,7 +74,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, `./dist/`),
-        filename: '[name].js',
+        filename: 'pages/[name].js',
         clean: true,
     },
     devServer: {
