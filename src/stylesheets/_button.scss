@@ -101,6 +101,7 @@
 
             &:not([class*="-outline"]) {
                 padding: 0;
+                height: auto;
             }
 
             &:hover {
@@ -155,6 +156,11 @@
 
         &-text {
             color: var(--ds-color-on-light);
+
+            &:not([class*="-outline"]) {
+                padding: 0;
+                height: auto;
+            }
 
             &:hover,
             &:active,
