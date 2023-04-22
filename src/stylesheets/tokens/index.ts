@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sat, 22 Apr 2023 02:30:25 GMT
+ * Generated on Sat, 22 Apr 2023 02:42:46 GMT
  */
 
 export const DsBorderWidthSmall = "1px";
@@ -87,7 +87,7 @@ export const DsPatternGreen700 = "#149214";
 export const DsPatternGreen800 = "#0C7615";
 export const DsPatternGreen900 = "#076115";
 export const DsPatternGreen000 = "#F5FFED";
-export const DsPatternGray100 = "#F2EFEF";
+export const DsPatternGray100 = "#EEF2F6";
 export const DsPatternGray200 = "#DCD8D7";
 export const DsPatternGray300 = "#C4C4C5";
 export const DsPatternGray400 = "#ACAEAE";
