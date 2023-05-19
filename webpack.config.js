@@ -70,8 +70,7 @@ module.exports = {
     ],
     entry: {
         ciga: './src/stylesheets/styles.scss',
-        loading: './src/javascripts/loading.js',
-        auth: './src/javascripts/auth.js',
+        main: './src/javascripts/main.js',
     },
     output: {
         path: path.resolve(__dirname, `./dist/`),

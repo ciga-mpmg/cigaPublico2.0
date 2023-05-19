@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sat, 22 Apr 2023 16:33:15 GMT
+ * Generated on Fri, 19 May 2023 21:40:47 GMT
  */
 
 export const DsBorderWidthSmall = "1px";

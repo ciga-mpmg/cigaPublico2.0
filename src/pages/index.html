@@ -1,119 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>CIGA</title>
-        <link
-            rel="icon"
-            type="image/x-icon"
-            href="../assets/images/brand/favicon.ico"
-        />
-    </head>
-    <body>
-        <div class="container-fluid login">
-            <div class="login-wrapper">
-                <img
-                    class="login-brand"
-                    class=""
-                    src="../assets/images/brand/CIGA_Logotipo-Tipografia_H-56.svg"
-                    alt=""
-                    srcset=""
-                    height="51px"
-                    width="153px"
-                />
-                <form auth>
-                    <div class="card card-borderless">
-                        <div class="card-header">
-                            <p class="text-title text-primary">
-                                <strong>Olá</strong>, faça seu login!
-                            </p>
-                        </div>
-                        <div class="card-body">
-                            <div class="mb-3">
-                                <label for="email" class="form-label">
-                                    Seu email
-                                </label>
-                                <input
-                                    type="email"
-                                    class="form-control"
-                                    id="email"
-                                    required
-                                />
-                            </div>
-                            <div class="mb-3">
-                                <label for="password" class="form-label">
-                                    Senha</label
-                                >
-                                <div class="input-group">
-                                    <input
-                                        type="password"
-                                        class="form-control"
-                                        id="password"
-                                        required
-                                    />
-                                    <div class="input-group-text">
-                                        <button
-                                            id="passwordView"
-                                            type="button"
-                                            class="button button-light-text button-icon"
-                                            onclick="togglePasswordVisibility()"
-                                        >
-                                            <span
-                                                id="passwordIcon"
-                                                class="ds-icon-eye"
-                                            ></span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <button
-                                    class="button button-light-text ms-auto"
-                                    type="button"
-                                >
-                                    <u>Esqueci minha senha</u>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <button
-                                class="button button-primary button-full button-large"
-                                type="submit"
-                            >
-                                Entrar
-                                <span class="ds-icon-arrow-right"></span>
-                            </button>
-                        </div>
-                    </div>
-                </form>
-                <button
-                    class="button button-light-text me-auto login-back"
-                    type="button"
-                >
-                    <span class="ds-icon-arrow-left fs-5"></span>
-                    Voltar para o site
-                </button>
-            </div>
-        </div>
-    </body>
-    <script>
-        function togglePasswordVisibility() {
-            const passwordInput = document.getElementById("password");
-            const passwordIcon = document.querySelector(
-                "#passwordView #passwordIcon"
-            );
 
-            if (passwordInput.type === "password") {
-                passwordInput.type = "text";
-                passwordIcon.classList.remove("ds-icon-eye");
-                passwordIcon.classList.add("ds-icon-eye-off");
-            } else {
-                passwordInput.type = "password";
-                passwordIcon.classList.remove("ds-icon-eye-off");
-                passwordIcon.classList.add("ds-icon-eye");
-            }
-        }
-    </script>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CIGA</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/brand/favicon.ico" />
+</head>
+
+<body>
+</body>
+
 </html>

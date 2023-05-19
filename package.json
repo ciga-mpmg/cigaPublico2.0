@@ -1,10 +1,10 @@
 {
-    "name": "painel-tela-login",
+    "name": "new-site",
     "version": "1.0.0",
     "description": "novo site",
     "main": "index.js",
-    "repository": "https://github.com/ciga-mpmg/painel-tela-login.git",
-    "homepage": "https://ciga-mpmg.github.io/painel-tela-login/",
+    "repository": "https://github.com/SteveJamerson/ciga-new-site.git",
+    "homepage": "https://stevejamerson.github.io/ciga/pages/",
     "author": "Steve Jamerson <stevejamerson@outlook.com>",
     "private": "true",
     "scripts": {
