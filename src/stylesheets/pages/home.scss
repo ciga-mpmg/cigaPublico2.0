@@ -1,1 +1,82 @@
 @use "../mixins/breakpoint.scss" as breakpoint;
+
+#home {
+    padding-top: 100px;
+    color: $ds-color-branding-500;
+}
+
+.home {
+    &-banner {
+        @include breakpoint.min("md") {
+            margin-bottom: 5rem;
+        }
+
+        .title {
+            max-width: 20ch;
+            margin: auto;
+            line-height: normal;
+        }
+
+        .subtitle {
+            letter-spacing: 3px;
+        }
+    }
+
+    &-score {
+        &-title {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+
+            span {
+                font-weight: 600;
+                line-height: 1;
+            }
+
+            :nth-child(1) {
+                font-size: 41px;
+            }
+
+            :nth-child(2) {
+                font-size: 51px;
+            }
+        }
+
+        &-values {
+            display: flex;
+            flex-direction: column;
+            line-height: 1;
+            margin-inline: 1rem;
+
+            span {
+                position: relative;
+                display: block;
+                font-size: 29px;
+                font-weight: 600;
+                margin-bottom: 8px;
+
+                &::before {
+                    content: '';
+                    width: 35px;
+                    height: 35px;
+                    background: linear-gradient(180deg, var(--color, #003B4D) 0%, #ffffff00 100%);
+                    position: absolute;
+                    left: 4px;
+                    top: 8px;
+                    overflow: hidden;
+                    transform: translate(-50%, -50%);
+                    clip-path: polygon(0% 50%, 25% 95%, 75% 95%, 100% 50%, 75% 5%, 25% 5%);
+                    clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+                    z-index: -1;
+                }
+
+            }
+        }
+    }
+}
+
+.bg-lines {
+    background-image: url('../../assets/images/background/site.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}

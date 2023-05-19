@@ -89,7 +89,6 @@
         @extend .container;
 
         @include breakpoint.max("lg") {
-            max-width: 100% !important;
             flex-wrap: wrap;
             overflow: hidden;
         }
