@@ -3,7 +3,7 @@
         "heading": {
             "family": {
                 "default": {
-                    "value": "'Inter', sans-serif"
+                    "value": "'Poppins', sans-serif"
                 }
             },
             "size": {
@@ -34,7 +34,7 @@
         "body": {
             "family": {
                 "default": {
-                    "value": "'Inter', sans-serif"
+                    "value": "'Poppins', sans-serif"
                 }
             },
             "size": {

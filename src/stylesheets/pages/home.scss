@@ -1,11 +1,19 @@
 @use "../mixins/breakpoint.scss" as breakpoint;
 
-#home {
-    padding-top: 100px;
-    color: $ds-color-branding-500;
+#home,
+#about {
+    padding-block: 100px;
+}
+
+section {
+    img {
+        width: -webkit-fill-available;
+    }
 }
 
 .home {
+    color: $ds-color-branding-500;
+
     &-banner {
         @include breakpoint.min("md") {
             margin-bottom: 5rem;
@@ -75,8 +83,55 @@
     }
 }
 
+.about {
+    &-resume {
+        .card-title {
+            @include breakpoint.min("lg") {
+                position: relative;
+                height: 160px;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                left: -115px;
+
+                span {
+                    line-height: 1;
+                }
+
+                :nth-child(1) {
+                    font-weight: 500;
+                    font-size: 60px;
+                }
+
+                :nth-child(2) {
+                    font-weight: 600;
+                    font-size: 74px;
+                }
+            }
+
+        }
+    }
+}
+
 .bg-lines {
     background-image: url('../../assets/images/background/site.png');
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.bg-waves {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: -10px;
+        top: 50px;
+        display: block;
+        background-image: url('../../assets/images/utils/waves.png');
+        background-repeat: no-repeat;
+        width: 100%;
+        aspect-ratio: 1;
+        z-index: 1;
+    }
 }
