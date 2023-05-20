@@ -148,6 +148,7 @@ section {
         background-image: url("../../assets/images/utils/waves.png");
         background-repeat: no-repeat;
         width: 100%;
+        height: 100%;
         aspect-ratio: 1;
         z-index: 1;
     }
@@ -162,6 +163,43 @@ section {
         url("../../assets/images/background/maps.jpg");
     background-repeat: no-repeat;
     background-position: center left;
+}
+
+.bg-thumb-video {
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        display: block;
+        background-image: url("../../assets/images/utils/play.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1;
+        z-index: 1;
+        pointer-events: none;
+    }
+    &::after {
+        content: "Assista ao vídeo";
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--ds-color-white);
+        width: 100%;
+        height: 100%;
+        margin-bottom: -5rem;
+        aspect-ratio: 1;
+        z-index: 1;
+        pointer-events: none;
+    }
 }
 
 .tac {
@@ -204,5 +242,36 @@ section {
                 font-weight: 400;
             }
         }
+    }
+}
+
+.video {
+    @include breakpoint.max("md") {
+        text-align: center;
+    }
+
+    .bg-thumb-video {
+        margin-top: -100px;
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) {
+        .bg-thumb-video {
+            margin-top: 0;
+        }
+    }
+}
+
+#modalVideo {
+    iframe {
+        aspect-ratio: 16/9;
+        margin: auto;
+        width: -webkit-fill-available;
+        height: auto;
+    }
+
+    .modal-body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
