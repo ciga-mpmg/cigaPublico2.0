@@ -1,7 +1,8 @@
 @use "../mixins/breakpoint.scss" as breakpoint;
 
 #home,
-#about {
+#about,
+#tac {
     padding-block: 100px;
 }
 
@@ -64,20 +65,37 @@ section {
                 margin-bottom: 8px;
 
                 &::before {
-                    content: '';
+                    content: "";
                     width: 35px;
                     height: 35px;
-                    background: linear-gradient(180deg, var(--color, #003B4D) 0%, #ffffff00 100%);
+                    background: linear-gradient(
+                        180deg,
+                        var(--color, #003b4d) 0%,
+                        #ffffff00 100%
+                    );
                     position: absolute;
                     left: 4px;
                     top: 8px;
                     overflow: hidden;
                     transform: translate(-50%, -50%);
-                    clip-path: polygon(0% 50%, 25% 95%, 75% 95%, 100% 50%, 75% 5%, 25% 5%);
-                    clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+                    clip-path: polygon(
+                        0% 50%,
+                        25% 95%,
+                        75% 95%,
+                        100% 50%,
+                        75% 5%,
+                        25% 5%
+                    );
+                    clip-path: polygon(
+                        50% 0%,
+                        95% 25%,
+                        95% 75%,
+                        50% 100%,
+                        5% 75%,
+                        5% 25%
+                    );
                     z-index: -1;
                 }
-
             }
         }
     }
@@ -108,13 +126,12 @@ section {
                     font-size: 74px;
                 }
             }
-
         }
     }
 }
 
 .bg-lines {
-    background-image: url('../../assets/images/background/site.png');
+    background-image: url("../../assets/images/background/site.png");
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -123,12 +140,12 @@ section {
     position: relative;
 
     &::before {
-        content: '';
+        content: "";
         position: absolute;
         left: -10px;
         top: 50px;
         display: block;
-        background-image: url('../../assets/images/utils/waves.png');
+        background-image: url("../../assets/images/utils/waves.png");
         background-repeat: no-repeat;
         width: 100%;
         aspect-ratio: 1;
@@ -137,7 +154,55 @@ section {
 }
 
 .bg-maps {
-    background-image: linear-gradient(270deg, #FFFFFF 50%, rgba(255, 255, 255, 0) 80%), url('../../assets/images/background/maps.jpg');
+    background-image: linear-gradient(
+            270deg,
+            #ffffff 50%,
+            rgba(255, 255, 255, 0) 80%
+        ),
+        url("../../assets/images/background/maps.jpg");
     background-repeat: no-repeat;
     background-position: center left;
+}
+
+.tac {
+    background-color: var(--ds-color-branding-500);
+    background-image: linear-gradient(
+            35deg,
+            var(--ds-color-branding-500) 20%,
+            #00000000 95%
+        ),
+        url("../../assets/images/background/represa.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+    color: var(--ds-color-white);
+    text-align: center;
+
+    @include breakpoint.min("lg") {
+        text-align: start;
+    }
+
+    .title {
+        color: var(--ds-color-white);
+
+        @include breakpoint.min("lg") {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+
+            span {
+                line-height: 1;
+            }
+
+            :nth-child(1) {
+                font-weight: 700;
+                font-size: 80px;
+            }
+
+            :nth-child(2) {
+                font-size: 40px;
+                font-weight: 400;
+            }
+        }
+    }
 }

@@ -71,3 +71,9 @@ $theme-breakpoints: (
     xl: tokens.$ds-breakpoints-xl,
     xxl: tokens.$ds-breakpoints-xxl,
 ) !default;
+
+$form-select-border-radius: 1rem !default;
+$form-select-border-radius-lg: 1rem !default;
+$form-select-indicator-color: tokens.$ds-color-branding-400;
+
+$form-select-padding-y-lg: 1.25rem !default;

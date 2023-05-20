@@ -4,6 +4,10 @@
     box-shadow: none !important;
 }
 
+.form-select {
+    cursor: pointer;
+}
+
 .input-group {
     input {
         transition: 0.3s;
@@ -27,6 +31,7 @@
             border-left: 0;
         }
     }
+
     &:has(.input-group-text:first-child) {
         input {
             border-left: 0;
@@ -50,6 +55,7 @@
             border-color: var(--ds-pattern-green-500);
         }
     }
+
     &:has(.is-warning) {
         .input-group-text {
             border-color: var(--ds-pattern-orange-500);
@@ -68,10 +74,12 @@
         .card-header {
             padding-bottom: 0.75rem;
         }
+
         .card-body {
             padding-top: 0.75rem;
             padding-bottom: 0.75rem;
         }
+
         .card-footer {
             padding-top: 0.75rem;
         }
@@ -81,6 +89,7 @@
         .card-header {
             padding-bottom: 0.75rem;
         }
+
         .card-body {
             padding-top: 0.75rem;
             border-radius: 0 0 1rem 1rem; //bottom
@@ -91,6 +100,7 @@
         .card-header {
             padding-bottom: 0.75rem;
         }
+
         .card-footer {
             padding-top: 0.75rem;
         }
@@ -102,6 +112,7 @@
             padding-bottom: 0.75rem;
             border-radius: 1rem 1rem 0 0; //top
         }
+
         .card-footer {
             padding-top: 0.75rem;
         }
