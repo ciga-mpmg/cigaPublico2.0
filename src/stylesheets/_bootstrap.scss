@@ -133,3 +133,24 @@
         border: 0;
     }
 }
+
+.accordion-button {
+    gap: 16px;
+    line-height: normal;
+
+    &::after {
+        --bs-accordion-btn-icon-transform: rotate(-45deg);
+        content: "\e9cd";
+        height: auto;
+        width: auto;
+        font-family: "icons" !important;
+        font-size: 24px;
+        background: none;
+        transform: var(--bs-accordion-btn-icon-transform);
+    }
+
+    &:not(.collapsed)::after {
+        --bs-accordion-btn-icon-transform: rotate(-180deg);
+        background: none;
+    }
+}

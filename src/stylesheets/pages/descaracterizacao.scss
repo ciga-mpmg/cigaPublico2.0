@@ -1,0 +1,15 @@
+@use "../mixins/breakpoint.scss" as breakpoint;
+@use "../tokens/tokens-variables" as tokens;
+
+.accordion-item {
+    border: 0;
+
+    & + & {
+        margin-top: 8px;
+    }
+}
+
+.accordion-button {
+    background-color: #f4f4f4;
+    border-radius: var(--ds-border-radius-medium) !important;
+}
