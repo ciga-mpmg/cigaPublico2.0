@@ -66,10 +66,18 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/pages/index.html',
             filename: 'pages/index.html',
+            chunks: ['main', 'ciga', 'pages', 'home'],
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/pages/sobre.html',
+            filename: 'pages/sobre.html',
+            chunks: ['main', 'ciga', 'pages'],
         }),
     ],
     entry: {
         ciga: './src/stylesheets/styles.scss',
+        home: './src/stylesheets/pages/home.scss',
+        pages: './src/stylesheets/pages/pages.scss',
         main: './src/javascripts/main.js',
     },
     output: {

@@ -1,19 +1,8 @@
 @use "../mixins/breakpoint.scss" as breakpoint;
-
-#home,
-#about,
-#tac {
-    padding-block: 100px;
-}
-
-section {
-    img {
-        width: -webkit-fill-available;
-    }
-}
+@use "../tokens/tokens-variables" as tokens;
 
 .home {
-    color: $ds-color-branding-500;
+    color: var(--ds-color-branding-500);
 
     &-banner {
         @include breakpoint.min("md") {
@@ -130,79 +119,6 @@ section {
     }
 }
 
-.bg-lines {
-    background-image: url("../../assets/images/background/site.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.bg-waves {
-    position: relative;
-
-    &::before {
-        content: "";
-        position: absolute;
-        left: -10px;
-        top: 50px;
-        display: block;
-        background-image: url("../../assets/images/utils/waves.png");
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 100%;
-        aspect-ratio: 1;
-        z-index: 1;
-    }
-}
-
-.bg-maps {
-    background-image: linear-gradient(
-            270deg,
-            #ffffff 50%,
-            rgba(255, 255, 255, 0) 80%
-        ),
-        url("../../assets/images/background/maps.jpg");
-    background-repeat: no-repeat;
-    background-position: center left;
-}
-
-.bg-thumb-video {
-    position: relative;
-    cursor: pointer;
-
-    &::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        margin: auto;
-        display: block;
-        background-image: url("../../assets/images/utils/play.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 100%;
-        height: 100%;
-        aspect-ratio: 1;
-        z-index: 1;
-        pointer-events: none;
-    }
-    &::after {
-        content: "Assista ao vídeo";
-        position: absolute;
-        inset: 0;
-        margin: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--ds-color-white);
-        width: 100%;
-        height: 100%;
-        font-weight: 500;
-        margin-bottom: -5rem;
-        aspect-ratio: 1;
-        z-index: 1;
-        pointer-events: none;
-    }
-}
-
 .tac {
     background-color: var(--ds-color-branding-500);
     background-image: linear-gradient(
@@ -259,21 +175,5 @@ section {
         .bg-thumb-video {
             margin-top: 0;
         }
-    }
-}
-
-#modalVideo {
-    iframe {
-        aspect-ratio: 16/9;
-        margin: auto;
-        width: -webkit-fill-available;
-        height: auto;
-        max-height: 80vh;
-    }
-
-    .modal-body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 }

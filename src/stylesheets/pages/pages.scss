@@ -1,0 +1,127 @@
+@use "../mixins/breakpoint.scss" as breakpoint;
+@use "../tokens/tokens-variables" as tokens;
+
+section {
+    padding-block: 100px;
+    img {
+        width: -webkit-fill-available;
+    }
+}
+
+.about {
+    &-resume {
+        .card-title {
+            @include breakpoint.min("lg") {
+                position: relative;
+                height: 160px;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                left: -115px;
+
+                span {
+                    line-height: 1;
+                }
+
+                :nth-child(1) {
+                    font-weight: 500;
+                    font-size: 60px;
+                }
+
+                :nth-child(2) {
+                    font-weight: 600;
+                    font-size: 74px;
+                }
+            }
+        }
+    }
+}
+
+.bg-lines {
+    background-image: url("../../assets/images/background/site.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-waves {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: -10px;
+        top: 50px;
+        display: block;
+        background-image: url("../../assets/images/utils/waves.png");
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1;
+        z-index: 1;
+    }
+}
+
+.bg-maps {
+    background-image: linear-gradient(
+            270deg,
+            #ffffff 50%,
+            rgba(255, 255, 255, 0) 80%
+        ),
+        url("../../assets/images/background/maps.jpg");
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+.bg-thumb-video {
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        display: block;
+        background-image: url("../../assets/images/utils/play.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1;
+        z-index: 1;
+        pointer-events: none;
+    }
+    &::after {
+        content: "Assista ao vídeo";
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--ds-color-white);
+        width: 100%;
+        height: 100%;
+        font-weight: 500;
+        margin-bottom: -5rem;
+        aspect-ratio: 1;
+        z-index: 1;
+        pointer-events: none;
+    }
+}
+
+#modalVideo {
+    iframe {
+        aspect-ratio: 16/9;
+        margin: auto;
+        width: -webkit-fill-available;
+        height: auto;
+        max-height: 80vh;
+    }
+
+    .modal-body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
