@@ -127,3 +127,9 @@
         }
     }
 }
+
+.list-borderless {
+    .list-group-item {
+        border: 0;
+    }
+}

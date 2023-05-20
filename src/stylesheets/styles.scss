@@ -7,7 +7,7 @@
 
 @import "bootstrap";
 
-@import './mixins/breakpoint';
+@import "./mixins/breakpoint";
 
 @import "./tokens/tokens-var";
 @import "./tokens/tokens-variables";
@@ -20,5 +20,6 @@
 
 @import "button";
 @import "navigation";
+@import "footer";
 
 @import "./pages/home";
