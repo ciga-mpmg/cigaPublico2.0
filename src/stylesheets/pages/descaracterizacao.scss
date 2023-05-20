@@ -13,3 +13,15 @@
     background-color: #f4f4f4;
     border-radius: var(--ds-border-radius-medium) !important;
 }
+
+.table {
+    margin: 0;
+
+    > :not(caption) > * > * {
+        font-weight: 400;
+    }
+}
+
+.pagination {
+    margin-top: 3rem;
+}

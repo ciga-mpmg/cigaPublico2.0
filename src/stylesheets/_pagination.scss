@@ -1,0 +1,40 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    &-view,
+    &-view-select,
+    &-page {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &-view {
+        flex-wrap: wrap;
+        row-gap: 8px;
+    }
+
+    &-page {
+        margin-left: auto;
+
+        .button {
+            border-radius: 8px;
+            background-color: #f6f6f6;
+
+            &:hover,
+            &.active {
+                color: var(--ds-color-white);
+                background-color: var(--ds-color-branding-500);
+            }
+        }
+
+        &-previous,
+        &-next {
+            font-size: 16px;
+        }
+    }
+}
