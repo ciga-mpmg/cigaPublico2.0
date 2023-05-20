@@ -141,6 +141,42 @@
             </div>
         </div>
     </section>
+    <section>
+        <div class="container container-lg-none">
+            <h3 class="fw-600 mb-5">Localização</h3>
+            <p class="fw-600 mb-4">Filtros do mapa</p>
+            <div class="row gy-4">
+                <div class="col-12 col-sm-6 col-lg-auto flex-grow-1">
+                    <label for="empreendedor" class="form-label">Empreendedor</label>
+                    <select class="form-select" name="empreendedor" id="empreendedor">
+                        <option value="" hidden>Selecione</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-auto flex-grow-1">
+                    <label for="comarca" class="form-label">Comarca</label>
+                    <select class="form-select" name="comarca" id="comarca">
+                        <option value="" hidden>Selecione</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div class="col-12 col-lg-auto hstack gap-3 align-items-end flex-wrap justify-content-end">
+                    <button class="button button-large button-primary-outline px-4 text-nowrap">
+                        Reiniciar zoom
+                    </button>
+                    <button class="button button-large button-primary px-4 text-nowrap">
+                        Pesquisar
+                        <span class="ds-icon-arrow-right"></span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <footer class="footer" id="footer">
         <div class="row footer-container">
