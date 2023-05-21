@@ -11,6 +11,8 @@
     background-color: transparent;
     border: 2px solid transparent;
     border-radius: var(--ds-border-radius-pill);
+    appearance: none;
+    cursor: pointer;
 
     &:focus,
     &:focus-within {
@@ -219,6 +221,6 @@
 
     &-cta {
         padding-inline: 3rem;
-        border-radius: 30px 5px
+        border-radius: 30px 5px;
     }
 }

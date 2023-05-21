@@ -1,7 +1,10 @@
 .form-control {
-    height: 48px;
     border-radius: 0.5rem;
     box-shadow: none !important;
+
+    &:not(.form-control-sm, .form-control-lg) {
+        height: 48px;
+    }
 }
 
 .form-select {
