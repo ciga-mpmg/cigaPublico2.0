@@ -6,9 +6,14 @@ const Pagination = (function () {
     const constr = (current, pages) => {
         const isMedium = window.innerWidth < 800;
         const isSmall = window.innerWidth < 600;
-        const difference = isMedium ? 2 : 2;
+        const difference = 2;
         const minLength = isMedium ? 3 : 5;
         const minimum = isMedium ? 5 : 7;
+
+        if (isSmall) return [current, '...'];
+        if (pages < minimum)
+            return Array.from({ length: pages }, (_, i) => i + 1);
+
         const initial =
             current - 1 <= difference
                 ? Array.from({ length: minLength }, (_, i) => i + 1)
@@ -21,22 +26,17 @@ const Pagination = (function () {
                       .sort((a, b) => a - b)
                 : [pages];
         const middle = () => {
-            const mid =
+            const large =
                 current - 1 > difference && pages - current > difference;
-            if (isMedium && mid) {
-                return ['...', current, '...'];
-            } else if (!isMedium && mid) {
-                return ['...', current - 1, current, current + 1, '...'];
+            if (large) {
+                return isMedium
+                    ? ['...', current, '...']
+                    : ['...', current - 1, current, current + 1, '...'];
             } else {
                 return ['...'];
             }
         };
-        const result = isSmall
-            ? [current, '...']
-            : pages < minimum
-            ? Array.from({ length: pages }, (_, i) => i + 1)
-            : [...initial, ...middle(), ...final];
-        return result;
+        return [...initial, ...middle(), ...final];
     };
 
     const template = (pages, currentPage, views, currentView, total, limit) => {
@@ -145,6 +145,14 @@ const Pagination = (function () {
                 total,
                 pages
             );
+            const change = new Event('change');
+            change['detail'] = {
+                currentPage,
+                currentView,
+                total,
+                pages,
+            };
+            element.dispatchEvent(change);
 
             const select = element.querySelector(`[pagination-view-select]`);
             const buttons = element.querySelectorAll(`[pagination-page]`);
@@ -185,7 +193,6 @@ const Pagination = (function () {
             const tooltipTriggerList = document.querySelectorAll(
                 '[data-bs-toggle="tooltip"]'
             );
-
             [...tooltipTriggerList].map(
                 (tooltipTriggerEl) => new Tooltip(tooltipTriggerEl)
             );
