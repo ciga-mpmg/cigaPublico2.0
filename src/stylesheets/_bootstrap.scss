@@ -1,7 +1,14 @@
 .form-control {
-    height: 48px;
     border-radius: 0.5rem;
     box-shadow: none !important;
+
+    &:not(.form-control-sm, .form-control-lg) {
+        height: 48px;
+    }
+}
+
+.form-select {
+    cursor: pointer;
 }
 
 .input-group {
@@ -27,6 +34,7 @@
             border-left: 0;
         }
     }
+
     &:has(.input-group-text:first-child) {
         input {
             border-left: 0;
@@ -50,6 +58,7 @@
             border-color: var(--ds-pattern-green-500);
         }
     }
+
     &:has(.is-warning) {
         .input-group-text {
             border-color: var(--ds-pattern-orange-500);
@@ -68,10 +77,12 @@
         .card-header {
             padding-bottom: 0.75rem;
         }
+
         .card-body {
             padding-top: 0.75rem;
             padding-bottom: 0.75rem;
         }
+
         .card-footer {
             padding-top: 0.75rem;
         }
@@ -81,6 +92,7 @@
         .card-header {
             padding-bottom: 0.75rem;
         }
+
         .card-body {
             padding-top: 0.75rem;
             border-radius: 0 0 1rem 1rem; //bottom
@@ -91,6 +103,7 @@
         .card-header {
             padding-bottom: 0.75rem;
         }
+
         .card-footer {
             padding-top: 0.75rem;
         }
@@ -102,6 +115,7 @@
             padding-bottom: 0.75rem;
             border-radius: 1rem 1rem 0 0; //top
         }
+
         .card-footer {
             padding-top: 0.75rem;
         }
@@ -113,6 +127,121 @@
         .card-body,
         .card-footer {
             border: 0;
+        }
+    }
+}
+
+.list-borderless {
+    .list-group-item {
+        border: 0;
+    }
+}
+
+.accordion-button {
+    gap: 16px;
+    line-height: normal;
+
+    &::after {
+        --bs-accordion-btn-icon-transform: rotate(-45deg);
+        content: "\e9cd";
+        height: auto;
+        width: auto;
+        font-family: "icons" !important;
+        font-size: 24px;
+        background: none;
+        transform: var(--bs-accordion-btn-icon-transform);
+    }
+
+    &:not(.collapsed)::after {
+        --bs-accordion-btn-icon-transform: rotate(-180deg);
+        background: none;
+    }
+}
+
+.table-lg {
+    > :not(caption) > * > * {
+        padding: 0.75rem 0.75rem;
+    }
+}
+
+.table {
+    tfoot {
+        tr:last-child {
+            th,
+            td {
+                border: 0;
+            }
+        }
+    }
+    &-radius {
+        thead {
+            tr:first-child {
+                th,
+                td {
+                    &:first-child {
+                        border-top-left-radius: 8px;
+                    }
+                    &:last-child {
+                        border-top-right-radius: 8px;
+                    }
+                }
+            }
+        }
+
+        tfoot {
+            tr:last-child {
+                th,
+                td {
+                    &:first-child {
+                        border-bottom-left-radius: 8px;
+                    }
+                    &:last-child {
+                        border-bottom-right-radius: 8px;
+                    }
+                }
+            }
+        }
+
+        &:has(thead + tbody):not(:has(tfoot)) {
+            tbody {
+                tr:last-child {
+                    th,
+                    td {
+                        border: 0;
+                        &:first-child {
+                            border-bottom-left-radius: 8px;
+                        }
+                        &:last-child {
+                            border-bottom-right-radius: 8px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &:has(tbody, tfoot):not(:has(thead)) {
+            tbody {
+                tr:first-child {
+                    th,
+                    td {
+                        &:first-child {
+                            border-top-left-radius: 8px;
+                        }
+                        &:last-child {
+                            border-top-right-radius: 8px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-borderless {
+            &,
+            thead,
+            tbody,
+            tfoot {
+                border: 0;
+            }
         }
     }
 }

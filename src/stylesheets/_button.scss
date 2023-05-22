@@ -11,6 +11,8 @@
     background-color: transparent;
     border: 2px solid transparent;
     border-radius: var(--ds-border-radius-pill);
+    appearance: none;
+    cursor: pointer;
 
     &:focus,
     &:focus-within {
@@ -205,6 +207,7 @@
 
     &-large {
         height: 56px;
+        font-size: 18px;
 
         [class^="ds-icon-"],
         [class*=" ds-icon-"] {
@@ -214,5 +217,10 @@
 
     &-full {
         width: 100%;
+    }
+
+    &-cta {
+        padding-inline: 3rem;
+        border-radius: 30px 5px;
     }
 }

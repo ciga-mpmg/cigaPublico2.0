@@ -66,10 +66,24 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/pages/index.html',
             filename: 'pages/index.html',
+            chunks: ['main', 'ciga', 'pages', 'home'],
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/pages/sobre.html',
+            filename: 'pages/sobre.html',
+            chunks: ['main', 'ciga', 'pages'],
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/pages/descaracterizacao.html',
+            filename: 'pages/descaracterizacao.html',
+            chunks: ['main', 'ciga', 'pages', 'descaracterizacao'],
         }),
     ],
     entry: {
         ciga: './src/stylesheets/styles.scss',
+        pages: './src/stylesheets/pages/pages.scss',
+        home: './src/stylesheets/pages/home.scss',
+        descaracterizacao: './src/stylesheets/pages/descaracterizacao.scss',
         main: './src/javascripts/main.js',
     },
     output: {

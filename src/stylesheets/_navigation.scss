@@ -1,0 +1,233 @@
+@use "./mixins/breakpoint.scss";
+
+.navigation {
+    position: fixed;
+    inset: 0;
+    bottom: auto;
+    display: flex;
+    max-width: 100vw;
+    margin-left: auto;
+    background-color: var(--ds-color-white);
+    overscroll-behavior-y: contain;
+
+    transform: translate(0, 0%);
+    transition: transform 0.3s;
+    z-index: 1000;
+
+    @include breakpoint.min("md") {
+        margin: auto;
+    }
+
+    @include breakpoint.max("md") {
+        transition: all 0.75s;
+        height: 88px;
+        max-width: 100vw;
+
+        &:not(.show) {
+            .navigation-list,
+            .navigation-nav,
+            .navigation-action {
+                transform: translate(calc(100% + var(--gutter-x)), 0%);
+                opacity: 0;
+                pointer-events: none;
+                z-index: -9999;
+                visibility: hidden;
+            }
+        }
+
+        &.show {
+            max-width: 300px;
+
+            .navigation {
+                height: 100vh;
+
+                &-list,
+                &-action {
+                    transform: translate(0%, 0%);
+                    opacity: 1;
+                    transition: all 0.5s;
+                    transition-delay: 0.25s;
+                    z-index: 1000;
+                }
+
+                &-nav {
+                    height: calc(100vh - 225px);
+                    overflow-y: auto;
+                    overflow-x: hidden;
+                }
+
+                &-container {
+                    min-height: 100vh;
+                    align-content: baseline;
+                    background-color: var(--ds-color-white);
+                }
+            }
+
+            &::before {
+                content: "";
+                width: 100vw;
+                height: 100vh;
+                background-color: rgba(0, 0, 0, 0.3);
+                position: fixed;
+                z-index: -1;
+                display: block;
+                inset: 0;
+            }
+        }
+    }
+
+    &.hide {
+        transform: translate(0, -100%);
+    }
+
+    &.float {
+        background-color: #ffffffcc;
+    }
+
+    .navigation-container {
+        @extend .container;
+
+        @include breakpoint.max("lg") {
+            flex-wrap: wrap;
+            overflow: hidden;
+        }
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.3s;
+    }
+
+    &-brand {
+        display: flex;
+        align-items: center;
+        min-height: 88px;
+        z-index: 1;
+    }
+
+    &-toggle {
+        @extend .button, .button-icon, .button-primary;
+
+        @include breakpoint.min("md") {
+            display: none;
+        }
+
+        border-radius: 10px;
+        box-shadow: var(--ds-color-primary-base) 0px 0px 0px 0vh;
+        transition: all 0.75s ease 0s;
+
+        &.show {
+            box-shadow: rgb(255 255 255 / 0%) 0px 0px 0px 150vh;
+
+            .navigation-toggle-icon {
+                background-color: transparent;
+
+                &::before {
+                    transform: translateY(0) rotate(-45deg);
+                }
+
+                &::after {
+                    transform: translateY(0) rotate(45deg);
+                }
+            }
+        }
+
+        &-icon {
+            &,
+            &::before,
+            &::after {
+                display: block;
+                position: relative;
+                width: 1.5rem;
+                height: 0.125rem;
+                border: 0;
+                border-radius: 5px;
+                background-color: var(--ds-color-white);
+                color: var(--ds-color-white);
+                pointer-events: none;
+                transition: 0.3s;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                transform: translateY(-0.5rem);
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                transform: translateY(0.5rem);
+            }
+        }
+    }
+
+    &-nav {
+        @include breakpoint.max("md") {
+            width: 100%;
+        }
+    }
+
+    &-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        @include breakpoint.min("lg") {
+            column-gap: 40px;
+        }
+
+        @include breakpoint.max("md") {
+            align-items: flex-start;
+            flex-direction: column;
+        }
+    }
+
+    &-link {
+        position: relative;
+
+        a {
+            text-decoration: none;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            display: block;
+            width: 0%;
+            height: 2px;
+            background-color: var(--ds-color-branding-300);
+            transition: 0.3s;
+
+            @include breakpoint.min("md") {
+                margin-inline: auto;
+            }
+        }
+
+        &:hover,
+        &.active {
+            font-weight: 500;
+            color: var(--ds-color-branding-900);
+
+            &::after {
+                width: 70%;
+            }
+        }
+    }
+
+    &-action {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        @include breakpoint.max("md") {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}

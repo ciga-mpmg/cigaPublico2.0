@@ -10,7 +10,10 @@
                     "destination": "_tokens-var.scss",
                     "format": "css/variables"
                 }
-            ]
+            ],
+            "options": {
+                "showFileHeader": false
+            }
         },
         "scss": {
             "prefix": "ds",
@@ -21,7 +24,10 @@
                     "destination": "_tokens-variables.scss",
                     "format": "scss/variables"
                 }
-            ]
+            ],
+            "options": {
+                "showFileHeader": false
+            }
         },
         "js": {
             "prefix": "ds",
@@ -32,7 +38,10 @@
                     "format": "javascript/es6",
                     "destination": "index.ts"
                 }
-            ]
+            ],
+            "options": {
+                "showFileHeader": false
+            }
         }
     }
 }

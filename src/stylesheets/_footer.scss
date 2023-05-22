@@ -1,0 +1,39 @@
+@use "./mixins/breakpoint.scss";
+
+.footer {
+    padding-block: 100px;
+    color: var(--ds-color-body);
+    background-color: var(--ds-color-white);
+    border-top: 1px solid var(--ds-pattern-gray-100);
+
+    .footer-container {
+        @extend .container;
+        --bs-gutter-y: 3rem;
+
+        @include breakpoint.max("lg") {
+            flex-wrap: wrap;
+            overflow: hidden;
+        }
+
+        display: flex;
+        justify-content: space-between;
+        transition: 0.3s;
+    }
+
+    &-link {
+        position: relative;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        color: var(--ds-color-body);
+
+        [class*="ds-icon"] {
+            font-size: 30px;
+        }
+
+        &:hover {
+            color: var(--bs-link-color) !important;
+        }
+    }
+}

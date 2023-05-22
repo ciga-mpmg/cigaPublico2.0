@@ -1,8 +1,3 @@
-/**
- * Do not edit directly
- * Generated on Fri, 19 May 2023 21:40:47 GMT
- */
-
 export const DsBorderWidthSmall = "1px";
 export const DsBorderWidthMedium = "2px";
 export const DsBorderWidthLarge = "3px";
@@ -119,7 +114,7 @@ export const DsSpacing18 = "4.50rem";
 export const DsSpacing19 = "4.75rem";
 export const DsSpacing20 = "5.00rem";
 export const DsSpacingAuto = "auto";
-export const DsTypographyHeadingFamilyDefault = "'Inter', sans-serif";
+export const DsTypographyHeadingFamilyDefault = "'Poppins', sans-serif";
 export const DsTypographyHeadingSizeH1 = "48px";
 export const DsTypographyHeadingSizeH2 = "40px";
 export const DsTypographyHeadingSizeH3 = "32px";
@@ -138,7 +133,7 @@ export const DsTypographyHeadingLetterSpacingH3 = "-4%";
 export const DsTypographyHeadingLetterSpacingH4 = "-4%";
 export const DsTypographyHeadingLetterSpacingH5 = "-4%";
 export const DsTypographyHeadingLetterSpacingH6 = "-4%";
-export const DsTypographyBodyFamilyDefault = "'Inter', sans-serif";
+export const DsTypographyBodyFamilyDefault = "'Poppins', sans-serif";
 export const DsTypographyBodySizeLarger = "24px";
 export const DsTypographyBodySizeLarge = "20px";
 export const DsTypographyBodySizeMedium = "18px";

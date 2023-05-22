@@ -1,0 +1,62 @@
+.badge {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    height: 40px;
+    font-weight: 500;
+    font-size: var(--ds-typography-body-size-normal);
+    padding-inline: 1rem;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: var(--ds-border-radius-pill);
+
+    &:focus,
+    &:focus-within {
+        outline: none;
+    }
+
+    &-primary {
+        color: var(--ds-color-on-primary);
+        background-color: var(--ds-color-primary-default);
+
+        &:hover {
+            background-color: var(--ds-color-primary-hover);
+        }
+    }
+
+    &-secondary {
+        color: var(--ds-color-on-secondary);
+        background-color: var(--ds-color-secondary-default);
+
+        &:hover {
+            background-color: var(--ds-color-secondary-hover);
+        }
+    }
+
+    &-light {
+        color: var(--ds-color-on-light);
+        background-color: var(--ds-color-light-default);
+
+        &:hover {
+            background-color: var(--ds-color-light-hover);
+        }
+    }
+
+    &-circle {
+        text-decoration: none;
+        aspect-ratio: 1;
+        padding: 0;
+    }
+
+    &-small {
+        height: 32px;
+        font-size: var(--ds-typography-body-size-small);
+    }
+
+    &-large {
+        height: 56px;
+        font-size: 18px;
+    }
+}
