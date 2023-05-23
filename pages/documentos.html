@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+   <head>
+      <meta charset="UTF-8"/>
+      <meta name="viewport" content="width=device-width,initial-scale=1"/>
+      <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+      <title>CIGA</title>
+      <link rel="icon" type="image/x-icon" href="../assets/images/brand/favicon.ico"/>
+      <script defer="defer" src="../pages/ciga.js"></script><script defer="defer" src="../pages/pages.js"></script><script defer="defer" src="../pages/descaracterizacao.js"></script><script defer="defer" src="../pages/main.js"></script>
+      <link href="../pages/ciga.css" rel="stylesheet">
+      <link href="../pages/pages.css" rel="stylesheet">
+      <link href="../pages/descaracterizacao.css" rel="stylesheet">
+   </head>
+   <body>
+      <header class="navigation" id="navigation">
+         <div class="navigation-container">
+            <a role="button" href="/" class="navigation-brand"><img loading="lazy" src="../assets/images/brand/CIGA_Logotipo-Tipografia_H-56.svg" alt="Logo CIGA" height="50px" width="150px"> </a><button type="button" class="navigation-toggle" data-navigation-control="navigation" aria-label="Toggle navigation"><span class="navigation-toggle-icon" aria-label="Icon toggle navigation"></span></button>
+            <nav class="navigation-nav" data-navigation-nav="navigation">
+               <ul class="navigation-list">
+                  <li class="navigation-link"><a role="button" href="./index.html">Home</a></li>
+                  <li class="navigation-link"><a role="button" href="./sobre.html">Sobre</a></li>
+                  <li class="navigation-link active"><a role="button" href="./documentos.html">Documentos</a></li>
+                  <li style="text-align: center;" class="navigation-link"><a role="button" href="./descaracterizacao.html">Descaracterização<br>de barragens</a></li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+           <section class = "pb-0"></section>
+      <section>
+         <div class="container container-lg-none">
+            <h3 class="fw-600 mb-5">Acesse os documentos dos TACs abaixo</h3>
+            <div class="border rounded-3">
+               <table class="table table-radius table-lg">
+                  <thead class="table-light">
+                     <tr>
+                        <th scope="col">TAC</th>
+                        <th scope="col">Tipo de documento</th>
+                        <th scope="col"></th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>Água</td>
+                        <td>TAC</td>
+                        <td><a href = "./pd1.pdf" download = "TAC_agua.pdf">Clique aqui para baixar</a></td>
+                     </tr>
+                     <tr>
+                        <td>Água</td>
+                        <td>Aditivo</td>
+                        <td>Clique aqui para baixar</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <div pagination views="5, 10, 25" total="423" currentpage="1" currentview="5"></div>
+         </div>
+      </section>
+      <footer class="footer" id="footer">
+         <div class="row footer-container">
+            <div class="col-12 col-lg-6 col-xl-3">
+               <ul class="list-group list-borderless">
+                  <li class="list-group-item">
+                     <h5 class="fw-normal text-secondary mb-3">Entre em contato</h5>
+                  </li>
+                  <li class="list-group-item"><a class="footer-link" href="https://goo.gl/maps/8CcE9Un7GWAQdr9V6?coh=178573&entry=tt" target="_blank"><span class="ds-icon-map-pin align-self-start"></span> R. Dias Adorno, 347 - Santo Agostinho, Belo Horizonte - MG, 8° andar.</a></li>
+                  <li class="list-group-item"><a class="footer-link text-nowrap" href="mailto:contato@ciga-mpmg.com.br"><span class="ds-icon-mail"></span> contato@ciga-mpmg.com.br</a></li>
+               </ul>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-3">
+               <ul class="list-group list-borderless">
+                  <li class="list-group-item">
+                     <h5 class="fw-normal text-secondary mb-3">Acesso rápido</h5>
+                  </li>
+                  <li class="list-group-item"><a class="footer-link" href="#"><span class="ds-icon-arrow-narrow-right"></span> Portal MPMG</a></li>
+                  <li class="list-group-item"><a class="footer-link" href="#"><span class="ds-icon-arrow-narrow-right"></span> CAOMA</a></li>
+                  <li class="list-group-item"><a class="footer-link" href="#"><span class="ds-icon-arrow-narrow-right"></span> Global Tailings Review</a></li>
+               </ul>
+            </div>
+            <div class="col-12 col-lg-12 col-xl-6 hstack gap-5 flex-wrap justify-content-center"><img height="auto" width="125" src="../assets/images/brand/MPMG.svg" alt=""> <img height="auto" width="125" src="../assets/images/brand/Caoma.svg" alt=""> <img height="auto" width="125" src="../assets/images/brand/CIGA_Logotipo-Completo_H-8.svg" alt=""></div>
+         </div>
+      </footer>
+   </body>
+</html>
