@@ -100,5 +100,8 @@ module.exports = {
         open: true,
         liveReload: true,
         host: '192.168.1.167',
+        performance: {
+            hints: false,
+        },
     },
 };
