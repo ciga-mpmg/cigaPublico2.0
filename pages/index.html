@@ -14,7 +14,7 @@
    <body>
       <header class="navigation" id="navigation">
          <div class="navigation-container">
-            <a role="button" href="/" class="navigation-brand"><img loading="lazy" src="../assets/images/brand/CIGA_Logotipo-Tipografia_H-56.svg" alt="Logo CIGA" height="50px" width="150px"> </a><button type="button" class="navigation-toggle" data-navigation-control="navigation" aria-label="Toggle navigation"><span class="navigation-toggle-icon" aria-label="Icon toggle navigation"></span></button>
+            <a role="button" href="./index.html" class="navigation-brand"><img loading="lazy" src="../assets/images/brand/CIGA_Logotipo-Tipografia_H-56.svg" alt="Logo CIGA" height="50px" width="150px"> </a><button type="button" class="navigation-toggle" data-navigation-control="navigation" aria-label="Toggle navigation"><span class="navigation-toggle-icon" aria-label="Icon toggle navigation"></span></button>
             <nav class="navigation-nav" data-navigation-nav="navigation">
                <ul class="navigation-list">
                   <li class="navigation-link active"><a role="button" href="./index.html">Home</a></li>
@@ -186,11 +186,9 @@
                   <div class="card card-borderless bg-transparent">
                      <div class="card-body">
                         <p class="card-text">O Termo de Ajustamento de Conduta (TAC) é um acordo regulamentado pela Instrução Normativa nº 4, de 21 de fevereiro de 2020, que pode ser firmado entre empresas e entidades, como o Ministério Público de Minas Gerais. O objetivo do TAC é que as partes se comprometam, perante o promotor de Justiça, a cumprir determinadas condições que visam resolver problemas ou compensar danos e prejuízos já causados à sociedade.</p>
-                        <select class="form-select form-select-lg mt-5" name="" id="">
+                        <select class="form-select form-select-lg mt-5" name="" id=""  onchange="location = this.value;">
                            <option value="" hidden>Selecione um TAC</option>
-                           <option value="1">TAC 1</option>
-                           <option value="2">TAC 2</option>
-                           <option value="3">TAC 3</option>
+                           <option value="./tac_cedro.html">TAC Cedro</option>
                         </select>
                      </div>
                   </div>
@@ -252,7 +250,7 @@
          <div class="modal-dialog modal-fullscreen modal-dialog-centered">
             <div class="modal-content bg-primary" style="--bs-bg-opacity: .5">
                <div class="modal-header border-0"><button type="button" class="button button-secondary button-icon ms-auto" data-bs-dismiss="modal" aria-label="Close"><span class="ds-icon-x"></span></button></div>
-               <div class="modal-body"><iframe width="100%" height="100%" src="./mapa.html" style="align:center; background-color: transparent;"</iframe></iframe></div>
+               <div class="modal-body"><span><iframe width="100%" height="100%" src="./mapa.html" style="align:center; background-color: transparent; display: block;"></iframe></span></div>
                <div class="modal-footer border-0"><button type="button" class="button button-secondary" data-bs-dismiss="modal">Fechar</button></div>
             </div>
          </div>

@@ -14,13 +14,13 @@
    <body>
       <header class="navigation" id="navigation">
          <div class="navigation-container">
-            <a role="button" href="/" class="navigation-brand"><img loading="lazy" src="../assets/images/brand/CIGA_Logotipo-Tipografia_H-56.svg" alt="Logo CIGA" height="50px" width="150px"> </a><button type="button" class="navigation-toggle" data-navigation-control="navigation" aria-label="Toggle navigation"><span class="navigation-toggle-icon" aria-label="Icon toggle navigation"></span></button>
+            <a role="button" href="./index.html" class="navigation-brand"><img loading="lazy" src="../assets/images/brand/CIGA_Logotipo-Tipografia_H-56.svg" alt="Logo CIGA" height="50px" width="150px"> </a><button type="button" class="navigation-toggle" data-navigation-control="navigation" aria-label="Toggle navigation"><span class="navigation-toggle-icon" aria-label="Icon toggle navigation"></span></button>
             <nav class="navigation-nav" data-navigation-nav="navigation">
                <ul class="navigation-list">
                   <li class="navigation-link"><a role="button" href="./index.html">Home</a></li>
                   <li class="navigation-link"><a role="button" href="./sobre.html">Sobre</a></li>
                   <li class="navigation-link"><a role="button" href="./documentos.html">Documentos</a></li>
-                  <li style="text-align: center;" class="navigation-link"><a role="button" href="./descaracterizacao.html">Descaracterização<br>de barragens</a></li>
+                  <li style="text-align: center;" class="navigation-link active"><a role="button" href="./descaracterizacao.html">Descaracterização<br>de barragens</a></li>
                </ul>
             </nav>
          </div>
@@ -102,25 +102,7 @@
             <p class="fw-600 mb-4">Filtros do mapa</p>
             <div class="row gy-4">
                <div class="col-12 col-sm-6 col-lg-auto flex-grow-1">
-                  <label for="empreendedor" class="form-label">Empreendedor</label> 
-                  <select class="form-select" name="empreendedor" id="empreendedor">
-                     <option value="" hidden>Selecione</option>
-                     <option value="1">1</option>
-                     <option value="2">2</option>
-                     <option value="3">3</option>
-                  </select>
-               </div>
-               <div class="col-12 col-sm-6 col-lg-auto flex-grow-1">
-                  <label for="comarca" class="form-label">Comarca</label> 
-                  <select class="form-select" name="comarca" id="comarca">
-                     <option value="" hidden>Selecione</option>
-                     <option value="1">1</option>
-                     <option value="2">2</option>
-                     <option value="3">3</option>
-                  </select>
-               </div>
-               <div class="col-12 col-lg-auto hstack gap-3 align-items-end flex-wrap justify-content-end"><button class="button button-large button-primary-outline px-4 text-nowrap">Reiniciar zoom</button> <button class="button button-large button-primary px-4 text-nowrap">Pesquisar <span class="ds-icon-arrow-right"></span></button></div>
-               <img src="../assets/images/background/map.jpg" alt="" srcset="">
+                 <span><iframe width="100%" height="600px" src="./mapa_descarac.html" style="align:center; background-color: transparent;"></iframe></span>
             </div>
          </div>
       </section>
