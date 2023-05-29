@@ -38,7 +38,7 @@ section {
 }
 
 .bg-lines {
-    background-image: url("../../assets/images/background/site.png");
+    background-image: url("../assets/images/background/site.png");
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -52,7 +52,7 @@ section {
         left: -10px;
         top: 50px;
         display: block;
-        background-image: url("../../assets/images/utils/waves.png");
+        background-image: url("../assets/images/utils/waves.png");
         background-repeat: no-repeat;
         width: 100%;
         height: 100%;
@@ -67,7 +67,7 @@ section {
             #ffffff 50%,
             rgba(255, 255, 255, 0) 80%
         ),
-        url("../../assets/images/background/maps.jpg");
+        url("../assets/images/background/maps.jpg");
     background-repeat: no-repeat;
     background-position: center left;
 }
@@ -75,6 +75,9 @@ section {
 .bg-thumb-video {
     position: relative;
     cursor: pointer;
+    border-radius: 20px 20px 20px 200px;
+    overflow: hidden;
+    padding: 0;
 
     &::before {
         content: "";
@@ -82,7 +85,7 @@ section {
         inset: 0;
         margin: auto;
         display: block;
-        background-image: url("../../assets/images/utils/play.png");
+        background-image: url("../assets/images/utils/play.png");
         background-repeat: no-repeat;
         background-position: center;
         width: 100%;
