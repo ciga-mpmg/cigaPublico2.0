@@ -55,7 +55,8 @@
                <div class="accordion-item">
                   <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1"><span class="badge badge-secondary badge-circle">30</span> Barragens listadas em TACs de Descaracterização e cadastradas no SIGBM como alteamento a montante</button></h2>
                   <div id="flush-collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                     <div class="accordion-body">					<table class="table table-radius table-lg">
+                     <div class="accordion-body">
+                       <table id="pergunta1" class="display table table-radius table-lg">
 						<thead class="table-light">
 							<tr>
 								<th scope="col">Empreendedor</th>
@@ -63,20 +64,142 @@
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
-								<td>Otto</td>
-								<td>@mdo</td>
-							</tr>
-							<tr>
-								<td>Thornton</td>
-								<td>@fat</td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>@twitter</td>
-							</tr>
+    <tr>
+      <td>AMG BRASIL S.A.</td>
+      <td>VOLTA GRANDE 2</td>
+    </tr>
+    <tr>
+      <td>ARCELORMITTAL BRASIL S.A.</td>
+      <td>BARRAGEM DE REJEITOS</td>
+    </tr>
+    <tr>
+      <td>CSN MINERACAO S.A.</td>
+      <td>BARRAGEM B4</td>
+    </tr>
+    <tr>
+      <td>CSN MINERACAO S.A.</td>
+      <td>BARRAGEM DO VIGIA</td>
+    </tr>
+    <tr>
+      <td>GERDAU ACOMINAS S/A</td>
+      <td>ALEMÃES</td>
+    </tr>
+    <tr>
+      <td>MINERACAO GERAL DO BRASIL S/A</td>
+      <td>BARRAGEM B1</td>
+    </tr>
+    <tr>
+      <td>MINERACAO GERAL DO BRASIL S/A</td>
+      <td>BARRAGEM B2</td>
+    </tr>
+    <tr>
+      <td>MINERACAO MORRO DO IPE S.A.</td>
+      <td>BARRAGEM B1 - MINA IPÊ</td>
+    </tr>
+    <tr>
+      <td>MINERACAO MORRO DO IPE S.A.</td>
+      <td>BARRAGEM B1-AUXILIAR - MINA TICO-TICO</td>
+    </tr>
+    <tr>
+      <td>MINERACAO MORRO DO IPE S.A.</td>
+      <td>BARRAGEM B2 - MINA TICO-TICO</td>
+    </tr>
+        <tr>
+      <td>MINERIOS NACIONAL S.A.</td>
+      <td>BARRAGEM B2</td>
+    </tr>
+    <tr>
+      <td>MINERIOS NACIONAL S.A.</td>
+      <td>BARRAGEM B2 AUXILIAR</td>
+    </tr>
+    <tr>
+      <td>MINERITA MINÉRIOS ITAÚNA LTDA.</td>
+      <td>BARRAGEM 03 - ZÉ DA GROTA</td>
+    </tr>
+    <tr>
+      <td>MOSAIC FERTILIZANTES P&amp;K LTDA.</td>
+      <td>BARRAGEM B5</td>
+    </tr>
+    <tr>
+      <td>SAFM MINERACAO LTDA</td>
+      <td>BARRAGEM CENTRAL</td>
+    </tr>
+    <tr>
+      <td>SAFM MINERACAO LTDA</td>
+      <td>BARRAGEM DE AREDES</td>
+    </tr>
+    <tr>
+      <td>SAMARCO MINERACAO S A</td>
+      <td>BARRAGEM DE GERMANO</td>
+    </tr>
+    <tr>
+      <td>SAMARCO MINERACAO S A</td>
+      <td>CAVA DO GERMANO</td>
+    </tr>
+    <tr>
+      <td>VALE S.A.</td>
+      <td>B3/B4</td>
+    </tr>
+    <tr>
+      <td>VALE S.A.</td>
+      <td>CAMPO GRANDE</td>
+    </tr>
+        <tr>
+      <td>VALE S.A.</td>
+      <td>DOUTOR</td>
+    </tr>
+    <tr>
+      <td>VALE S.A.</td>
+      <td>FORQUILHA I</td>
+    </tr>
+    <tr>
+      <td>VALE S.A.</td>
+      <td>FORQUILHA II</td>
+    </tr>
+    <tr>
+      <td>VALE S.A.</td>
+      <td>FORQUILHA III</td>
+    </tr>
+    <tr>
+      <td>VALE S.A.</td>
+      <td>GRUPO</td>
+    </tr>
+    <tr>
+      <td>VALE S.A.</td>
+      <td>IPOEMA</td>
+    </tr>
+    <tr>
+      <td>VALE S.A.</td>
+      <td>SUL SUPERIOR</td>
+    </tr>
+    <tr>
+      <td>VALE S.A.</td>
+      <td>VARGEM GRANDE</td>
+    </tr>
+    <tr>
+      <td>VALE S.A.</td>
+      <td>XINGU</td>
+    </tr>
+    <tr>
+      <td>VALE S.A.</td>
+      <td>ÁREA IX</td>
+    </tr>
 						</tbody>
-					</table></div>
+					</table>
+					<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
+<script>$(document).ready(function () {
+
+  $('#pergunta1').DataTable({
+    language: {
+        url: 'https://cdn.datatables.net/plug-ins/1.13.4/i18n/pt-BR.json',
+    },
+});
+});</script>
+
+					</div>
                   </div>
                </div>
                <div class="accordion-item">
