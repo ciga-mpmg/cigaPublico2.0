@@ -10,6 +10,15 @@
       <link href="../pages/ciga.css" rel="stylesheet">
       <link href="../pages/pages.css" rel="stylesheet">
       <link href="../pages/home.css" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
+      <script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
    </head>
    <body>
       <header class="navigation" id="navigation">
@@ -39,16 +48,19 @@
                <div class="col-md-12 col-xl-7">
                   <div class="row gy-4">
                       <div class="col-md-3">
-                        <div class="home-score-values"><span style="--color: #FEC200;">40+</span> TACs acompanhados</div>
+                        <div class="home-score-values"><span class="counter" style="--color: #FEC200;">40</span> TACs acompanhados</div>
                      </div>
                      <div class="col-md-3">
-                        <div class="home-score-values "><span style="--color: #65D0EC;">200+</span> Estruturas geotécnicas</div>
+                        <div class="home-score-values">
+                           <span class="counter" style="--color: #65D0EC;">200</span>
+                           Estruturas geotécnicas
+                        </div>
                      </div>
                      <div class="col-md-3">
-                        <div class="home-score-values"><span style="--color: #77BE4E;">90+</span> Municípios</div>
+                        <div class="home-score-values"><span class="counter"style="--color: #77BE4E;">90</span> Municípios</div>
                      </div>
                       <div class="col-md-3">
-                        <div class="home-score-values"><span style="--color: #D18243;">22.000+</span> Recomendações acompanhadas</div>
+                        <div class="home-score-values"><span class="counter" style="--color: #D18243;">22.000</span> Recomendações acompanhadas</div>
                      </div>
                   </div>
                </div>
@@ -244,5 +256,7 @@
             </div>
          </div>
       </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+      <script src="jquery.counterup.js"></script>
    </body>
 </html>
