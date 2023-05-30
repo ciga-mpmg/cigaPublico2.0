@@ -284,5 +284,27 @@
             </div>
          </div>
       </div>
+      <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+      <script>
+         $("#modalVideoTac").on('hidden.bs.modal', function (e) {
+    $("#modalVideoTac iframe").attr("src", $("#modalVideoTac iframe").attr("src"));
+});
+      </script>
+            <script>
+ $("#modalVideoCiga").on('hidden.bs.modal', function (e) {
+    $("#modalVideoCiga iframe").attr("src", $("#modalVideoCiga iframe").attr("src"));
+});
+ $("#modalVideoRej").on('hidden.bs.modal', function (e) {
+    $("#modalVideoRej iframe").attr("src", $("#modalVideoRej iframe").attr("src"));
+});
+ $("#modalVideoAlt").on('hidden.bs.modal', function (e) {
+    $("#modalVideoAlt iframe").attr("src", $("#modalVideoAlt iframe").attr("src"));
+});
+ $("#modalVideoMarc").on('hidden.bs.modal', function (e) {
+    $("#modalVideoMarc iframe").attr("src", $("#modalVideoMarc iframe").attr("src"));
+});
+      </script>
    </body>
 </html>

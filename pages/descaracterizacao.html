@@ -503,6 +503,12 @@ BARRAGEM REJEITOS</td>
             </div>
          </div>
       </section>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+                  <script>
+ $("#modalVideo").on('hidden.bs.modal', function (e) {
+    $("#modalVideo iframe").attr("src", $("#modalVideo iframe").attr("src"));
+});
+      </script>
       <footer class="footer" id="footer">
          <div class="row footer-container">
             <div class="col-12 col-lg-6 col-xl-3">
