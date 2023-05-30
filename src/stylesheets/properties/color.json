@@ -31,6 +31,12 @@
             "active": { "value": "{pattern.gray.400}" },
             "disabled": { "value": "{pattern.gray.400}66" }
         },
+        "offwhite": {
+            "default": { "value": "{pattern.gray.000}" },
+            "hover": { "value": "{pattern.gray.100}" },
+            "active": { "value": "{pattern.gray.400}" },
+            "disabled": { "value": "{pattern.gray.400}66" }
+        },
         "on": {
             "primary": { "value": "{color.white}" },
             "secondary": { "value": "{color.white}" },
