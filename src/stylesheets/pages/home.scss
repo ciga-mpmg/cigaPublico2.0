@@ -178,7 +178,10 @@
     }
 }
 
-.swiper-slide {
-    // flex: 1;
-    height: auto;
+.swiper-wrapper {
+    .swiper-slide {
+        height: auto;
+        padding-block: 3rem;
+        padding-inline: 1rem;
+    }
 }

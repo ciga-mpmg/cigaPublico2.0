@@ -8,6 +8,32 @@ section {
     }
 }
 
+.button-next,
+.button-prev {
+    position: absolute;
+    z-index: 100;
+    inset: 0;
+    margin-block: auto;
+}
+
+.button-next {
+    left: auto;
+    right: -2.5rem;
+
+    @include breakpoint.min("xl") {
+        right: -3rem;
+    }
+}
+
+.button-prev {
+    right: auto;
+    left: -2.5rem;
+
+    @include breakpoint.min("xl") {
+        left: -3rem;
+    }
+}
+
 .about {
     &-resume {
         .card-title {
