@@ -212,8 +212,8 @@
                      <h5 class="fw-normal text-secondary mb-3">Links úteis</h5>
                   </li>
                   <li class="list-group-item"><a class="footer-link" href="https://www.mpmg.mp.br/portal/"><span class="ds-icon-arrow-narrow-right"></span> Portal MPMG</a></li>
-                  <li class="list-group-item"><a class="footer-link" href="https://www.instagram.com/caoma.mpmg/?hl=pt"><span class="ds-icon-arrow-narrow-right"></span> CAOMA</a></li>
-                  <li class="list-group-item"><a class="footer-link" href="https://app.anm.gov.br/SIGBM/Publico/GerenciarPublico"><span class="ds-icon-arrow-narrow-right"></span> Global Tailings Review</a></li>
+                  <li class="list-group-item"><a class="footer-link" href="https://www.instagram.com/caoma.mpmg/?hl=pt"><span class="ds-icon-arrow-narrow-right"></span> Instagram CAOMA</a></li>
+                  <li class="list-group-item"><a class="footer-link" href="https://app.anm.gov.br/SIGBM/Publico/GerenciarPublico"><span class="ds-icon-arrow-narrow-right"></span>SIGBM</a></li>
                </ul>
             </div>
             <div class="col-12 col-lg-12 col-xl-6 hstack gap-5 flex-wrap justify-content-center"><img height="auto" width="125" src="../assets/images/brand/MPMG.svg" alt=""> <img height="auto" width="125" src="../assets/images/brand/Caoma.svg" alt=""> <img height="auto" width="125" src="../assets/images/brand/CIGA_Logotipo-Completo_H-8.svg" alt=""></div>
@@ -284,5 +284,27 @@
             </div>
          </div>
       </div>
+      <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+      <script>
+         $("#modalVideoTac").on('hidden.bs.modal', function (e) {
+    $("#modalVideoTac iframe").attr("src", $("#modalVideoTac iframe").attr("src"));
+});
+      </script>
+            <script>
+ $("#modalVideoCiga").on('hidden.bs.modal', function (e) {
+    $("#modalVideoCiga iframe").attr("src", $("#modalVideoCiga iframe").attr("src"));
+});
+ $("#modalVideoRej").on('hidden.bs.modal', function (e) {
+    $("#modalVideoRej iframe").attr("src", $("#modalVideoRej iframe").attr("src"));
+});
+ $("#modalVideoAlt").on('hidden.bs.modal', function (e) {
+    $("#modalVideoAlt iframe").attr("src", $("#modalVideoAlt iframe").attr("src"));
+});
+ $("#modalVideoMarc").on('hidden.bs.modal', function (e) {
+    $("#modalVideoMarc iframe").attr("src", $("#modalVideoMarc iframe").attr("src"));
+});
+      </script>
    </body>
 </html>
