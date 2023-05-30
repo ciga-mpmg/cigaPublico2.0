@@ -536,9 +536,9 @@ BARRAGEM REJEITOS</td>
             <div class="modal fade" id="modalVideo" tabindex="-1" aria-labelledby="modalVideoLabel" aria-hidden="true">
          <div class="modal-dialog modal-fullscreen modal-dialog-centered">
             <div class="modal-content bg-primary" style="--bs-bg-opacity: .5">
-               <div class="modal-header border-0"><button type="button" class="button button-secondary button-icon ms-auto" data-bs-dismiss="modal" aria-label="Close"><span class="ds-icon-x"></span></button></div>
+               <div class="modal-header border-0"><button type="button" class="button button-secondary button-icon ms-auto" data-bs-dismiss="modal" aria-label="Close"><span class="ds-icon-x" onClick='$("#modalVideo iframe").attr("src", $("#modalVideo iframe").attr("src"));'></span></button></div>
                <div class="modal-body"><iframe width="560" height="315" src="https://www.youtube.com/embed/sVMOW_LB1bc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-               <div class="modal-footer border-0"><button type="button" class="button button-secondary" data-bs-dismiss="modal">Fechar</button></div>
+               <div class="modal-footer border-0"><button type="button" class="button button-secondary" data-bs-dismiss="modal" onClick='$("#modalVideo iframe").attr("src", $("#modalVideo iframe").attr("src"));'>Fechar</button></div>
             </div>
          </div>
       </div>
