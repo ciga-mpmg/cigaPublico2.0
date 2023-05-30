@@ -21,6 +21,7 @@
 
     &:disabled {
         cursor: no-drop;
+        box-shadow: none !important;
     }
 
     &-primary {
@@ -190,6 +191,61 @@
 
             &:disabled {
                 border-color: var(--ds-color-light-disabled);
+            }
+        }
+    }
+
+    &-offwhite {
+        color: var(--ds-color-on-offwhite);
+        background-color: var(--ds-color-offwhite-default);
+
+        &:hover {
+            background-color: var(--ds-color-offwhite-hover);
+        }
+
+        &:active,
+        &:focus-within {
+            background-color: var(--ds-color-offwhite-active);
+        }
+
+        &:disabled {
+            background-color: var(--ds-color-offwhite-disabled);
+        }
+
+        &-text {
+            color: var(--ds-color-on-offwhite);
+
+            &:not([class*="-outline"]) {
+                padding: 0;
+                height: auto;
+            }
+
+            &:hover,
+            &:active,
+            &:focus-within {
+                color: var(--ds-color-offwhite-hover);
+            }
+
+            &:disabled {
+                color: var(--ds-color-offwhite-disabled);
+            }
+        }
+
+        &-outline {
+            @extend .button-offwhite-text;
+            border-color: var(--ds-color-offwhite-default);
+
+            &:hover {
+                border-color: var(--ds-color-offwhite-hover);
+            }
+
+            &:active,
+            &:focus-within {
+                border-color: var(--ds-color-offwhite-active);
+            }
+
+            &:disabled {
+                border-color: var(--ds-color-offwhite-disabled);
             }
         }
     }

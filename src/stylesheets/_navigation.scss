@@ -72,6 +72,7 @@
                 z-index: -1;
                 display: block;
                 inset: 0;
+                left: -100vw;
             }
         }
     }
@@ -90,6 +91,8 @@
         @include breakpoint.max("lg") {
             flex-wrap: wrap;
             overflow: hidden;
+            max-width: 100%;
+            padding-inline: 24px;
         }
 
         display: flex;

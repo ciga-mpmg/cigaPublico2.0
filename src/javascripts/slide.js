@@ -1,23 +1,21 @@
-import Swiper from 'swiper';
+import Swiper, { Autoplay, Pagination, Navigation } from 'swiper';
+
+Swiper.use([Autoplay, Pagination, Navigation]);
 
 function createSwiper(params, config) {
     return new Swiper(params, config);
 }
 
 createSwiper('.swiper-control', {
-    slidesPerView: 1.5,
-    spaceBetween: 32,
-    centeredSlides: true,
+    slidesPerView: 1,
     grabCursor: true,
-    initialSlide: 0,
+    navigation: {
+        nextEl: '.button-next',
+        prevEl: '.button-prev',
+    },
     breakpoints: {
         1200: {
-            slidesPerView: 3.5,
-            initialSlide: 1,
-        },
-        800: {
-            slidesPerView: 2.5,
-            initialSlide: 1,
+            slidesPerView: 2,
         },
     },
 });

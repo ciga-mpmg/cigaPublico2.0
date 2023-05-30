@@ -91,6 +91,9 @@ module.exports = {
         filename: 'pages/[name].js',
         clean: true,
     },
+    performance: {
+        hints: false,
+    },
     devServer: {
         static: {
             directory: path.join(__dirname, 'public'),
@@ -100,8 +103,5 @@ module.exports = {
         open: true,
         liveReload: true,
         host: '192.168.1.167',
-        performance: {
-            hints: false,
-        },
     },
 };

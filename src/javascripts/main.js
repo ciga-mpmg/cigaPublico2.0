@@ -22,3 +22,4 @@ const popoverList = [...popoverTriggerList].map(
 import './navigation';
 import './pagination';
 import './slide';
+import './modal';
