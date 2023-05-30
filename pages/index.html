@@ -10,6 +10,15 @@
       <link href="../pages/ciga.css" rel="stylesheet">
       <link href="../pages/pages.css" rel="stylesheet">
       <link href="../pages/home.css" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
+      <script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
    </head>
    <body>
       <header class="navigation" id="navigation">
@@ -30,7 +39,7 @@
             <div class="home-banner text-center bg-lines">
                <p class="subtitle" style="font-weight: 500"><b>Transformando dados em ação:</b></p>
                <h1 class="title text-primary">Conheça a atuação do CIGA</h1>
-               <img class="my-4" src="../assets/images/background/banner-home.png" alt="" srcset="">
+               <img class="my-4" src="../assets/images/background/full.png" alt="" srcset="">
             </div>
             <div class="row gy-4 align-items-center home-score">
                <div class="col-md-12 col-xl-5">
@@ -39,16 +48,19 @@
                <div class="col-md-12 col-xl-7">
                   <div class="row gy-4">
                       <div class="col-md-3">
-                        <div class="home-score-values"><span style="--color: #FEC200;">40+</span> TACs acompanhados</div>
+                        <div class="home-score-values"><span class="counter" style="--color: #FEC200;">40</span> TACs acompanhados</div>
                      </div>
                      <div class="col-md-3">
-                        <div class="home-score-values "><span style="--color: #65D0EC;">200+</span> Estruturas geotécnicas</div>
+                        <div class="home-score-values">
+                           <span class="counter" style="--color: #65D0EC;">200</span>
+                           Estruturas geotécnicas
+                        </div>
                      </div>
                      <div class="col-md-3">
-                        <div class="home-score-values"><span style="--color: #77BE4E;">90+</span> Municípios</div>
+                        <div class="home-score-values"><span class="counter"style="--color: #77BE4E;">90</span> Municípios</div>
                      </div>
                       <div class="col-md-3">
-                        <div class="home-score-values"><span style="--color: #D18243;">22.000+</span> Recomendações acompanhadas</div>
+                        <div class="home-score-values"><span class="counter" style="--color: #D18243;">22.000</span> Recomendações acompanhadas</div>
                      </div>
                   </div>
                </div>
@@ -58,7 +70,7 @@
       <section id="about" class="about bg-primary">
          <div class="container container-lg-none">
             <div class="row align-items-center mb-5 about-resume">
-               <div class="bg-waves col-md-6 col-lg-7"><img src="../assets/images/background/vallourec.jpg" alt=""></div>
+               <div class="bg-waves col-md-6 col-lg-7"><img src="../assets/images/background/quem-somos.png" alt=""></div>
                <div class="col-md-6 col-lg-5">
                   <div class="card card-borderless bg-transparent text-white">
                      <div class="card-header">
@@ -66,7 +78,7 @@
                         <h2 class="text-white">Conheça o CIGA</h2>
                      </div>
                      <div class="card-body">
-                        <p class="card-text">O CIGA, Centro Integrado de Gestão Ambiental, é uma plataforma tecnológica criada em 2022, pelo CAOMA, que contribui na implementação de novos padrões para o acompanhamento de segurança de barragens, fornecendo subsídios à tomada de decisões e dando transparência às ações realizadas pelo MPMG. +</p>
+                        <p class="card-text">O CIGA, Centro Integrado de Gestão Ambiental, é uma plataforma tecnológica criada em 2022, pelo CAOMA, que contribui na implementação de novos padrões para o acompanhamento de segurança de barragens, fornecendo subsídios à tomada de decisão e dando transparência às ações realizadas pelo MPMG. +</p>
                      </div>
                      <div class="card-footer"><button class="button button-secondary button-large button-cta">Saiba mais</button></div>
                   </div>
@@ -175,7 +187,7 @@
                   <div class="card card-borderless bg-transparent">
                      <div class="card-body">
                         <p class="card-text">O Termo de Ajustamento de Conduta (TAC) é um acordo regulamentado pela Instrução Normativa nº 4, de 21 de fevereiro de 2020, que pode ser firmado entre empresas e entidades, como o Ministério Público de Minas Gerais. O objetivo do TAC é que as partes se comprometam, perante o promotor de Justiça, a cumprir determinadas condições que visam resolver problemas ou compensar danos e prejuízos já causados à sociedade.</p>
-                        <select class="form-select form-select-lg mt-5" name="" id=""  onchange="window.open(this.value);">
+                        <select class="form-select form-select-lg mt-5" name="" id=""  onchange="window.open(this.value);this.value = '';">
                            <option value="" hidden>Selecione um TAC</option>
                            <optgroup label="-"><option value="./dam_break.html">Dam Break
 </option></optgroup>
@@ -309,5 +321,7 @@
             </div>
          </div>
       </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+      <script src="jquery.counterup.js"></script>
    </body>
 </html>
