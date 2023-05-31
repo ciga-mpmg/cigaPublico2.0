@@ -231,8 +231,10 @@
 </select>
  <script>
                           document.querySelector("#seletorTac").onchange = function() {
+    setTimeout(() => {                        
     window.open(document.querySelector("#seletorTac").value,
     '_blank');
+    });
 };
                         </script>
                      </div>
