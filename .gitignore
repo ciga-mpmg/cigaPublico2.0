@@ -3,3 +3,5 @@
 
 package-lock.json
 yarn.lock
+.Rproj.user
+*.Rproj
