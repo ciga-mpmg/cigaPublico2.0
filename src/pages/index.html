@@ -1,371 +1,181 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>CIGA</title>
-    <link rel="icon" type="image/x-icon" href="../assets/images/brand/favicon.ico" />
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-W83SJ45ZGV"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'G-W83SJ45ZGV');
+   </script>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1" />
+   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+   <title>CIGA</title>
+   <link rel="icon" type="image/x-icon" href="../assets/images/brand/favicon.ico" />
+   <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
+   <script>
+      jQuery(document).ready(function ($) {
+         $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+         });
+      });
+   </script>
 </head>
 
 <body>
-    <header class="navigation" id="navigation">
-        <div class="navigation-container">
-            <a role="button" href="/" class="navigation-brand">
-                <img loading="lazy" src="../assets/images/brand/CIGA_Logotipo-Tipografia_H-56.svg" alt="Logo CIGA"
-                    height="50px" width="150px">
-            </a>
-            <button type="button" class="navigation-toggle" data-navigation-control="navigation"
-                aria-label="Toggle navigation">
-                <span class="navigation-toggle-icon" aria-label="Icon toggle navigation"></span>
-            </button>
-            <nav class="navigation-nav" data-navigation-nav="navigation">
-                <ul class="navigation-list">
-                    <li class="navigation-link active">
-                        <a role="button" href="./">Home</a>
-                    </li>
-                    <li class="navigation-link">
-                        <a role="button" href="./sobre.html">Sobre</a>
-                    </li>
-                    <li class="navigation-link">
-                        <a role="button" href="./documentos.html">
-                            Documentos
-                        </a>
-                    </li>
-                    <li class="navigation-link">
-                        <a role="button" href="./descaracterizacao.html">Descaracterização de barragens</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <section id="home" class="home">
-        <div class="container container-lg-none">
-            <div class="home-banner text-center bg-lines">
-                <p class="subtitle">Transformando dados em ação:</p>
-                <h1 class="title text-primary"> Conheça a ferramenta inteligente do CIGA</h1>
+   <header class="navigation" id="navigation">
+      <div class="navigation-container">
+         <div class="hstack gap-5 flex-wrap justify-content-center" style="min-height: 5vw;"> <img
+               class="logo-tela-grande" height="auto" width="125"
+               src="../assets/images/brand/CIGA_Logotipo-Completo_H-8.svg" alt=""> <img class="logo-tela-grande"
+               height="auto" width="125" src="../assets/images/brand/Caoma.svg" alt=""> <img height="auto" width="125"
+               src="../assets/images/brand/MPMG.svg" alt=""></div>
+         <button type="button" class="navigation-toggle" data-navigation-control="navigation"
+            aria-label="Toggle navigation"><span class="navigation-toggle-icon"
+               aria-label="Icon toggle navigation"></span></button>
+         <nav class="navigation-nav" data-navigation-nav="navigation">
+            <ul class="navigation-list">
+               <li class="navigation-link active"><a role="button" href="./index.html">Home</a></li>
+               <li class="navigation-link"><a role="button" href="./ciga.html">CIGA</a></li>
+               <li class="navigation-link"><a role="button" href="./sobre.html">Sobre</a></li>
+               <li style="text-align: center;" class="navigation-link"><a role="button"
+                     href="./descaracterizacao.html">Descaracterização<br>de barragens</a></li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+   <section id="home" class="home">
+      <div class="container container-lg-none" style="margin-top: 3vw;">
+         <div class="home-banner text-center bg-lines">
+            <h1 class="title" style="color: var(--ds-color-branding-300); font-weight: 580;">MPMG em defesa da sociedade
+               mineira</h1>
+            <p class="subtitle" style="font-weight: 350; color: #571521;"><b>Segurança das barragens - Da resposta aos
+                  rompimentos à criação do CIGA</b></p>
+            <img class="my-4" src="../assets/images/background/Banner.png" alt="" srcset="">
+         </div>
+         <div class="row gy-4 home-score">
+            <div class="col-md-12 col-xl-5">
+               <p class="home-score-title"><span
+                     style="font-weight: 500; font-size: 35px;line-height: 55px; color: var(--ds-color-branding-300);">Transformações
+                     após rompimentos de barragens em Minas Gerais</span></p>
+            </div>
+            <div class="col-md-12 col-xl-7">
+               <p>Os rompimentos das barragens de rejeito em Minas Gerais tiveram consequências diversas, diretas e
+                  indiretas, causadas tanto pelas manchas de inundação quanto pelos seus efeitos subsequentes. A
+                  sociedade mudou sua percepção sobre a mineração e a existência das barragens. Consequentemente,
+                  evidencia-se um grande aumento da pressão realizada ao poder público, exigindo-se novos critérios de
+                  abordagem, aumentando a segurança e transparência.</p>
 
-                <img class="my-4" src="../assets/images/background/banner-home.png" alt="" srcset="">
-            </div>
-            <div class="row gy-4 align-items-center home-score">
-                <div class="col-md-12 col-xl-5">
-                    <p class="home-score-title">
-                        <span>Nossos</span>
-                        <span>números</span>
-                    </p>
-                </div>
-                <div class="col-md-12 col-xl-7">
-                    <div class="row gy-4">
-                        <div class="col-md-3">
-                            <div class="home-score-values">
-                                <span style="--color: #D18243;">17.000+</span> Recomendações emitidas
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="home-score-values">
-                                <span style="--color: #65D0EC;">300</span> Estruturas geotécnicas
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="home-score-values">
-                                <span style="--color: #77BE4E;">50</span> Municípios
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="home-score-values">
-                                <span style="--color: #FEC200;">29</span> TACs acompanhados
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="about" class="about bg-primary">
-        <div class="container container-lg-none">
-            <div class="row align-items-center mb-5 about-resume">
-                <div class="bg-waves col-md-6 col-lg-7">
-                    <img src="../assets/images/background/about.png" alt="">
-                </div>
-                <div class="col-md-6 col-lg-5">
-                    <div class="card card-borderless bg-transparent text-white">
-                        <div class="card-header">
-                            <h2 class="card-title text-white">
-                                <span>Quem</span> <span>Somos</span>
-                            </h2>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">
-                                O CIGA, Centro Integrado de Gestão Ambiental, é uma plataforma tecnológica criada em
-                                2022, pelo CAOMA, que contribui na implementação de novos padrões para o acompanhamento
-                                de segurança de barragens, fornecendo subsídios à tomada de decisões e dando
-                                transparência às ações realizadas pelo MPMG.
-                            </p>
-                        </div>
-                        <div class="card-footer">
-                            <button class="button button-secondary button-large button-cta">
-                                Saiba mais
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="bg-light p-5">
-        <div class="container position-relative">
-            <div class="swiper swiper-control" data-slide="swiper-control">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="card card-borderless h-100 shadow">
-                            <div class="card-header">
-                                <h3 class="card-title fw-normal text-primary">O que é Auditoria?</h2>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    A Auditoria técnica especializada independente, no contexto dos
-                                    empreendimentos minerários, acompanha, analisa, auxilia e valida as ações e
-                                    compromissos
-                                    firmados nos acordos, além de todas aquelas
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <button class="button button-primary-text button-large ms-auto">
-                                    Saiba mais
-                                    <span class="ds-icon-arrow-right"></span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card card-borderless h-100 shadow">
-                            <div class="card-header">
-                                <h3 class="card-title fw-normal text-primary">Programa de Auditoria</h2>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    A Auditoria técnica especializada independente, no contexto dos empreendimentos
-                                    minerários, acompanha, analisa, auxilia e valida as ações e compromissos firmados
-                                    nos
-                                    acordos, além de todas aquelas
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <button class="button button-primary-text button-large ms-auto">
-                                    Saiba mais
-                                    <span class="ds-icon-arrow-right"></span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card card-borderless h-100 shadow">
-                            <div class="card-header">
-                                <h3 class="card-title fw-normal text-primary">O que é Auditoria?</h2>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    A Auditoria técnica especializada independente, no contexto dos
-                                    empreendimentos minerários, acompanha, analisa, auxilia e valida as ações e
-                                    compromissos
-                                    firmados nos acordos, além de todas aquelas
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <button class="button button-primary-text button-large ms-auto">
-                                    Saiba mais
-                                    <span class="ds-icon-arrow-right"></span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card card-borderless h-100 shadow">
-                            <div class="card-header">
-                                <h3 class="card-title fw-normal text-primary">Programa de Auditoria</h2>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    A Auditoria técnica especializada independente, no contexto dos empreendimentos
-                                    minerários, acompanha, analisa, auxilia e valida as ações e compromissos firmados
-                                    nos
-                                    acordos, além de todas aquelas
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <button class="button button-primary-text button-large ms-auto">
-                                    Saiba mais
-                                    <span class="ds-icon-arrow-right"></span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="button button-icon button-offwhite button-prev shadow">
-                <span class="ds-icon-chevron-left fs-3"></span>
-            </button>
-            <button class="button button-icon button-offwhite button-next shadow">
-                <span class="ds-icon-chevron-right fs-3"></span>
-            </button>
-        </div>
-    </section>
-    <section id="maps" class="maps bg-maps p-0">
-        <div class="container container-lg-none py-5">
-            <div class="row align-items-center">
-                <div class="col-lg-6 offset-lg-6">
-                    <div class="card card-borderless bg-white" style="--bs-bg-opacity: .9">
-                        <div class="card-header">
-                            <h2 class="card-title text-primary fw-600">
-                                Mapa de estruturas geotécnicas dos TACs
-                            </h2>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">
-                                A Auditoria técnica especializada independente, no contexto dos empreendimentos
-                                minerários, acompanha, analisa, auxilia e valida as ações e compromissos firmados nos
-                                acordos, além de todas aquelas que sejam necessárias para garantir a segurança de
-                                trabalhadores e pessoas, caracterizar o dano...
-                            </p>
-                        </div>
-                        <div class="card-footer">
-                            <button class="button button-secondary button-large button-cta">
-                                Ver mapa
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="tac" class="tac">
-        <div class="container container-lg-none py-5">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h2 class="title">
-                        <span>TACs</span>
-                        <span>Acompanhados</span>
-                    </h2>
-                </div>
-                <div class="col-lg-6">
-                    <div class="card card-borderless bg-transparent">
-                        <div class="card-body">
-                            <p class="card-text">
-                                O Termo de Ajustamento de Conduta (TAC) é um acordo regulamentado pela Instrução
-                                Normativa nº 4, de 21 de fevereiro de 2020, que pode ser firmado entre empresas e
-                                entidades, como o Ministério Público de Minas Gerais. O objetivo do TAC é que as partes
-                                se comprometam, perante o promotor de Justiça, a cumprir determinadas condições que
-                                visam resolver problemas ou compensar danos e prejuízos já causados à sociedade.
-                            </p>
-                            <select class="form-select form-select-lg mt-5" name="" id="">
-                                <option value="" hidden>Selecione um TAC</option>
-                                <option value="1">TAC 1</option>
-                                <option value="2">TAC 2</option>
-                                <option value="3">TAC 3</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="video" class="video p-0">
-        <div class="container container-lg-none">
-            <div class="row align-items-center mb-5 video-resume">
-                <div class="col-md-6 col-lg-6">
-                    <div class="bg-thumb-video">
-                        <img src="../assets/images/utils/thumb-video.png" alt="" data-bs-toggle="modal"
-                            data-bs-target="#modalVideo" data-bs-whatever="https://www.youtube.com/embed/t8GPe36hVlw">
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6">
-                    <div class="card card-borderless bg-transparent">
-                        <div class="card-header">
-                            <h2 class="card-title text-primary fw-600">
-                                Atuação do CIGA
-                            </h2>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">
-                                O CIGA tem como objetivo geral apoiar, robustecer e possibilitar a análise e
-                                visualização inteligente de dados no contexto das barragens de rejeitos de mineração em
-                                Minas Gerais por meio da criação de uma ferramenta com apresentação das questões
-                                relacionadas ao meio ambiente e à segurança de estruturas geotécnicas no estado.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+               <p>O Ministério Público de Minas Gerais teve atuação diligente frente às mineradoras responsáveis pelas
+                  tragédias. Suas ações contemplaram oferecer denúncias contra os executivos das empresas, de ajuizar
+                  diversas Ações Civis Públicas e propor Termos de Ajustamento de Conduta. Destaca-se ainda a atuação na
+                  elaboração e aprovação da Lei “Mar de Lama Nunca Mais” (Lei Estadual nº 23.291/2019).</p>
 
+               <p>Nesse contexto, o MPMG, por intermédio do Centro de Apoio Operacional das Promotorias de Justiça de
+                  Defesa do Meio Ambiente (CAOMA), implementou o Centro Integrado de Gestão Ambiental (CIGA).</p>
             </div>
-        </div>
-    </section>
-    <footer class="footer" id="footer">
-        <div class="row footer-container">
-            <div class="col-12 col-lg-6 col-xl-3">
-                <ul class="list-group list-borderless">
-                    <li class="list-group-item">
-                        <h5 class="fw-normal text-secondary mb-3">Entre em contato</h5>
-                    </li>
-                    <li class="list-group-item">
-                        <a class="footer-link" href="https://goo.gl/maps/8CcE9Un7GWAQdr9V6?coh=178573&entry=tt"
-                            target="_blank">
-                            <span class="ds-icon-map-pin align-self-start"></span>
-                            R. Dias Adorno, 347 - Santo Agostinho, Belo Horizonte - MG, 8° andar.
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a class="footer-link text-nowrap" href="mailto:contato@ciga-mpmg.com.br">
-                            <span class="ds-icon-mail"></span> contato@ciga-mpmg.com.br</a>
-                    </li>
-                </ul>
+         </div>
+      </div>
+   </section>
+   <section id="about" class="about" style="background-color: #4a5762;">
+      <div class="container container-lg-none">
+         <div class="row align-items-center mb-5 about-resume">
+            <div class="bg-waves col-md-6 col-lg-7"><img src="../assets/images/background/ciga_comp.jpg" alt=""
+                  style="border-radius: 15px; border-bottom-left-radius: 150px;"></div>
+            <div class="col-md-6 col-lg-5">
+               <div class="card card-borderless bg-transparent text-white">
+                  <div class="card-header">
+                     <h2 class="text-white">Conheça o CIGA</h2>
+                  </div>
+                  <div class="card-body">
+                     <p class="card-text">Conheça o CIGA e entenda como o MPMG vem utilizando diferentes tecnologias
+                        para incentivar uma nova cultura de mineração no Estado de Minas Gerais, em linha com as
+                        melhores práticas internacionais de responsabilidade socioambiental e segurança de barragens.
+                     </p>
+                  </div>
+                  <div class="card-footer text-primary"><a href="./ciga.html" style="text-decoration: none;"><button
+                           class="button button-large button-cta"
+                           style="background-color: white; color: #003b4d !important;">Saiba mais</button></a></div>
+               </div>
             </div>
-            <div class="col-12 col-lg-6 col-xl-3">
-                <ul class="list-group list-borderless">
-                    <li class="list-group-item">
-                        <h5 class="fw-normal text-secondary mb-3">Acesso rápido</h5>
-                    </li>
-                    <li class="list-group-item">
-                        <a class="footer-link" href="#">
-                            <span class="ds-icon-arrow-narrow-right"></span> Portal MPMG
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a class="footer-link" href="#">
-                            <span class="ds-icon-arrow-narrow-right"></span> CAOMA
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a class="footer-link" href="#">
-                            <span class="ds-icon-arrow-narrow-right"></span> Global Tailings Review
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-12 col-lg-12 col-xl-6 hstack gap-5 flex-wrap justify-content-center">
-                <img height="auto" width="125" src="../assets/images/brand/MPMG.svg" alt="">
-                <img height="auto" width="125" src="../assets/images/brand/Caoma.svg" alt="">
-                <img height="auto" width="125" src="../assets/images/brand/CIGA_Logotipo-Completo_H-8.svg" alt="">
-            </div>
-        </div>
-    </footer>
-    <!-- Modal -->
-    <div class="modal fade" id="modalVideo" tabindex="-1" aria-labelledby="modalVideoLabel" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen modal-dialog-centered">
-            <div class="modal-content bg-primary" style="--bs-bg-opacity: .5">
-                <div class="modal-header border-0">
-                    <button type="button" class="button button-secondary button-icon ms-auto" data-bs-dismiss="modal"
-                        aria-label="Close">
-                        <span class="ds-icon-x"></span>
-                    </button>
-                </div>
-                <div class="modal-body"> </div>
-                <div class="modal-footer border-0">
-                    <button type="button" class="button button-secondary" data-bs-dismiss="modal">Fechar</button>
-                </div>
-            </div>
-        </div>
-    </div>
+         </div>
+      </div>
+   </section>
+   <footer class="footer" id="footer">
+      <div class="row footer-container">
+         <div class="col-12 col-lg-6 col-xl-3">
+            <ul class="list-group list-borderless">
+               <li class="list-group-item">
+                  <h5 class="fw-normal text-secondary mb-3">Entre em contato</h5>
+               </li>
+               <li class="list-group-item"><a class="footer-link"
+                     href="https://goo.gl/maps/8CcE9Un7GWAQdr9V6?coh=178573&entry=tt" target="_blank"><span
+                        class="ds-icon-map-pin align-self-start"></span> R. Dias Adorno, 347 - Santo Agostinho, Belo
+                     Horizonte - MG, 8° andar.</a></li>
+               <li class="list-group-item"><a class="footer-link text-nowrap" href="mailto:contato@ciga-mpmg.com.br"
+                     style="white-space: wrap !important;"><span class="ds-icon-mail"></span>
+                     contato@ciga-mpmg.com.br</a></li>
+            </ul>
+         </div>
+         <div class="col-12 col-lg-6 col-xl-3">
+            <ul class="list-group list-borderless">
+               <li class="list-group-item">
+                  <h5 class="fw-normal text-secondary mb-3">Links úteis</h5>
+               </li>
+               <li class="list-group-item"><a class="footer-link" href="https://www.mpmg.mp.br/portal/"
+                     target="_blank"><span class="ds-icon-arrow-narrow-right"></span> Portal MPMG</a></li>
+               <li class="list-group-item"><a class="footer-link" href="https://www.instagram.com/caoma.mpmg/?hl=pt"
+                     target="_blank"><span class="ds-icon-arrow-narrow-right"></span>Instagram CAOMA</a></li>
+               <li class="list-group-item"><a class="footer-link"
+                     href="https://app.anm.gov.br/SIGBM/Publico/GerenciarPublico" target="_blank"><span
+                        class="ds-icon-arrow-narrow-right"></span>SIGBM</a></li>
+            </ul>
+         </div>
+         <div class="col-12 col-lg-12 col-xl-6 hstack gap-5 flex-wrap justify-content-center"> <img height="auto"
+               width="125" src="../assets/images/brand/CIGA_Logotipo-Completo_H-8.svg" alt=""> <img height="auto"
+               width="125" src="../assets/images/brand/Caoma.svg" alt=""> <img height="auto" width="125"
+               src="../assets/images/brand/MPMG.svg" alt=""></div>
+      </div>
+   </footer>
+   <div class="modal fade" id="modalVideo" tabindex="-1" aria-labelledby="modalVideoLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+         <div class="modal-content bg-primary" style="--bs-bg-opacity: .5">
+            <div class="modal-header border-0"><button type="button" class="button button-secondary button-icon ms-auto"
+                  data-bs-dismiss="modal" aria-label="Close"><span class="ds-icon-x"></span></button></div>
+            <div class="modal-body"><iframe width="560" height="315" src="https://www.youtube.com/embed/Xco-bcDs_H8"
+                  id="video" title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe></div>
+            <div class="modal-footer border-0"><button type="button" class="button button-secondary"
+                  data-bs-dismiss="modal">Fechar</button></div>
+         </div>
+      </div>
+   </div>
+   <script>
+      $("#modalVideo").on('hidden.bs.modal', function (e) {
+         $("#modalVideo iframe").attr("src", $("#modalVideo iframe").attr("src"));
+      });
+   </script>
+
+   <div class="modal fade" id="modalMapa" tabindex="-1" aria-labelledby="modalVideoLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+         <div class="modal-content bg-primary" style="--bs-bg-opacity: .5">
+            <div class="modal-header border-0"><button type="button" class="button button-secondary button-icon ms-auto"
+                  data-bs-dismiss="modal" aria-label="Close"><span class="ds-icon-x"></span></button></div>
+            <div class="modal-body"><span><iframe width="100%" height="100%" src="./mapa.html"
+                     style="align:center; background-color: transparent; display: block;"
+                     scrolling="no"></iframe></span></div>
+            <div class="modal-footer border-0"><button type="button" class="button button-secondary"
+                  data-bs-dismiss="modal">Fechar</button></div>
+         </div>
+      </div>
+   </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+   <script src="../pages/jquery.counterup.js"></script>
 </body>
 
 </html>

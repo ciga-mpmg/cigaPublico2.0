@@ -1,309 +1,480 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>CIGA</title>
-    <link rel="icon" type="image/x-icon" href="../assets/images/brand/favicon.ico" />
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-W83SJ45ZGV"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'G-W83SJ45ZGV');
+   </script>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1" />
+   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+   <title>CIGA</title>
+   <link rel="icon" type="image/x-icon" href="../assets/images/brand/favicon.ico" />
 </head>
 
 <body>
-    <header class="navigation" id="navigation">
-        <div class="navigation-container">
-            <a role="button" href="/" class="navigation-brand">
-                <img loading="lazy" src="../assets/images/brand/CIGA_Logotipo-Tipografia_H-56.svg" alt="Logo CIGA"
-                    height="50px" width="150px">
-            </a>
-            <button type="button" class="navigation-toggle" data-navigation-control="navigation"
-                aria-label="Toggle navigation">
-                <span class="navigation-toggle-icon" aria-label="Icon toggle navigation"></span>
-            </button>
-            <nav class="navigation-nav" data-navigation-nav="navigation">
-                <ul class="navigation-list">
-                    <li class="navigation-link">
-                        <a role="button" href="./">Home</a>
-                    </li>
-                    <li class="navigation-link active">
-                        <a role="button" href="./sobre.html">Sobre</a>
-                    </li>
-                    <li class="navigation-link">
-                        <a role="button" href="./documentos.html">
-                            Documentos
-                        </a>
-                    </li>
-                    <li class="navigation-link">
-                        <a role="button" href="./descaracterizacao.html">Descaracterização de barragens</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <section id="resume" class="resume">
-        <div class="container container-lg-none">
-            <div class="row align-items-center mb-5 bg-lines">
-                <div class="col-lg-6 col-xl-5">
-                    <div class="card card-borderless bg-transparent">
-                        <div class="card-header">
-                            <h6 class="card-title fw-normal text-primary" style="letter-spacing: 3px;">
-                                Quem somos
-                            </h6>
-                            <h2 class="card-title fw-600 text-primary">
-                                Conheça o CIGA
-                            </h2>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">
-                                O CIGA, Centro Integrado de Gestão Ambiental, é uma plataforma tecnológica criada em
-                                2022, pelo CAOMA, que contribui na implementação de novos padrões para o acompanhamento
-                                de segurança de barragens, fornecendo subsídios à tomada de decisões e dando
-                                transparência às ações realizadas pelo MPMG.
-                            </p>
-                            <p class="card-text">
-                                O CIGA recebe das Auditorias Técnicas Independentes as planilhas de controle das
-                                recomendações emitidas, validando e carregando as informações em banco de dados. Essas
-                                informações ficam disponíveis aos promotores do MPMG e autarquias parceiras em um Painel
-                                Gerencial com números, tabelas, gráficos e imagens.
-                            </p>
-                            <p class="card-text">
-                                Pelo Painel é possível visualizar diretamente as informações provenientes das
-                                recomendações, catalogadas, organizadas e classificadas, referentes às ações
-                                emergenciais, preventivas e/ou reparadoras decorrentes da existência de estruturas
-                                geotécnicas ou dos rompimentos de barragens de mineração já ocorridos no território
-                                mineiro.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 offset-xl-1">
-                    <img class="d-block mx-auto" src="../assets/images/background/banner-sobre.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="video" class="video bg-primary">
-        <div class="container container-lg-none">
-            <div class="row align-items-center mb-5 video-resume">
-                <div class="col-md-6">
-                    <div class="card card-borderless bg-transparent text-white">
-                        <div class="card-header">
-                            <h2 class="card-title text-white fw-600 ">
-                                Atuação do CIGA
-                            </h2>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">
-                                O CIGA tem como objetivo geral apoiar, robustecer e possibilitar a análise e
-                                visualização inteligente de dados no contexto das barragens de rejeitos de mineração em
-                                Minas Gerais por meio da criação de uma ferramenta com apresentação das questões
-                                relacionadas ao meio ambiente e à segurança de estruturas geotécnicas no estado.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="bg-thumb-video">
-                        <img src="../assets/images/utils/thumb-video.png" alt="" data-bs-toggle="modal"
-                            data-bs-target="#modalVideo" data-bs-whatever="https://www.youtube.com/embed/sVMOW_LB1bc">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="faq" class="bg-secondary">
-        <div class="container container-lg-none">
-            <p class="text-white fw-600 fs-2 mb-5 d-flex align-items-center gap-3"><span
-                    class="ds-icon-message fs-1"></span>
-                Perguntas frequentes</p>
-            <div class="accordion" id="accordionFlushExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                            O que é uma Auditoria
-                        </button>
-                    </h2>
-                    <div id="collapse1" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                            <div class="row align-items-center g-5">
-                                <div class="col-md-3">
-                                    <img src="../assets/images/faq/auditoria.png" alt="" srcset="">
-                                </div>
-                                <div class="col-md-9">
-                                    <p class="card-text">
-                                        Frequentemente, uma das obrigações de um TAC firmado entre o Ministério Público
-                                        e as mineradoras é a contratação de uma empresa de Auditoria Técnica e Ambiental
-                                        Independente. Por ser independente e não possuir vínculo direto com a mineradora
-                                        auditada, seus resultados são isentos de interesse ou influência do
-                                        empreendedor. A Auditoria tem a função de examinar e atestar a integridade e
-                                        veracidade das ações realizadas para o cumprimento dos TACs. Também analisa
-                                        ações relacionadas à segurança de trabalhadores e pessoas, à reparação e
-                                        monitoramento das estruturas, à caracterização de danos e ao meio ambiente e
-                                        infraestruturas afetadas. A Auditoria emite relatórios para o Ministério
-                                        Público, com as recomendações que foram emitidas à mineradora auditada.
-                                    </p>
-                                </div>
+   <header class="navigation" id="navigation">
+      <div class="navigation-container">
+         <div class="hstack gap-5 flex-wrap justify-content-center" style="min-height: 5vw;"> <img
+               class="logo-tela-grande" height="auto" width="125"
+               src="../assets/images/brand/CIGA_Logotipo-Completo_H-8.svg" alt=""> <img class="logo-tela-grande"
+               height="auto" width="125" src="../assets/images/brand/Caoma.svg" alt=""> <img height="auto" width="125"
+               src="../assets/images/brand/MPMG.svg" alt=""></div>
+         <button type="button" class="navigation-toggle" data-navigation-control="navigation"
+            aria-label="Toggle navigation"><span class="navigation-toggle-icon"
+               aria-label="Icon toggle navigation"></span></button>
+         <nav class="navigation-nav" data-navigation-nav="navigation">
+            <ul class="navigation-list">
+               <li class="navigation-link"><a role="button" href="./index.html">Home</a></li>
+               <li class="navigation-link"><a role="button" href="./ciga.html">CIGA</a></li>
+               <li class="navigation-link sobre active"><a role="button" href="./sobre.html">Sobre</a></li>
+               <li style="text-align: center;" class="navigation-link"><a role="button"
+                     href="./descaracterizacao.html">Descaracterização<br>de barragens</a></li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+   <section id="resume" class="resume" style="padding-block-end: 0px;">
+      <div class="container container-lg-none">
+         <div class="row align-items-center mb-5 bg-lines">
+            <div class="col-md-6">
+               <div class="card card-borderless bg-transparent">
+                  <div class="card-header">
+                     <h6 class="card-title fw-normal text-primary" style="letter-spacing: 3px;">Quem somos</h6>
+                     <h2 class="card-title fw-600 text-primary">Conheça o CIGA</h2>
+                  </div>
+                  <div class="card-body" style="font-size: 15px;">
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                            O que é uma recomendação
-                        </button>
-                    </h2>
-                    <div id="collapse2" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                            <p class="card-text">
-                                As recomendações são emitidas pela Auditoria Técnica e Ambiental Independente, após
-                                análise de evidências, para assegurar o cumprimento dos TACs. Essas evidências são
-                                coletadas por meio de documentos, reuniões ou auditorias técnicas de campo, e, com isso,
-                                as equipes de auditores redigem as recomendações, que são textos objetivos, completos e
-                                sucintos. Elas tratam diretamente dos problemas em questão, indicando “o que”, “quando”
-                                e “onde” deve haver ação da mineradora auditada, cabendo ao empreendedor definir “como”
-                                resolver as questões e apresentá-las para avaliação da auditoria. Ela dá uma
-                                recomendação por concluída quando entende que os aspectos técnicos da recomendação foram
-                                cumpridos pela mineradora. Com as recomendações, a auditoria solicita evidências para o
-                                cumprimento dos TACs e orienta as empresas para que corrijam ou melhorem suas ações,
-                                iniciem processos e/ou melhores suas rotinas.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                            Barragens listadas em TACs de
-                            Descaracterização, mas cadastradas no SIGBM como outro tipo de alteamento
-                        </button>
-                    </h2>
-                    <div id="collapse3" class="accordion-collapse collapse">
-                        <div class="accordion-body">content</div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                            Barragens listadas em TACs de
-                            Descaracterização, mas que não possuem cadastro no SIGBM
-                        </button>
-                    </h2>
-                    <div id="collapse4" class="accordion-collapse collapse">
-                        <div class="accordion-body">content</div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                            Barragens listadas em TACs de
-                            Descaracterização, mas que foram removidas do SIGBM
-                        </button>
-                    </h2>
-                    <div id="collapse5" class="accordion-collapse collapse">
-                        <div class="accordion-body">content</div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                            Barragens não listadas em TACs de
-                            Descaracterização do seu empreendedor, mas cadastradas
-                            no SIGBM como alteamento a montante
-                        </button>
-                    </h2>
-                    <div id="collapse6" class="accordion-collapse collapse">
-                        <div class="accordion-body">content</div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
-                            Barragens cujo empreendedor não
-                            assinou TAC, mas cadastradas no SIGBM como alteamento a montante
-                        </button>
-                    </h2>
-                    <div id="collapse7" class="accordion-collapse collapse">
-                        <div class="accordion-body">content</div>
-                    </div>
-                </div>
+
+
+                     <p class="card-text" style="text-align: justify;"> O Centro Integrado de Gestão Ambiental (CIGA) é
+                        uma plataforma tecnológica criada em 2022, pelo CAOMA, que contribui na implementação de novos
+                        padrões para o acompanhamento de segurança de barragens, fornecendo subsídios à tomada de
+                        decisão e dando transparência às ações realizadas pelo MPMG.</p>
+
+                     <p class="card-text" style="text-align: justify;">O CIGA está projetado para consolidar e
+                        disponibilizar ao MPMG e demais interessados diferentes tipos de informações relacionadas ao
+                        cumprimento de legislações ambientais e dados relacionados às temáticas acompanhadas pelo CAOMA.
+                     </p>
+
+                     <p class="card-text" style="text-align: justify;">Ele recebe das Auditorias Técnicas Independentes
+                        o controle das recomendações técnicas emitidas, validando e carregando as informações em banco
+                        de dados. Essas informações ficam disponíveis aos promotores do MPMG e autarquias parceiras em
+                        um Painel Gerencial com números, tabelas, gráficos e imagens. Pelo Painel é possível visualizar
+                        diversos dados provenientes das recomendações técnicas, detalhes sobre os TACs assinados,
+                        histórico de registros das estruturas geotécnicas cadastradas no SIGBM, imagens de satélite que
+                        permitem o acompanhamento do ciclo de vida das barragens, além de informações e a localização
+                        das estruturas listadas nos TACs de Descaracterização.</p>
+
+                     <p class="card-text" style="text-align: justify;">Pelo Painel é possível visualizar diversos dados
+                        provenientes das recomendações técnicas, detalhes sobre os TACs assinados, histórico de
+                        registros das estruturas geotécnicas cadastradas no SIGBM, imagens de satélite que permitem o
+                        acompanhamento do ciclo de vida das barragens, além de informações e a localização das
+                        estruturas listadas nos TACs de Descaracterização.</p>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
-    <footer class="footer" id="footer">
-        <div class="row footer-container">
-            <div class="col-12 col-lg-6 col-xl-3">
-                <ul class="list-group list-borderless">
-                    <li class="list-group-item">
-                        <h5 class="fw-normal text-secondary mb-3">Entre em contato</h5>
-                    </li>
-                    <li class="list-group-item">
-                        <a class="footer-link" href="https://goo.gl/maps/8CcE9Un7GWAQdr9V6?coh=178573&entry=tt"
-                            target="_blank">
-                            <span class="ds-icon-map-pin align-self-start"></span>
-                            R. Dias Adorno, 347 - Santo Agostinho, Belo Horizonte - MG, 8° andar.
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a class="footer-link text-nowrap" href="mailto:contato@ciga-mpmg.com.br">
-                            <span class="ds-icon-mail"></span> contato@ciga-mpmg.com.br</a>
-                    </li>
-                </ul>
+            <div class="col-md-6"><img src="../assets/images/background/banner-sobre.png" alt=""
+                  style="width: 75%; margin-left: 12%"></div>
+         </div>
+      </div>
+   </section>
+   <section id="video" class="video">
+      <div class="container container-lg-none">
+         <div class="row align-items-center mb-5 video-resume">
+            <div class="col-md-6">
+               <div class="card card-borderless bg-transparent">
+                  <div class="card-header">
+                     <h2 class="card-title text-primary fw-600">Atuação do CIGA</h2>
+                  </div>
+                  <div class="card-body">
+                     <p class="card-text">O CIGA representa uma nova abordagem do Ministério Público de Minas Gerais nas
+                        tratativas relacionadas ao meio ambiente e a mineração no estado. Por meio do CIGA, promotores e
+                        diversas partes interessadas passaram a contar com uma plataforma de dados e uma sala de
+                        operações que auxiliam no acompanhamento dos acordos assinados entre o poder público e as
+                        empresas auditadas.</p>
+
+                     <p class="card-text">O CIGA é uma ferramenta em constante expansão, desenvolvendo novas formas de
+                        aproximar a sociedade civil das atuações do Ministério Público de Minas Gerais e ampliando a
+                        visibilidade de processos e ações em prol da sociedade mineira. O CIGA fortalece o compromisso
+                        do MPMG na defesa das pessoas e do meio ambiente. </p>
+                  </div>
+               </div>
             </div>
-            <div class="col-12 col-lg-6 col-xl-3">
-                <ul class="list-group list-borderless">
-                    <li class="list-group-item">
-                        <h5 class="fw-normal text-secondary mb-3">Acesso rápido</h5>
-                    </li>
-                    <li class="list-group-item">
-                        <a class="footer-link" href="#">
-                            <span class="ds-icon-arrow-narrow-right"></span> Portal MPMG
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a class="footer-link" href="#">
-                            <span class="ds-icon-arrow-narrow-right"></span> CAOMA
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a class="footer-link" href="#">
-                            <span class="ds-icon-arrow-narrow-right"></span> Global Tailings Review
-                        </a>
-                    </li>
-                </ul>
+            <div class="bg-thumb-video col-md-6"><img src="../assets/images/utils/thumb-video.png" alt=""
+                  data-bs-toggle="modal" data-bs-target="#modalVideoCiga"></div>
+         </div>
+      </div>
+   </section>
+   <section id="about" class="about bg-primary">
+      <div class="container container-lg-none">
+         <div class="row align-items-center about-resume">
+            <div class="col-md-6 col-lg-5">
+               <div class="card card-borderless bg-transparent text-white">
+                  <h2 class="text-white">
+                     <p>Dúvidas frequentes</p>
+                  </h2>
+               </div>
             </div>
-            <div class="col-12 col-lg-12 col-xl-6 hstack gap-5 flex-wrap justify-content-center">
-                <img height="auto" width="125" src="../assets/images/brand/MPMG.svg" alt="">
-                <img height="auto" width="125" src="../assets/images/brand/Caoma.svg" alt="">
-                <img height="auto" width="125" src="../assets/images/brand/CIGA_Logotipo-Completo_H-8.svg" alt="">
+         </div>
+      </div>
+   </section>
+   <section id="tac" class="video">
+      <div class="container container-lg-none">
+         <div class="row align-items-center mb-5 video-resume">
+            <div class="bg-thumb-video col-md-6"><img src="../assets/images/utils/thumb-video.png" alt=""
+                  data-bs-toggle="modal" data-bs-target="#modalVideoTac"></div>
+            <div class="col-md-6">
+               <div class="card card-borderless bg-transparent">
+                  <div class="card-header">
+                     <h2 class="card-title text-primary fw-600">O que é um TAC</h2>
+                  </div>
+                  <div class="card-body">
+                     <p class="card-text">O Termo de Ajustamento de Conduta, ou TAC, é um acordo que o Ministério
+                        Público celebra com responsáveis por uma ameaça ou violação de direitos. Seu objetivo é impedir
+                        que a ilegalidade ou situação de risco permaneça, além de buscar reparar o dano causado e evitar
+                        que ações judiciais sejam propostas. O termo "TACs" é utilizado no CIGA como uma generalização
+                        que abrange outros instrumentos, como Termos de Compromisso e Termos de Acordo Judicial, em que
+                        todos visam solucionar conflitos de forma extrajudicial. Outras informações sobre TACs podem ser
+                        encontradas no vídeo <span class="ao-lado">ao lado</span> <span class="acima">acima</span>.</p>
+                  </div>
+               </div>
             </div>
-        </div>
-    </footer>
-    <!-- Modal -->
-    <div class="modal fade" id="modalVideo" tabindex="-1" aria-labelledby="modalVideoLabel" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen modal-dialog-centered">
-            <div class="modal-content bg-primary" style="--bs-bg-opacity: .5">
-                <div class="modal-header border-0">
-                    <button type="button" class="button button-secondary button-icon ms-auto" data-bs-dismiss="modal"
-                        aria-label="Close">
-                        <span class="ds-icon-x"></span>
-                    </button>
-                </div>
-                <div class="modal-body"> </div>
-                <div class="modal-footer border-0">
-                    <button type="button" class="button button-secondary" data-bs-dismiss="modal">Fechar</button>
-                </div>
+
+         </div>
+      </div>
+   </section>
+   <section id="audit" class="video bg-primary">
+      <div class="container container-lg-none">
+         <div class="row align-items-center mb-5 video-resume">
+            <div class="col-md-6">
+               <div class="card card-borderless bg-transparent">
+                  <div class="card-header">
+                     <h2 class="card-title text-white fw-600">O que é uma Auditoria</h2>
+                  </div>
+                  <div class="card-body text-white" style="font-size: 13px;">
+                     <p class="card-text " style="text-align: justify;">Frequentemente, uma das obrigações de um TAC
+                        firmado entre o Ministério Público e as mineradoras é a contratação de uma empresa de Auditoria
+                        Técnica e Ambiental Independente. Por ser independente e não possuir vínculo direto com a
+                        mineradora auditada, seus resultados são isentos de interesse ou influência do empreendedor. A
+                        Auditoria tem a função de examinar e atestar a integridade e veracidade das ações realizadas
+                        para o cumprimento dos TACs. Também analisa ações relacionadas à segurança de trabalhadores e
+                        pessoas, à reparação e monitoramento das estruturas, à caracterização de danos e ao meio
+                        ambiente e infraestruturas afetadas. A Auditoria emite relatórios para o Ministério Público, com
+                        as recomendações que foram emitidas à mineradora auditada.</p>
+                     <p class="card-text " style="text-align: justify;">É por meio de recomendações técnicas que a
+                        Auditoria solicita informações, requer apresentação de evidências ou esclarecimentos quanto às
+                        decisões técnicas implementadas pelas empresas auditadas. A Auditoria questiona as condições
+                        observadas e solicita outros esclarecimentos com o objetivo de alcançar a melhor solução técnica
+                        possível, baseado em legislações, regulamentos e nas melhores práticas aplicáveis. As
+                        recomendações técnicas são emitidas a partir de evidências disponibilizadas por meio de
+                        documentos, reuniões ou inspeções técnicas de campo, de forma objetiva e sucinta. Elas tratam
+                        diretamente dos problemas em questão, indicando “o que”, “quando” e “onde” se recomenda a ação
+                        da empresa auditada, cabendo ao empreendedor definir “como” resolver as questões e apresentá-las
+                        para avaliação. As recomendações técnicas são concluídas quando a Auditoria entende que os
+                        aspectos requisitados foram cumpridos pela empresa auditada.</p>
+
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
+            <div class="col-md-6"><img
+                  src="../assets/images/background/fotos_capa_dambreak_image_6t2u73o66ud8xbahbw51t9lvtjtz.jpg" alt=""
+                  data-bs-toggle="modal" data-bs-target="#"
+                  style="border-radius: 15px; border-bottom-left-radius: 150px;"></div>
+         </div>
+      </div>
+   </section>
+   <section id="PATAI" class="video">
+      <div class="container container-lg-none">
+         <div class="row align-items-center mb-5 video-resume">
+            <div class="col-md-12">
+               <div class="card card-borderless bg-transparent">
+                  <div class="card-header">
+                     <h2 class="card-title text-primary fw-600">O Programa de Auditoria Técnica e Ambiental Independente
+                     </h2>
+                  </div>
+                  <div class="card-body text-primary" style="text-align: justify;">
+                     <p class="card-text ">
+                     <p>Em 2015, após a ruptura da Barragem de Fundão, em Mariana, iniciou-se um movimento de
+                        questionamento acerca da permanência ou não das barragens de rejeito de mineração em Minas
+                        Gerais. Nesse contexto, em prol da cultura de prevenção, o MPMG implementou, por meio dos TACs,
+                        uma série de acordos com a Samarco/Fundação Renova para o acompanhamento das questões
+                        relacionadas às obras emergenciais e ao manejo do rejeito de Fundão e institucionalizou o
+                        Programa de Auditoria Técnica e Ambiental Independente (ou, Programa de Auditoria).</p>
+                     <p>Em 2019, após a ruptura das Barragens B-I, B-IV e B-IV_A, em Brumadinho, e o reconhecimento dos
+                        desafios e riscos existentes nas estruturas de contenção de rejeito de mineração em Minas
+                        Gerais, o processo de reavaliação dos estudos de Dam Break (extensão das manchas hipotéticas de
+                        inundação) e de segurança geotécnica das barragens se expandiu para as estruturas da Vale em
+                        Minas Gerais. Assim, o Programa de Auditoria foi expandido e passou a ser composto por quatro
+                        empresas de abrangência internacional que atuam como Auditoras Técnicas Independentes e se
+                        reportam ao MPMG: Advisian, AECOM, RIZZO e SLR.
+                     </p>
+                     <p>Em 2022, o MPMG, em parceira com outros órgãos públicos*, firmou Termos de Compromisso para que
+                        as mineradoras responsáveis por barragens alteadas a montante cumpram as prerrogativas dos
+                        processos de descaracterização. A iniciativa visa que o processo de descaracterização das
+                        estruturas ocorra de forma segura no menor tempo possível tecnicamente, associado às melhores
+                        tecnologias existentes, envolvendo ainda a contratação de equipes técnicas especializadas e
+                        independentes para acompanhamento. Essa iniciativa reforça o papel diligente do MPMG, promovendo
+                        ações que visam o desenvolvimento da mineração no estado de Minas Gerais de forma mais segura e
+                        responsável.</p>
+                     <p style="font-size:10px;">* São eles: Governo de Minas Gerais por meio da Secretaria de Estado de
+                        Meio Ambiente e Desenvolvimento Sustentável (SEMAD) e da Fundação Estadual do Meio Ambiente
+                        (FEAM), Ministério Público Federal (MPF) e Agência Nacional de Mineração (ANM)</p>
+                     </p>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section id="rejeito" class="video bg-primary">
+      <div class="container container-lg-none">
+         <div class="row align-items-center mb-5 video-resume">
+            <div class="col-md-6">
+               <div class="card card-borderless bg-transparent">
+                  <div class="card-header">
+                     <h2 class="card-title text-white fw-600">O que é uma barragem de rejeito de mineração</h2>
+                  </div>
+                  <div class="card-body text-white" style="text-align:justify;">
+                     <p class="card-text">
+                     <p>As barragens de rejeitos de mineração são estruturas importantes na indústria de mineração,
+                        projetadas para armazenar os resíduos sólidos e água gerados durante o processo de extração e
+                        beneficiamento do minério. Essas barragens desempenham um papel fundamental na contenção e
+                        gestão adequada desses materiais, evitando sua dispersão e minimizando possíveis impactos
+                        ambientais.</p>
+                     <p>Elas podem ser construídas utilizando diferentes métodos e técnicas de alteamento. Essas
+                        variações nos métodos construtivos levam em consideração as características geotécnicas do
+                        local, o volume de rejeitos a ser armazenado e outros fatores relevantes.</p>
+                     <p>Em razão da sua magnitude e complexidade, as barragens de rejeitos podem apresentar desafios
+                        significativos. O acúmulo desses materiais pode resultar em uma aparência visual marcante no
+                        ambiente, alterando a paisagem local. Além disso, é crucial garantir a integridade dessas
+                        estruturas para evitar possíveis vazamentos ou rupturas que possam acarretar danos severos e até
+                        irreversíveis. O vídeo <span class="ao-lado">ao lado</span> <span class="abaixo">abaixo</span>
+                        detalha os métodos de alteamento de barragens.</p>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="bg-thumb-video col-md-6"><img src="../assets/images/utils/thumb-video.png" alt=""
+                  data-bs-toggle="modal" data-bs-target="#modalVideoRej"></div>
+         </div>
+      </div>
+   </section>
+   <section id="alteamento" class="video">
+      <div class="container container-lg-none">
+         <div class="row align-items-center mb-5 video-resume">
+            <div class="bg-thumb-video col-md-6"><img src="../assets/images/utils/thumb-video.png" alt=""
+                  data-bs-toggle="modal" data-bs-target="#modalVideoAlt"></div>
+            <div class="col-md-6">
+               <div class="card card-borderless bg-transparent">
+                  <div class="card-header">
+                     <h2 class="card-title text-primary fw-600">O que é alteamento de barragens</h2>
+                  </div>
+                  <div class="card-body text-primary" style="text-align: justify;">
+                     <p class="card-text ">O termo "alteamento" refere-se ao processo de elevação ou aumento da altura
+                        de uma barragem de mineração ao longo do tempo. À medida que a barragem de rejeitos de mineração
+                        recebe continuamente os resíduos sólidos e água resultantes do processamento do minério,
+                        torna-se necessário aumentar sua capacidade de armazenamento para acomodar o volume crescente de
+                        materiais. O alteamento da barragem pode ser realizado por diferentes métodos, como a montante,
+                        a jusante e por linha de centro. Cada método possui características técnicas e construtivas
+                        distintas e a escolha do tipo de alteamento depende de diversos fatores. O vídeo <span
+                           class="ao-lado">ao lado</span> <span class="acima">acima</span> detalha os métodos de
+                        alteamento de barragens.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section id="descarac" class="video bg-primary">
+      <div class="container container-lg-none">
+         <div class="row align-items-center mb-5 video-resume">
+            <div class="col-md-6">
+               <div class="card card-borderless bg-transparent">
+                  <div class="card-header">
+                     <h2 class="card-title text-white fw-600">Por que descaracterizar uma barragem?</h2>
+                  </div>
+                  <div class="card-body text-white" style="text-align:justify;">
+                     <p class="card-text">
+                     <p>Após a ruptura da barragem da Samarco, em 2015, ficou clara a necessidade de maior regulação e
+                        controle destas estruturas. Após 2019, com o rompimento das barragens B-I, B-IV e B-IV_A na Mina
+                        do Córrego do Feijão, em Brumadinho, o MPMG, em consonância com as demandas da sociedade, atuou
+                        para a aprovação do Projeto de Lei de Iniciativa Popular conhecido como Lei Mar de Lama Nunca
+                        Mais (Lei Estadual no 23.291/2019), que “disciplina, especialmente, o licenciamento ambiental e
+                        a fiscalização de barragens de rejeitos ou resíduos industriais ou de mineração no Estado, de
+                        forma articulada com a política nacional de segurança de barragens.”</p>
+                     <p>Em 24/02/2022, o Ministério Público de Minas Gerais, juntamente com outros órgãos públicos,
+                        firmou Termos de Compromisso de Descaracterização das barragens construídas pelo método a
+                        montante e que não atenderam ao prazo definido para a descaracterização estabelecido pela Lei
+                        Mar de Lama Nunca Mais. Os principais marcos de atuação do MPMG estão detalhados no vídeo <span
+                           class="ao-lado">ao lado</span> <span class="abaixo">abaixo</span>. Essas variações nos
+                        métodos construtivos levam em consideração as características geotécnicas do local, o volume de
+                        rejeitos a ser armazenado e outros fatores relevantes.</p>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="bg-thumb-video col-md-6"><img src="../assets/images/utils/thumb-video.png" alt=""
+                  data-bs-toggle="modal" data-bs-target="#modalVideoMarc"></div>
+         </div>
+      </div>
+   </section>
+   <footer class="footer" id="footer">
+      <div class="row footer-container">
+         <div class="col-12 col-lg-6 col-xl-3">
+            <ul class="list-group list-borderless">
+               <li class="list-group-item">
+                  <h5 class="fw-normal text-secondary mb-3">Entre em contato</h5>
+               </li>
+               <li class="list-group-item"><a class="footer-link"
+                     href="https://goo.gl/maps/8CcE9Un7GWAQdr9V6?coh=178573&entry=tt" target="_blank"><span
+                        class="ds-icon-map-pin align-self-start"></span> R. Dias Adorno, 347 - Santo Agostinho, Belo
+                     Horizonte - MG, 8° andar.</a></li>
+               <li class="list-group-item"><a class="footer-link text-nowrap" href="mailto:contato@ciga-mpmg.com.br"
+                     style="white-space: wrap !important;"><span class="ds-icon-mail"></span>
+                     contato@ciga-mpmg.com.br</a></li>
+            </ul>
+         </div>
+         <div class="col-12 col-lg-6 col-xl-3">
+            <ul class="list-group list-borderless">
+               <li class="list-group-item">
+                  <h5 class="fw-normal text-secondary mb-3">Links úteis</h5>
+               </li>
+               <li class="list-group-item"><a class="footer-link" href="https://www.mpmg.mp.br/portal/"
+                     target="_blank"><span class="ds-icon-arrow-narrow-right" target="_blank"></span> Portal MPMG</a>
+               </li>
+               <li class="list-group-item"><a class="footer-link" href="https://www.instagram.com/caoma.mpmg/?hl=pt"
+                     target="_blank"><span class="ds-icon-arrow-narrow-right" target="_blank"></span> Instagram
+                     CAOMA</a></li>
+               <li class="list-group-item"><a class="footer-link"
+                     href="https://app.anm.gov.br/SIGBM/Publico/GerenciarPublico" target="_blank"><span
+                        class="ds-icon-arrow-narrow-right" target="_blank"></span>SIGBM</a></li>
+            </ul>
+         </div>
+         <div class="col-12 col-lg-12 col-xl-6 hstack gap-5 flex-wrap justify-content-center"><img height="auto"
+               width="125" src="../assets/images/brand/MPMG.svg" alt=""> <img height="auto" width="125"
+               src="../assets/images/brand/Caoma.svg" alt=""> <img height="auto" width="125"
+               src="../assets/images/brand/CIGA_Logotipo-Completo_H-8.svg" alt=""></div>
+      </div>
+   </footer>
+   <div class="modal fade" id="modalVideoCiga" tabindex="-1" aria-labelledby="modalVideoLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+         <div class="modal-content bg-primary" style="--bs-bg-opacity: .5">
+            <div class="modal-header border-0"><button type="button" class="button button-secondary button-icon ms-auto"
+                  data-bs-dismiss="modal" aria-label="Close"><span class="ds-icon-x"></span></button></div>
+            <div class="modal-body"><iframe width="560" height="315" src="https://www.youtube.com/embed/Xco-bcDs_H8"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen style="    aspect-ratio: 16/9;
+    margin: auto;
+    width: -webkit-fill-available;
+    height: auto;
+    max-height: 80vh;"></iframe></div>
+            <div class="modal-footer border-0"><button type="button" class="button button-secondary"
+                  data-bs-dismiss="modal">Fechar</button></div>
+         </div>
+      </div>
+   </div>
+   <div class="modal fade" id="modalVideoTac" tabindex="-1" aria-labelledby="modalVideoLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+         <div class="modal-content bg-primary" style="--bs-bg-opacity: .5">
+            <div class="modal-header border-0"><button type="button" class="button button-secondary button-icon ms-auto"
+                  data-bs-dismiss="modal" aria-label="Close"><span class="ds-icon-x"></span></button></div>
+            <div class="modal-body"><iframe width="560" height="315" src="https://www.youtube.com/embed/2cwH0SDR0LQ"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen style="    aspect-ratio: 16/9;
+    margin: auto;
+    width: -webkit-fill-available;
+    height: auto;
+    max-height: 80vh;"></iframe></div>
+            <div class="modal-footer border-0"><button type="button" class="button button-secondary"
+                  data-bs-dismiss="modal">Fechar</button></div>
+         </div>
+      </div>
+   </div>
+   <div class="modal fade" id="modalVideoRej" tabindex="-1" aria-labelledby="modalVideoLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+         <div class="modal-content bg-primary" style="--bs-bg-opacity: .5">
+            <div class="modal-header border-0"><button type="button" class="button button-secondary button-icon ms-auto"
+                  data-bs-dismiss="modal" aria-label="Close"><span class="ds-icon-x"></span></button></div>
+            <div class="modal-body"><iframe width="560" height="315" src="https://www.youtube.com/embed/eJniLdIc_bE"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen style="    aspect-ratio: 16/9;
+    margin: auto;
+    width: -webkit-fill-available;
+    height: auto;
+    max-height: 80vh;"></iframe></div>
+            <div class="modal-footer border-0"><button type="button" class="button button-secondary"
+                  data-bs-dismiss="modal">Fechar</button></div>
+         </div>
+      </div>
+   </div>
+   <div class="modal fade" id="modalVideoAlt" tabindex="-1" aria-labelledby="modalVideoLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+         <div class="modal-content bg-primary" style="--bs-bg-opacity: .5">
+            <div class="modal-header border-0"><button type="button" class="button button-secondary button-icon ms-auto"
+                  data-bs-dismiss="modal" aria-label="Close"><span class="ds-icon-x"></span></button></div>
+            <div class="modal-body"><iframe width="560" height="315" src="https://www.youtube.com/embed/H0bGFd1vYVA"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen style="    aspect-ratio: 16/9;
+    margin: auto;
+    width: -webkit-fill-available;
+    height: auto;
+    max-height: 80vh;"></iframe></div>
+            <div class="modal-footer border-0"><button type="button" class="button button-secondary"
+                  data-bs-dismiss="modal">Fechar</button></div>
+         </div>
+      </div>
+   </div>
+   <div class="modal fade" id="modalVideoMarc" tabindex="-1" aria-labelledby="modalVideoLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+         <div class="modal-content bg-primary" style="--bs-bg-opacity: .5">
+            <div class="modal-header border-0"><button type="button" class="button button-secondary button-icon ms-auto"
+                  data-bs-dismiss="modal" aria-label="Close"><span class="ds-icon-x"></span></button></div>
+            <div class="modal-body"><iframe width="560" height="315" src="https://www.youtube.com/embed/sVMOW_LB1bc"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen style="    aspect-ratio: 16/9;
+    margin: auto;
+    width: -webkit-fill-available;
+    height: auto;
+    max-height: 80vh;"></iframe></div>
+            <div class="modal-footer border-0"><button type="button" class="button button-secondary"
+                  data-bs-dismiss="modal">Fechar</button></div>
+         </div>
+      </div>
+   </div>
+   <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+   <script>
+      $("#modalVideoTac").on('hidden.bs.modal', function (e) {
+         $("#modalVideoTac iframe").attr("src", $("#modalVideoTac iframe").attr("src"));
+      });
+   </script>
+   <script>
+      $("#modalVideoCiga").on('hidden.bs.modal', function (e) {
+         $("#modalVideoCiga iframe").attr("src", $("#modalVideoCiga iframe").attr("src"));
+      });
+      $("#modalVideoRej").on('hidden.bs.modal', function (e) {
+         $("#modalVideoRej iframe").attr("src", $("#modalVideoRej iframe").attr("src"));
+      });
+      $("#modalVideoAlt").on('hidden.bs.modal', function (e) {
+         $("#modalVideoAlt iframe").attr("src", $("#modalVideoAlt iframe").attr("src"));
+      });
+      $("#modalVideoMarc").on('hidden.bs.modal', function (e) {
+         $("#modalVideoMarc iframe").attr("src", $("#modalVideoMarc iframe").attr("src"));
+      });
+   </script>
 </body>
 
 </html>

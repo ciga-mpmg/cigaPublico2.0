@@ -1,261 +1,627 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>CIGA</title>
-    <link rel="icon" type="image/x-icon" href="../assets/images/brand/favicon.ico" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W83SJ45ZGV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-W83SJ45ZGV');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>CIGA</title>
+  <link rel="icon" type="image/x-icon" href="../assets/images/brand/favicon.ico" />
 </head>
 
 <body>
-    <header class="navigation" id="navigation">
-        <div class="navigation-container">
-            <a role="button" href="/" class="navigation-brand">
-                <img loading="lazy" src="../assets/images/brand/CIGA_Logotipo-Tipografia_H-56.svg" alt="Logo CIGA"
-                    height="50px" width="150px">
-            </a>
-            <button type="button" class="navigation-toggle" data-navigation-control="navigation"
-                aria-label="Toggle navigation">
-                <span class="navigation-toggle-icon" aria-label="Icon toggle navigation"></span>
-            </button>
-            <nav class="navigation-nav" data-navigation-nav="navigation">
-                <ul class="navigation-list">
-                    <li class="navigation-link">
-                        <a role="button" href="./">Home</a>
-                    </li>
-                    <li class="navigation-link">
-                        <a role="button" href="./sobre.html">Sobre</a>
-                    </li>
-                    <li class="navigation-link">
-                        <a role="button" href="./documentos.html">
-                            Documentos
-                        </a>
-                    </li>
-                    <li class="navigation-link active">
-                        <a role="button" href="./descaracterizacao.html">Descaracterização de barragens</a>
-                    </li>
-                </ul>
-            </nav>
+  <header class="navigation" id="navigation">
+    <div class="navigation-container">
+      <div class="hstack gap-5 flex-wrap justify-content-center" style="min-height: 5vw;"> <img class="logo-tela-grande"
+          height="auto" width="125" src="../assets/images/brand/CIGA_Logotipo-Completo_H-8.svg" alt=""> <img
+          class="logo-tela-grande" height="auto" width="125" src="../assets/images/brand/Caoma.svg" alt=""> <img
+          height="auto" width="125" src="../assets/images/brand/MPMG.svg" alt=""></div>
+      <button type="button" class="navigation-toggle" data-navigation-control="navigation"
+        aria-label="Toggle navigation"><span class="navigation-toggle-icon"
+          aria-label="Icon toggle navigation"></span></button>
+      <nav class="navigation-nav" data-navigation-nav="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-link"><a role="button" href="./index.html">Home</a></li>
+          <li class="navigation-link"><a role="button" href="./ciga.html">CIGA</a></li>
+          <li class="navigation-link sobre"><a role="button" href="./sobre.html">Sobre</a></li>
+          <li style="text-align: center;" class="navigation-link active"><a role="button"
+              href="./descaracterizacao.html">Descaracterização<br>de barragens</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section id="about" class="about bg-primary">
+    <div class="container container-lg-none">
+      <div class="row align-items-center mb-5 about-resume">
+        <div class="bg-thumb-video col-md-6 col-lg-6"><img
+            src="../assets/images/background/fotos_capa_sdralegria_image_x77zieu5w9e5pfvek1ifhwzyhcxg.jpg"
+            style="border-radius: 15px; border-bottom-left-radius: 150px;" alt="" data-bs-toggle="modal"
+            data-bs-target="#modalVideo"></div>
+
+        <div class="col-md-6 col-lg-5">
+          <div class="card card-borderless bg-transparent text-white">
+            <div class="card-header">
+              <h5 class="text-white"><span>O que é</span></h5>
+              <h2 class="text-white"><span>Descaracterização de barragens</span></h2>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+              <p style="text-align: justify;">Após a ruptura da barragem da Samarco, em 2015, ficou clara a necessidade
+                de maior regulação e controle destas estruturas. Após 2019, com o rompimento das barragens B-I, B-IV e
+                B-IV_A na Mina do Córrego do Feijão, em Brumadinho, o MPMG, em consonância com as demandas da sociedade,
+                atuou para a aprovação do Projeto de Lei de Iniciativa Popular conhecido como Lei Mar de Lama Nunca Mais
+                (Lei Estadual no 23.291/2019), que “disciplina, especialmente, o licenciamento ambiental e a
+                fiscalização de barragens de rejeitos ou resíduos industriais ou de mineração no Estado, de forma
+                articulada com a política nacional de segurança de barragens.”</p>
+
+              <p style="text-align: justify;">Em 24/02/2022, o Ministério Público de Minas Gerais, juntamente com outros
+                órgãos públicos, firmou Termos de Compromisso de Descaracterização das barragens construídas pelo método
+                a montante e que não atenderam ao prazo definido para a descaracterização estabelecido pela Lei Mar de
+                Lama Nunca Mais. Os principais marcos de atuação do MPMG estão detalhados no vídeo <span
+                  class="ao-lado">ao lado</span> <span class="abaixo">acima</span>.</p>
+            </div>
+          </div>
         </div>
-    </header>
-    <section class="pb-0">
-        <div class="container container-lg-none">
-            <h2 class="text-primary fw-600 mb-5">Descaracterização de Barragens</h2>
-            <p class="text-primary fw-600 mb-4">As 56 barragens acompanhadas pelo CIGA estão divididas entre:</p>
-            <div class="accordion" id="accordionFlushExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                            <span class="badge badge-secondary badge-circle">1</span> Barragens listadas em TACs de
-                            Descaracterização e cadastradas no SIGBM como alteamento a montante
-                        </button>
-                    </h2>
-                    <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">content</div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                            <span class="badge badge-secondary badge-circle">2</span> Barragens listadas em TACs de
-                            Descaracterização, são diques internos associados a barragens do SIGBM, mas não possuem
-                            cadastro no SIGBM
-                        </button>
-                    </h2>
-                    <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">content</div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                            <span class="badge badge-secondary badge-circle">3</span> Barragens listadas em TACs de
-                            Descaracterização, mas cadastradas no SIGBM como outro tipo de alteamento
-                        </button>
-                    </h2>
-                    <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">content</div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                            <span class="badge badge-secondary badge-circle">4</span>Barragens listadas em TACs de
-                            Descaracterização, mas que não possuem cadastro no SIGBM
-                        </button>
-                    </h2>
-                    <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">content</div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                            <span class="badge badge-secondary badge-circle">5</span> Barragens listadas em TACs de
-                            Descaracterização, mas que foram removidas do SIGBM
-                        </button>
-                    </h2>
-                    <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">content</div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                            <span class="badge badge-secondary badge-circle">6</span>Barragens não listadas em TACs de
-                            Descaracterização do seu empreendedor, mas cadastradas
-                            no SIGBM como alteamento a montante
-                        </button>
-                    </h2>
-                    <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">content</div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
-                            <span class="badge badge-secondary badge-circle">7</span> Barragens cujo empreendedor não
-                            assinou TAC, mas cadastradas no SIGBM como alteamento a montante
-                        </button>
-                    </h2>
-                    <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">content</div>
-                    </div>
-                </div>
+      </div>
+    </div>
+  </section>
+  <section class="pb-0">
+    <div class="container container-lg-none">
+      <h2 class="text-primary fw-600 mb-5">Descaracterização de Barragens</h2>
+      <p class="text-primary fw-600 mb-4">As 56 barragens* acompanhadas pelo CIGA estão divididas entre:</p>
+      <p style="font-size: 13px;">* O termo barragens é aqui utilizado como uma generalização que abrange outros tipos
+        de estruturas geotécnicas como diques, pilhas etc.
+      </p>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false"
+              aria-controls="flush-collapse1"><span class="badge badge-primary badge-circle"
+                style="background-color: #003b4d;">29</span> Listadas em TAC de Descaracterização e cadastradas no SIGBM
+              como alteamento a montante</button></h2>
+          <div id="flush-collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <table id="pergunta1" class="display table table-radius table-lg">
+                <thead class="table-light">
+                  <tr>
+                    <th scope="col">Empreendedor</th>
+                    <th scope="col">Barragem</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>AMG BRASIL S.A.</td>
+                    <td>VOLTA GRANDE 2</td>
+                  </tr>
+                  <tr>
+                    <td>ARCELORMITTAL BRASIL S.A.</td>
+                    <td>BARRAGEM DE REJEITOS</td>
+                  </tr>
+                  <tr>
+                    <td>CSN MINERACAO S.A.</td>
+                    <td>BARRAGEM B4</td>
+                  </tr>
+                  <tr>
+                    <td>CSN MINERACAO S.A.</td>
+                    <td>BARRAGEM DO VIGIA</td>
+                  </tr>
+                  <tr>
+                    <td>GERDAU ACOMINAS S/A</td>
+                    <td>ALEMÃES</td>
+                  </tr>
+                  <tr>
+                    <td>MINERACAO GERAL DO BRASIL S/A</td>
+                    <td>BARRAGEM B1</td>
+                  </tr>
+                  <tr>
+                    <td>MINERACAO GERAL DO BRASIL S/A</td>
+                    <td>BARRAGEM B2</td>
+                  </tr>
+                  <tr>
+                    <td>MINERACAO MORRO DO IPE S.A.</td>
+                    <td>BARRAGEM B1 - MINA IPÊ</td>
+                  </tr>
+                  <tr>
+                    <td>MINERACAO MORRO DO IPE S.A.</td>
+                    <td>BARRAGEM B1-AUXILIAR - MINA TICO-TICO</td>
+                  </tr>
+                  <tr>
+                    <td>MINERACAO MORRO DO IPE S.A.</td>
+                    <td>BARRAGEM B2 - MINA TICO-TICO</td>
+                  </tr>
+                  <tr>
+                    <td>MINERIOS NACIONAL S.A.</td>
+                    <td>BARRAGEM B2</td>
+                  </tr>
+                  <tr>
+                    <td>MINERIOS NACIONAL S.A.</td>
+                    <td>BARRAGEM B2 AUXILIAR</td>
+                  </tr>
+                  <tr>
+                    <td>MINERITA MINÉRIOS ITAÚNA LTDA.</td>
+                    <td>BARRAGEM 03 - ZÉ DA GROTA</td>
+                  </tr>
+                  <tr>
+                    <td>MOSAIC FERTILIZANTES P&amp;K LTDA.</td>
+                    <td>BARRAGEM B5</td>
+                  </tr>
+                  <tr>
+                    <td>SAFM MINERACAO LTDA</td>
+                    <td>BARRAGEM CENTRAL</td>
+                  </tr>
+                  <tr>
+                    <td>SAFM MINERACAO LTDA</td>
+                    <td>BARRAGEM DE AREDES</td>
+                  </tr>
+                  <tr>
+                    <td>SAMARCO MINERACAO S A</td>
+                    <td>BARRAGEM DE GERMANO</td>
+                  </tr>
+                  <tr>
+                    <td>SAMARCO MINERACAO S A</td>
+                    <td>CAVA DO GERMANO</td>
+                  </tr>
+                  <tr>
+                    <td>VALE S.A.</td>
+                    <td>ÁREA IX</td>
+                  </tr>
+                  <tr>
+                    <td>VALE S.A.</td>
+                    <td>B3/B4</td>
+                  </tr>
+                  <tr>
+                    <td>VALE S.A.</td>
+                    <td>CAMPO GRANDE</td>
+                  </tr>
+                  <tr>
+                    <td>VALE S.A.</td>
+                    <td>DOUTOR</td>
+                  </tr>
+                  <tr>
+                    <td>VALE S.A.</td>
+                    <td>FORQUILHA I</td>
+                  </tr>
+                  <tr>
+                    <td>VALE S.A.</td>
+                    <td>FORQUILHA II</td>
+                  </tr>
+                  <tr>
+                    <td>VALE S.A.</td>
+                    <td>FORQUILHA III</td>
+                  </tr>
+                  <tr>
+                    <td>VALE S.A.</td>
+                    <td>GRUPO</td>
+                  </tr>
+                  <tr>
+                    <td>VALE S.A.</td>
+                    <td>SUL SUPERIOR</td>
+                  </tr>
+                  <tr>
+                    <td>VALE S.A.</td>
+                    <td>VARGEM GRANDE</td>
+                  </tr>
+                  <tr>
+                    <td>VALE S.A.</td>
+                    <td>XINGU</td>
+                  </tr>
+                </tbody>
+              </table>
+              <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+                integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+              <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
+              <script>$(document).ready(function () {
+
+                  $('#pergunta1').DataTable({
+                    language: {
+                      url: 'https://cdn.datatables.net/plug-ins/1.13.4/i18n/pt-BR.json',
+                    },
+                  });
+                });</script>
+
             </div>
+          </div>
         </div>
-    </section>
-    <section class="pb-0">
-        <div class="container container-lg-none">
-            <h3 class="fw-600 mb-5">Localização</h3>
-            <p class="fw-600 mb-4">Filtros do mapa</p>
-            <div class="row gy-4">
-                <div class="col-12 col-sm-6 col-lg-auto flex-grow-1">
-                    <label for="empreendedor" class="form-label">Empreendedor</label>
-                    <select class="form-select" name="empreendedor" id="empreendedor">
-                        <option value="" hidden>Selecione</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-auto flex-grow-1">
-                    <label for="comarca" class="form-label">Comarca</label>
-                    <select class="form-select" name="comarca" id="comarca">
-                        <option value="" hidden>Selecione</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select>
-                </div>
-                <div class="col-12 col-lg-auto hstack gap-3 align-items-end flex-wrap justify-content-end">
-                    <button class="button button-large button-primary-outline px-4 text-nowrap">
-                        Reiniciar zoom
-                    </button>
-                    <button class="button button-large button-primary px-4 text-nowrap">
-                        Pesquisar
-                        <span class="ds-icon-arrow-right"></span>
-                    </button>
-                </div>
-                <img src="../assets/images/background/map.jpg" alt="" srcset="">
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false"
+              aria-controls="flush-collapse2"><span class="badge badge-primary badge-circle"
+                style="background-color: #003b4d;">8</span> Listadas em TAC de Descaracterização, são diques internos
+              associados a barragens do SIGBM, mas não possuem cadastro no SIGBM</button></h2>
+          <div id="flush-collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <table id="pergunta2" class="display table table-radius table-lg">
+                <thead class="table-light">
+                  <tr>
+                    <th scope="col">Empreendedor</th>
+                    <th scope="col">Barragem</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <td>VALE S.A.</td>
+                    <td>CORDÃO NOVA VISTA (PONTAL)</td>
+                  </tr>
+                  <tr>
+                    <td>VALE S.A.</td>
+                    <td>DIQUE 1A (CONCEIÇÃO)</td>
+                  </tr>
+                  <tr>
+                    <td>VALE S.A.</td>
+                    <td>DIQUE 1B (CONCEIÇÃO)</td>
+                  </tr>
+                  <tr>
+                    <td>VALE S.A.</td>
+                    <td>DIQUE 02 (PONTAL)</td>
+                  </tr>
+                  <tr>
+                    <td>VALE S.A.</td>
+                    <td>DIQUE 03 (PONTAL)</td>
+                  </tr>
+                  <tr>
+                    <td>VALE S.A.</td>
+                    <td>DIQUE 04 (PONTAL)</td>
+                  </tr>
+                  <tr>
+                    <td>VALE S.A.</td>
+                    <td>MINERVINO (PONTAL)</td>
+                  </tr>
+                  <tr>
+                    <td>VALE S.A.</td>
+                    <td>5 (MAC)</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
+          </div>
         </div>
-    </section>
-    <section>
-        <div class="container container-lg-none">
-            <h3 class="fw-600 mb-5">Barragens apresentadas no mapa</h3>
-            <div class="border rounded-3">
-                <table class="table table-radius table-lg">
-                    <thead class="table-light">
-                        <tr>
-                            <th scope="col">Comarca</th>
-                            <th scope="col">Barragem</th>
-                            <th scope="col">Empreendedor</th>
-                            <th scope="col">Município</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry the Bird</td>
-                            <td></td>
-                            <td>@twitter</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false"
+              aria-controls="flush-collapse3"><span class="badge badge-primary badge-circle"
+                style="background-color: #003b4d;">3</span>Listadas em TAC de Descaracterização, mas cadastradas no
+              SIGBM como outro tipo de alteamento</button></h2>
+          <div id="flush-collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <table id="pergunta3" class="display table table-radius table-lg">
+                <thead class="table-light">
+                  <tr>
+                    <th scope="col">Empreendedor</th>
+                    <th scope="col">Barragem</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>HERCULANO MINERACAO LTDA</td>
+                    <td>BARRAGEM B1</td>
+                  </tr>
+                  <tr>
+                    <td>ITAMINAS COMERCIO DE MINERIOS SA</td>
+                    <td>B1</td>
+                  </tr>
+                  <tr>
+                    <td>NACIONAL DE GRAFITE LTDA</td>
+                    <td>B4</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <div pagination views="5, 10, 25" total="423" currentPage="1" currentView="5"></div>
-    </section>
-    <footer class="footer" id="footer">
-        <div class="row footer-container">
-            <div class="col-12 col-lg-6 col-xl-3">
-                <ul class="list-group list-borderless">
-                    <li class="list-group-item">
-                        <h5 class="fw-normal text-secondary mb-3">Entre em contato</h5>
-                    </li>
-                    <li class="list-group-item">
-                        <a class="footer-link" href="https://goo.gl/maps/8CcE9Un7GWAQdr9V6?coh=178573&entry=tt"
-                            target="_blank">
-                            <span class="ds-icon-map-pin align-self-start"></span>
-                            R. Dias Adorno, 347 - Santo Agostinho, Belo Horizonte - MG, 8° andar.
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a class="footer-link text-nowrap" href="mailto:contato@ciga-mpmg.com.br">
-                            <span class="ds-icon-mail"></span> contato@ciga-mpmg.com.br</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-12 col-lg-6 col-xl-3">
-                <ul class="list-group list-borderless">
-                    <li class="list-group-item">
-                        <h5 class="fw-normal text-secondary mb-3">Acesso rápido</h5>
-                    </li>
-                    <li class="list-group-item">
-                        <a class="footer-link" href="#">
-                            <span class="ds-icon-arrow-narrow-right"></span> Portal MPMG
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a class="footer-link" href="#">
-                            <span class="ds-icon-arrow-narrow-right"></span> CAOMA
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a class="footer-link" href="#">
-                            <span class="ds-icon-arrow-narrow-right"></span> Global Tailings Review
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-12 col-lg-12 col-xl-6 hstack gap-5 flex-wrap justify-content-center">
-                <img height="auto" width="125" src="../assets/images/brand/MPMG.svg" alt="">
-                <img height="auto" width="125" src="../assets/images/brand/Caoma.svg" alt="">
-                <img height="auto" width="125" src="../assets/images/brand/CIGA_Logotipo-Completo_H-8.svg" alt="">
-            </div>
+          </div>
         </div>
-    </footer>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false"
+              aria-controls="flush-collapse4"><span class="badge badge-primary badge-circle"
+                style="background-color: #003b4d;">4</span>Listadas em TAC de Descaracterização, mas que não possuem
+              cadastro no SIGBM</button></h2>
+          <div id="flush-collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <table id="pergunta3" class="display table table-radius table-lg">
+                <thead class="table-light">
+                  <tr>
+                    <th scope="col">Empreendedor</th>
+                    <th scope="col">Barragem</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>ALCOA ALUMÍNIO S.A.</td>
+                    <td>ÁREA DE RESÍDUO DE BAUXITA 1, CÉLULA 3 (“ARB 1”)</td>
+                  </tr>
+                  <tr>
+                    <td>ALCOA ALUMÍNIO S.A.</td>
+                    <td>ÁREA DE RESÍDUO DE BAUXITA 3, CÉLULAS 1 E 2 (“ARB 3”)</td>
+                  </tr>
+                  <tr>
+                    <td>ALCOA ALUMÍNIO S.A.</td>
+                    <td>ÁREA DE RESÍDUO DE BAUXITA 6A (“ARB 6A”)</td>
+                  </tr>
+                  <tr>
+                    <td>ALCOA ALUMÍNIO S.A.</td>
+                    <td>ÁREA DE RESÍDUO DE BAUXITA 7 (“ARB 7”)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false"
+              aria-controls="flush-collapse5"><span class="badge badge-primary badge-circle"
+                style="background-color: #003b4d;">2</span>Listadas em TAC de Descaracterização, mas que foram removidas
+              do SIGBM</button></h2>
+          <div id="flush-collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <table id="pergunta3" class="display table table-radius table-lg">
+                <thead class="table-light">
+                  <tr>
+                    <th scope="col">Empreendedor</th>
+                    <th scope="col">Barragem</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>MINERITA MINÉRIOS ITAÚNA LTDA.</td>
+                    <td>BARRAGEM 01 - JOSE JAIME</td>
+                  </tr>
+                  <tr>
+                    <td>VALE S.A.</td>
+                    <td>IPOEMA</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false"
+              aria-controls="flush-collapse6"><span class="badge badge-circle"
+                style="background-color: #f2952f;">6</span>Não inseridas na Política Estadual de Segurança de Barragens,
+              mas acompanhadas de forma direta pela ANM
+            </button></h2>
+          <div id="flush-collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <table id="pergunta3" class="display table table-radius table-lg">
+                <thead class="table-light">
+                  <tr>
+                    <th scope="col">Empreendedor</th>
+                    <th scope="col">Barragem</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>ARCELORMITTAL BRASIL S.A.</td>
+                    <td>BACIA 01</td>
+                  </tr>
+                  <tr>
+                    <td>AVG EMPREENDIMENTOS MINERARIOS S.A.</td>
+                    <td>PILHA 01</td>
+                  </tr>
+                  <tr>
+                    <td>AVG EMPREENDIMENTOS MINERARIOS S.A.</td>
+                    <td>PILHA 02</td>
+                  </tr>
+                  <tr>
+                    <td>EXTRATIVA METALURGIA S.A.</td>
+                    <td>BARRAGEM REJEITOS</td>
+                  </tr>
+                  <tr>
+                    <td>VALE S.A.</td>
+                    <td>ED MONJOLO</td>
+                  </tr>
+                  <tr>
+                    <td>VALE S.A.</td>
+                    <td>
+                      ED VALE DAS COBRAS</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse" data-bs-target="#flush-collapse7" aria-expanded="false"
+              aria-controls="flush-collapse7"><span class="badge badge-circle"
+                style="background-color: #9f3235;">1</span>Não listada em TAC de Descaracterização, mas acompanhada de
+              forma direta pelo Ministério Público Federal</button></h2>
+          <div id="flush-collapse7" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <table id="pergunta3" class="display table table-radius table-lg">
+                <thead class="table-light">
+                  <tr>
+                    <th scope="col">Empreendedor</th>
+                    <th scope="col">Barragem</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>TOPAZIO IMPERIAL MINERAÇÃO COMERCIO E INDUSTRIA LTDA</td>
+                    <td>ÁGUA FRIA</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse" data-bs-target="#flush-collapse9" aria-expanded="false"
+              aria-controls="flush-collapse7"><span class="badge badge-circle"
+                style="background-color: #6eaa25;">2</span>Listadas em TAC de Descaracterização, com descaracterização
+              concluída, já descadastradas do SIGBM</button></h2>
+          <div id="flush-collapse9" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <table id="pergunta3" class="display table table-radius table-lg">
+                <thead class="table-light">
+                  <tr>
+                    <th scope="col">Empreendedor</th>
+                    <th scope="col">Barragem</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>CSN MINERACAO S.A.</td>
+                    <td>BARRAGEM AUXILIAR DO VIGIA</td>
+                  </tr>
+                  <tr>
+                    <td>MINERACAO USIMINAS S.A.</td>
+                    <td>BARRAGEM CENTRAL</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse" data-bs-target="#flush-collapse8" aria-expanded="false"
+              aria-controls="flush-collapse7"><span class="badge badge-circle"
+                style="background-color: #6eaa25;">1</span>Listadas em TAC de Descaracterização, com descaracterização
+              concluída, mas não descadastradas do SIGBM</button></h2>
+          <div id="flush-collapse8" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <table id="pergunta3" class="display table table-radius table-lg">
+                <thead class="table-light">
+                  <tr>
+                    <th scope="col">Empreendedor</th>
+                    <th scope="col">Barragem</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>VALE S.A.</td>
+                    <td>BAIXO JOÃO PEREIRA</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="container container-lg-none">
+        <p class="fw-600 mb-4 text-primary" style="margin-top: 0.5em;">Legenda</p>
+
+        <div class="container">
+          <div class="row">
+
+            <div class="col-sm-2">
+              <span class="badge badge-circle" style="background-color: #6eaa25;"> </span>
+              <span class=" mb-4 text-primary">Concluída</span>
+
+            </div>
+            <div class="col-sm-4">
+              <span class="badge badge-circle" style="background-color: #f2952f;"> </span>
+              <span class=" mb-4 text-primary">Em acompanhamento direto pela ANM</span>
+            </div>
+
+            <div class="col-sm">
+              <span class="badge badge-primary badge-circle" style="background-color: #003b4d;"> </span>
+              <span class=" mb-4 text-primary">Em acompanhamento por TAC</span>
+            </div>
+
+            <div class="col-sm">
+              <span class="badge badge-circle" style="background-color: #9f3235;"> </span>
+              <span class=" mb-4 text-primary">Em acompanhamento pelo MPF</span>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </div>
+  </section>
+
+  <section class="pb-0">
+    <div class="container container-lg-none">
+      <h3 class="fw-600 mb-5 text-primary">Localização das descaracterizações</h3>
+      <p class="fw-600 mb-4 text-primary">Explore as barragens no mapa abaixo</p>
+
+
+      <div class="row gy-4">
+        <div class="col-12 col-sm-6 col-lg-auto flex-grow-1">
+
+          <p class="fw-600 mb-4 text-primary" style="margin-bottom: 0em !important;">Selecione o(s) empreendedor(es) que
+            deseja visualizar no mapa</p>
+          <span><iframe width="100%" height="800px" src="./mapa_descarac.html"
+              style="align:center; background-color: transparent;" scrolling="no"></iframe></span>
+        </div>
+      </div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+  <script>
+    $("#modalVideo").on('hidden.bs.modal', function (e) {
+      $("#modalVideo iframe").attr("src", $("#modalVideo iframe").attr("src"));
+    });
+  </script>
+  <footer class="footer" id="footer">
+    <div class="row footer-container">
+      <div class="col-12 col-lg-6 col-xl-3">
+        <ul class="list-group list-borderless">
+          <li class="list-group-item">
+            <h5 class="fw-normal text-secondary mb-3">Entre em contato</h5>
+          </li>
+          <li class="list-group-item"><a class="footer-link"
+              href="https://goo.gl/maps/8CcE9Un7GWAQdr9V6?coh=178573&entry=tt" target="_blank"><span
+                class="ds-icon-map-pin align-self-start"></span> R. Dias Adorno, 347 - Santo Agostinho, Belo Horizonte -
+              MG, 8° andar.</a></li>
+          <li class="list-group-item"><a class="footer-link text-nowrap" href="mailto:contato@ciga-mpmg.com.br"
+              style="white-space: wrap !important;"><span class="ds-icon-mail"></span> contato@ciga-mpmg.com.br</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-lg-6 col-xl-3">
+        <ul class="list-group list-borderless">
+          <li class="list-group-item">
+            <h5 class="fw-normal text-secondary mb-3">Links úteis</h5>
+          </li>
+          <li class="list-group-item"><a class="footer-link" href="https://www.mpmg.mp.br/portal/" target="_blank"><span
+                class="ds-icon-arrow-narrow-right" target="_blank"></span> Portal MPMG</a></li>
+          <li class="list-group-item"><a class="footer-link" href="https://www.instagram.com/caoma.mpmg/?hl=pt"
+              target="_blank"><span class="ds-icon-arrow-narrow-right" target="_blank"></span>Instagram CAOMA</a></li>
+          <li class="list-group-item"><a class="footer-link"
+              href="https://app.anm.gov.br/SIGBM/Publico/GerenciarPublico" target="_blank"><span
+                class="ds-icon-arrow-narrow-right" target="_blank"></span>SIGBM</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-lg-12 col-xl-6 hstack gap-5 flex-wrap justify-content-center"><img height="auto"
+          width="125" src="../assets/images/brand/MPMG.svg" alt=""> <img height="auto" width="125"
+          src="../assets/images/brand/Caoma.svg" alt=""> <img height="auto" width="125"
+          src="../assets/images/brand/CIGA_Logotipo-Completo_H-8.svg" alt=""></div>
+    </div>
+  </footer>
+  <div class="modal fade" id="modalVideo" tabindex="-1" aria-labelledby="modalVideoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+      <div class="modal-content bg-primary" style="--bs-bg-opacity: .5">
+        <div class="modal-header border-0"><button type="button" class="button button-secondary button-icon ms-auto"
+            data-bs-dismiss="modal" aria-label="Close"><span class="ds-icon-x"
+              onClick='$("#modalVideo iframe").attr("src", $("#modalVideo iframe").attr("src"));'></span></button></div>
+        <div class="modal-body"><iframe width="560" height="315" src="https://www.youtube.com/embed/sVMOW_LB1bc"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe></div>
+        <div class="modal-footer border-0"><button type="button" class="button button-secondary" data-bs-dismiss="modal"
+            onClick='$("#modalVideo iframe").attr("src", $("#modalVideo iframe").attr("src"));'>Fechar</button></div>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>

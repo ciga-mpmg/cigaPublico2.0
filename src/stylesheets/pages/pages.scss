@@ -3,6 +3,7 @@
 
 section {
     padding-block: 100px;
+
     img {
         width: -webkit-fill-available;
     }
@@ -88,11 +89,9 @@ section {
 }
 
 .bg-maps {
-    background-image: linear-gradient(
-            270deg,
+    background-image: linear-gradient(270deg,
             #ffffff 50%,
-            rgba(255, 255, 255, 0) 80%
-        ),
+            rgba(255, 255, 255, 0) 80%),
         url("../assets/images/background/maps.jpg");
     background-repeat: no-repeat;
     background-position: center left;
@@ -120,6 +119,7 @@ section {
         z-index: 1;
         pointer-events: none;
     }
+
     &::after {
         content: "Assista ao vídeo";
         position: absolute;
@@ -153,4 +153,45 @@ section {
         align-items: center;
         justify-content: center;
     }
+}
+
+.ao-lado {
+    display: inline;
+}
+
+.acima {
+    display: none;
+}
+
+.abaixo {
+    display: none;
+}
+
+
+@media(max-width: 767px) {
+    .ao-lado {
+        display: none;
+    }
+
+    .acima {
+        display: inline;
+    }
+
+    .abaixo {
+        display: inline;
+    }
+}
+
+@media(max-width: 1000px) {
+    .logo-tela-grande {
+        display: none;
+    }
+}
+
+header {
+    min-height: 90px;
+}
+
+.navigation-toggle {
+    margin: 25px 0;
 }

@@ -78,6 +78,19 @@ module.exports = {
             filename: 'pages/descaracterizacao.html',
             chunks: ['main', 'ciga', 'pages', 'descaracterizacao'],
         }),
+        new HtmlWebpackPlugin({
+            template: './src/pages/ciga.html',
+            filename: 'pages/ciga.html',
+            chunks: ['main', 'ciga', 'pages', 'home'],
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/pages/mapas/mapa.html',
+            filename: 'pages/mapa.html',
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/pages/mapas/mapa_descarac.html',
+            filename: 'pages/mapa_descarac.html'
+        }),
     ],
     entry: {
         ciga: './src/stylesheets/styles.scss',
@@ -99,9 +112,9 @@ module.exports = {
             directory: path.join(__dirname, 'public'),
         },
         compress: true,
-        port: 3333,
-        open: true,
+        port: 4242,
+        open: false,
         liveReload: true,
-        host: '192.168.1.167',
+        host: 'localhost',
     },
 };
