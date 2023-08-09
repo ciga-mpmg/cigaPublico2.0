@@ -7,6 +7,9 @@ Novo site do Centro Integrado de Gestão Ambiental (CIGA).
 -   [Node](https://nodejs.org/en) (versão 14 ou superior)
 -   NPM (versão 9 ou superior)
 -   [Serve](https://www.npmjs.com/package/serve) (versão 14 ou superior)
+-   Yarn
+    - MAC: `brew install yarn`
+    - Linux: `sudo apt-get install yarn` 
 
 ## Instalação
 
