@@ -23,3 +23,4 @@ import './navigation';
 import './pagination';
 import './slide';
 import './modal';
+import './jquery.counterup';
