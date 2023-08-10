@@ -1,0 +1,152 @@
+---
+# IMPORTANTE
+# LEMBRAR DE SEMPRE DE SUBSTITUIR O (ALL) POR 'TODOS' NO HTML RENDERIZADO
+output: 
+  html_document:
+    self_contained: true
+---
+
+```{css, echo = FALSE}
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.crosstalk-input .control-label{
+  color: #003b4d;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.selectize-input{
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+
+}
+
+.selectize-dropdown.multi{
+  z-index: 9999;
+}
+
+.main-container {
+max-width: 100% !important;
+
+}
+```
+
+```{r, include = FALSE, results='hide'}
+knitr::opts_chunk$set(
+  error = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  echo = FALSE
+)
+
+shape_mg <- readr::read_rds("shapes/shape_mg.rds")
+
+geotecnica <- sf::st_read(
+  "shapes/lista_estruturas_descaracterizacao_plataforma_ciga.shp"
+) |>
+  dplyr::mutate(
+    legenda = ifelse(
+      legenda == "Emacompanhamento pela ANM",
+      "Em acompanhamento pela ANM",
+      legenda
+    )
+  ) |>
+  dplyr::mutate(legenda_final = dplyr::case_match(
+    legenda,
+    "Descaracterizada" ~ "Concluída",
+    "Em acompanhamento pela ANM" ~ "Em acompanhamento direto pela ANM",
+    "TAC assinado" ~ "Em acompanhamento por TAC",
+    "Sem TAC assinado" ~ "Sem acompanhamento por TAC"
+  ))
+
+cores_legenda <- tibble::tribble(
+  ~legenda, ~cores_mapa,
+  "Concluída", "green",
+  "Em acompanhamento direto pela ANM", "orange",
+  "Em acompanhamento por TAC", "#4c7e80",
+  "Sem acompanhamento por TAC", "darkred"
+)
+
+dados_mapa <- geotecnica |>
+  dplyr::bind_rows() |>
+  dplyr::mutate(
+    cores_mapa = dplyr::case_when(
+      legenda_final == "Concluída" ~ "green",
+      legenda_final == "Em acompanhamento direto pela ANM" ~ "orange",
+      legenda_final == "Em acompanhamento por TAC" ~ "cadetblue",
+      legenda_final == "Sem acompanhamento por TAC" ~ "darkred"
+    )
+  ) |>
+  dplyr::mutate(
+    empreended = ifelse(
+      empreended == "MOSAIC FERTILIZANTES P&K LTDA.",
+      "MOSAIC FERTILIZANTES P. e K. LTDA.",
+      empreended
+    )
+  )
+```
+
+```{r}
+# Wrap data frame in SharedData
+sd <- crosstalk::SharedData$new(dados_mapa)
+
+# Use SharedData like a dataframe with Crosstalk-enabled widgets
+crosstalk::bscols(
+  widths = c(12, 12),
+  crosstalk::filter_select("empreend", "", sd, group = ~empreended),
+  leaflet::leaflet(sd, width = "100%", height = 600, elementId = "map") |>
+    leaflet::addProviderTiles(
+      leaflet::providers$Esri.WorldImagery,
+      options = leaflet::providerTileOptions(
+        minZoom = 6,
+        maxZoom = 16
+      ),
+      group = "Imagens de satélite"
+    ) |>
+    leaflet::addProviderTiles(
+      leaflet::providers$Esri.WorldGrayCanvas,
+      options = leaflet::providerTileOptions(
+        minZoom = 6,
+        maxZoom = 16
+      ),
+      group = "Mapa base"
+    ) |>
+    leaflet::addAwesomeMarkers(
+      icon = leaflet::awesomeIcons(
+        icon = "glyphicon-map-marker",
+        iconColor = "white",
+        library = "glyphicon",
+        markerColor = ~cores_mapa
+      ),
+      label = ~ purrr::map(
+        paste(
+          "<strong>Nome da barragem</strong>: ", stringr::str_to_upper(barragem), "<br>",
+          "<strong>Empreendedor</strong>: ", stringr::str_to_upper(empreended), "<br>",
+          "<strong>Legenda</strong>: ", legenda_final, "<br>"
+        ),
+        shiny::HTML
+      )
+    ) |>
+    leaflet::addPolygons(
+      data = leaflet::getMapData(leaflet::leaflet(shape_mg)),
+      color = "black",
+      stroke = TRUE,
+      weight = 2,
+      fillOpacity = 0
+    ) |>
+    leaflet::addLayersControl(
+      baseGroups = c("Mapa base", "Imagens de satélite"),
+      options = leaflet::layersControlOptions(collapsed = FALSE)
+    ) |>
+    leaflet::addLegend(
+      "bottomright",
+      labels = cores_legenda$legenda,
+      colors = cores_legenda$cores_mapa,
+      title = "Barragem - Descaracterização",
+      opacity = 1
+    )
+)
+```

@@ -1,0 +1,97 @@
+---
+output:
+  html_document:
+    self_contained: true
+---
+
+```{r, include = FALSE, results='hide'}
+knitr::opts_chunk$set(error = FALSE, message = FALSE, warning = FALSE, echo = FALSE)
+
+geotecnica <- sf::st_read(
+  "shapes/lista_estruturas_plataforma_ciga.shp"
+) |>
+  dplyr::mutate(
+    legenda = "TAC normal"
+  )
+
+shape_mg <- readr::read_rds("shapes/shape_mg.rds")
+```
+
+```{css, echo = FALSE}
+.main-container {
+max-width: 100% !important;
+}
+
+.container-fluid {
+ padding-right: 0px !important;
+ padding-left: 0px !important;
+}
+```
+
+```{r, echo = FALSE}
+cores_legenda <- tibble::tribble(
+  ~metodo_construtivo, ~cores_mapa,
+  # "Descaracterizada", "gray",
+  "Em acompanhamento pela ANM", "yellow",
+  "TAC normal", "orange",
+  "TAC assinado", "darkblue",
+  "Sem TAC assinado", "darkred"
+)
+
+dados_mapa <- dplyr::bind_rows(geotecnica) |>
+  dplyr::mutate(
+    cores_mapa = dplyr::case_when(
+      legenda == "Em acompanhamento pela ANM" ~ "yellow",
+      legenda == "TAC normal" ~ "orange",
+      legenda == "TAC assinado" ~ "darkblue",
+      legenda == "Sem TAC assinado" ~ "darkred"
+    )
+  )
+
+leaflet::leaflet(
+  dados_mapa,
+  width = "100%",
+  height = "100vh",
+  elementId = "map"
+) |>
+  leaflet::addProviderTiles(
+    leaflet::providers$Esri.WorldImagery,
+    options = leaflet::providerTileOptions(
+      minZoom = 5,
+      maxZoom = 16
+    ),
+    group = "Imagens de satélite"
+  ) |>
+  leaflet::addProviderTiles(
+    leaflet::providers$Esri.WorldGrayCanvas,
+    options = leaflet::providerTileOptions(
+      minZoom = 5,
+      maxZoom = 16
+    ),
+    group = "Mapa base"
+  ) |>
+  leaflet::addAwesomeMarkers(
+    data = dados_mapa,
+    group = "markerGroup",
+    label = ~ purrr::map(
+      paste(
+        "<strong>Nome da barragem</strong>: ", stringr::str_to_upper(barragem), "<br>",
+        "<strong>Empreendedor</strong>: ", stringr::str_to_upper(empreended), "<br>",
+        "<strong>Município</strong>: ", stringr::str_to_upper(municipio), "<br>"
+      ),
+      shiny::HTML
+    )
+  ) |>
+  leaflet::addPolygons(
+    data = leaflet::getMapData(leaflet::leaflet(shape_mg)),
+    color = "black",
+    stroke = TRUE,
+    weight = 2,
+    fillOpacity = 0
+  ) |>
+  leaflet::addLayersControl(
+    baseGroups = c("Mapa base", "Imagens de satélite"),
+    options = leaflet::layersControlOptions(collapsed = FALSE)
+  )
+```
+
