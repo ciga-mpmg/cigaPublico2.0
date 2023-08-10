@@ -85,11 +85,11 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             template: './src/pages/mapas/mapa.html',
-            filename: 'pages/mapa.html',
+            filename: 'pages/mapas/mapa.html',
         }),
         new HtmlWebpackPlugin({
             template: './src/pages/mapas/mapa_descarac.html',
-            filename: 'pages/mapa_descarac.html'
+            filename: 'pages/mapas/mapa_descarac.html'
         }),
     ],
     entry: {
