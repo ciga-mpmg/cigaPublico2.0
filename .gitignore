@@ -5,3 +5,4 @@ package-lock.json
 yarn.lock
 .Rproj.user
 *.Rproj
+.DS_Store
