@@ -6,9 +6,14 @@
         "white": {
             "value": "#FFFFFF"
         },
+        "ciga": {
+            "900": {
+                "value": "#BA0C30"
+            }
+        },
         "blue": {
             "300": {
-                "value": "#BA0C30"
+                "value": "#65D0EC"
             },
             "900": {
                 "value": "#003B4D"
