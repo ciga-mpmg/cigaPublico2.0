@@ -2,6 +2,16 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const fs = require('fs');
+const tacs = fs.readdirSync('./src/pages/tacs/');
+
+let tacPages = tacs.map(name => {
+    return new HtmlWebpackPlugin({
+        template: `./src/pages/tacs/${name}`,
+        filename: `pages/tacs/${name}`,
+        chunks: ['main', 'ciga', 'pages'],
+    })
+});
 
 module.exports = {
     devtool: false,
@@ -91,7 +101,7 @@ module.exports = {
             template: './src/pages/mapas/mapa_descarac.html',
             filename: 'pages/mapas/mapa_descarac.html'
         }),
-    ],
+    ].concat(tacPages),
     entry: {
         ciga: './src/stylesheets/styles.scss',
         pages: './src/stylesheets/pages/pages.scss',
